@@ -16,3 +16,7 @@ All Rights Reserved!
 - `vendor:` update version for dependencies, packages.
 - `test:` adding missing tests, refactoring tests; no production code change
 - `create:` add a new file
+
+## Third party programs
+### Iconscout: 
+Using iconscout.com for the icons. You can add these icons by going to this site: https://iconscout.com/unicons/explore/line and search for the icon you want. The next step is to copy the Font and paste it into the file. 
