@@ -204,3 +204,7 @@ img{
 .nav_link:hover{
     color: var(--first-color);
 }
+
+.nav_icon{
+    font-size: 1.2rem;
+}
