@@ -153,3 +153,9 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
+.nav_logo,
+.nav_toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
