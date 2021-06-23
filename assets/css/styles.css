@@ -159,3 +159,7 @@ img{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
+
+.nav_logo:hover{
+    color: var(--first-color);
+}
