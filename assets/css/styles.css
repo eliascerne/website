@@ -342,3 +342,9 @@ img{
     text-align: center;
     margin-bottom: var(--mb-2-5);
 }
+
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
