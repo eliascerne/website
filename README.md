@@ -14,6 +14,7 @@ This is the offical repository for the website eliascerne.com.
 - `vendor:` update version for dependencies, packages.
 - `test:` adding missing tests, refactoring tests; no production code change
 - `create:` add a new file
+- `correct:` correcting a misspelled word or text
 
 ## Third party programs
 ### Iconscout: 
