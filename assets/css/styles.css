@@ -300,3 +300,7 @@ img{
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
 }
+
+.home_scroll-arrow{
+    font-size: 1.25rem;
+}
