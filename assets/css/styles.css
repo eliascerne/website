@@ -252,3 +252,8 @@ img{
 .home_social-icon:hover{
     color: var(--first-color-alt);
 }
+
+.home_blob{
+    width: 200px;
+    fill: var(--first-color);
+}
