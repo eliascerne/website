@@ -324,3 +324,8 @@ img{
     margin-left: var(--mb-0-5);
     transition: .3s;
 }
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
