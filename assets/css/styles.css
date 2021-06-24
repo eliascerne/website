@@ -348,3 +348,7 @@ img{
     justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
+
+.about_info-name{
+    font-size: var(--smaller-font-size);
+}
