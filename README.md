@@ -1,8 +1,6 @@
 # Website
 This is the offical repository for the website eliascerne.com.
 
-Made by: ©Elias Cerne
-All Rights Reserved!
 
 ## Rules for Commits
 
@@ -20,3 +18,7 @@ All Rights Reserved!
 ## Third party programs
 ### Iconscout: 
 Using iconscout.com for the icons. You can add these icons by going to this site: https://iconscout.com/unicons/explore/line and search for the icon you want. The next step is to copy the Font and paste it into the file. 
+
+## Contributor
+Made by: ©Elias Cerne
+All Rights Reserved!
