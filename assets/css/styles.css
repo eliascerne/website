@@ -349,6 +349,18 @@ img{
     margin-bottom: var(--mb-2-5);
 }
 
+.about_info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
 .about_info-name{
     font-size: var(--smaller-font-size);
+}
+
+.about_info-title,
+.about_info-name{
+    display: block;
+    text-align: center;
 }
