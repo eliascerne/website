@@ -405,3 +405,9 @@ img{
     margin-left: auto;
     transition: .4s;
 }
+
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
