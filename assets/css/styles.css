@@ -482,3 +482,7 @@ img{
     height: max-content;
     margin-bottom: var(--mb-2-5);
 }
+
+.skills_open .skills_arrow{
+    transform: rotate(-180deg);
+}
