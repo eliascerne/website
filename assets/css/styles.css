@@ -426,3 +426,8 @@ img{
 .skills_bar{
     background-color: var(--first-color-lighter);
 }
+
+.skills_percentage{
+    display: block;
+    background-color: var(--first-color);
+}
