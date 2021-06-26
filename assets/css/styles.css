@@ -431,3 +431,39 @@ img{
     display: block;
     background-color: var(--first-color);
 }
+
+.skills_sub1Skill1{
+    width: 50%;
+}
+
+.skills_sub2Skill1{
+    width: 50%;
+}
+
+.skills_sub3Skill1{
+    width: 50%;
+}
+
+.skills_sub1Skill2{
+    width: 50%;
+}
+
+.skills_sub2Skill2{
+    width: 50%;
+}
+
+.skills_sub3Skill2{
+    width: 50%;
+}
+
+.skills_sub1Skill3{
+    width: 50%;
+}
+
+.skills_sub2Skill3{
+    width: 50%;
+}
+
+.skills_sub3Skill3{
+    width: 50%;
+}
