@@ -381,3 +381,13 @@ img{
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
 }
+
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
