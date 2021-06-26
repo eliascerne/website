@@ -369,3 +369,15 @@ img{
     display: flex;
     justify-content: center;
 }
+
+/*========== SKILLS ==========*/
+.skills_container{
+    row-gap: 0;
+}
+
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
