@@ -610,3 +610,7 @@ img{
     cursor: pointer;
     font-size: var(--small-font-size);
 }
+
+.services_button:hover .button_icon{
+    transform: translateX(.25rem);
+}
