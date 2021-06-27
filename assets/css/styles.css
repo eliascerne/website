@@ -638,3 +638,11 @@ img{
     padding: 1.5rem;
     border-radius: 1rem;
 }
+
+.services_modal-services{
+    row-gap: 1rem;
+}
+
+.services_modal-service{
+    display: flex;
+}
