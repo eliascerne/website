@@ -590,3 +590,8 @@ img{
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
 }
+
+.services_button{
+    cursor: pointer;
+    font-size: var(--small-font-size);
+}
