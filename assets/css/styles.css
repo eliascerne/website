@@ -546,3 +546,11 @@ img{
     background-color: var(--first-color);
     transform: translate(6px, -7px);
 }
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualification_active[data-content]{
+    display: block;
+}
