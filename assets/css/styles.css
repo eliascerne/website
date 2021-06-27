@@ -661,3 +661,8 @@ img{
     color: var(--first-color);
     cursor: pointer;
 }
+
+.services_modal-icon{
+    color: var(--first-color);
+    margin-right: var(--mb-0-25);
+}
