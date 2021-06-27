@@ -538,3 +538,11 @@ img{
     background-color: var(--first-color);
     border-radius: 50%;
 }
+
+.qualification_line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
