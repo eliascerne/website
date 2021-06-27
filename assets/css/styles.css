@@ -530,3 +530,11 @@ img{
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
+
+.qualification_rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
