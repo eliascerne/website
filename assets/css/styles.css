@@ -646,3 +646,9 @@ img{
 .services_modal-service{
     display: flex;
 }
+
+.services_modal-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
