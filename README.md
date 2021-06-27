@@ -20,6 +20,8 @@ This is the offical repository for the website eliascerne.com.
 ### Iconscout: 
 Using iconscout.com for the icons. You can add these icons by going to this site: https://iconscout.com/unicons/explore/line and search for the icon you want. The next step is to copy the Font and paste it into the file. 
 
+### Swiperjs:
+
 ## Contributor
 Made by: © [@erias04]( https://github.com/erias04 )
  <br/>
