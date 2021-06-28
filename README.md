@@ -15,6 +15,7 @@ This is the offical repository for the website eliascerne.com.
 - `test:` adding missing tests, refactoring tests; no production code change
 - `create:` add a new file
 - `correct:` correcting a misspelled word or text
+- `delete:` deleting a file
 
 ## Third party programs
 ### Iconscout: 
