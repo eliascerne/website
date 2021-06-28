@@ -90,18 +90,20 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*===== PORTFOLIO SWIPER =====*/
-let swiper = new Swiper('.portfolio_container', {
-    cssMode: true,
+let swiperPortfolio = new Swiper('.portfolio_container', {
+    /*autoplay: {
+        delay: 10000,
+      },*/
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
+      //dynamicBullets: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    keyboard: true,
-});
+  });
