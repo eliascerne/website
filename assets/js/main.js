@@ -90,7 +90,7 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*===== PORTFOLIO SWIPER =====*/
-var swiper = new Swiper('.swiper-container', {
+let swiper = new Swiper('.portfolio_container', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -102,4 +102,4 @@ var swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  });
+});
