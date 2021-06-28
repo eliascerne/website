@@ -89,7 +89,7 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-/*===== PORTFOLIO SWIPER =====*/
+/*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper('.portfolio_container', {
     /*autoplay: {
         delay: 10000,
