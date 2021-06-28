@@ -90,8 +90,9 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*===== PORTFOLIO SWIPER =====*/
-let swiper = new Swiper('.portfolio_container', {
+let swiperPortfolio = new Swiper('.portfolio_container', {
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -99,6 +100,5 @@ let swiper = new Swiper('.portfolio_container', {
     pagination: {
       el: '.swiper-pagination'
     },
-    mousewheel: true,
     keyboard: true,
 });
