@@ -25,6 +25,7 @@ Using iconscout.com for the icons. You can add these icons by going to this site
 ### Swiperjs:
 Using swiperjs for the Portfolio section. We will generate a swiper with swiperjs. You can see all swipers here: https://swiperjs.com/demos. 
 To implement the swiper to the site, you have to go to: https://github.com/nolimits4web/swiper/tree/master/demos and there find the right one for you.
+See a list of all effects for swiperjs [script](https://swiperjs.com/swiper-api).
 Thanks to nolimits4web to pulish that amazing swiper collection.
 
 ## Contributor
