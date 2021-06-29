@@ -12,6 +12,9 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
     <!--========= ICON ==========-->
     <link rel="icon" type="image/img" href="assets/img/portfolio1.jpg">
 </head>
@@ -617,9 +620,82 @@
         </section>
 
         <!--========== PORTFOLIO ==========-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+
+            <div class="portfolio_container container swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!--========== PORTFOLIO 1 ==========-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Modern Website</h3>
+                            <p class="portfolio_description">A nice looking, responsive personal website. Made by Elias Cerne</p>
+                            <a href="#" class="button button--flex button--small portfolio_button">
+                               Demo
+                                <i class="uil uil-angle-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--========== PORTFOLIO 2 ==========-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">A Modern Website</h3>
+                            <p class="portfolio_description">A nice looking, responsive personal website. Made by Elias Cerne</p>
+                            <a href="#" class="button button--flex button--small portfolio_button">
+                               Demo
+                                <i class="uil uil-angle-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--========== PORTFOLIO 3 ==========-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Modern Website</h3>
+                            <p class="portfolio_description">A nice looking, responsive personal website. Made by Elias Cerne</p>
+                            <a href="#" class="button button--flex button--small portfolio_button">
+                               Demo
+                                <i class="uil uil-angle-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
     </main>
     <!--========== JS ==========-->
     <script src="assets/js/main.js"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
 </body>
 </html>

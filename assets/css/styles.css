@@ -674,3 +674,29 @@ img{
 }
 
 /*===== PORTFOLIO =====*/
+.portfolio_container{
+    overflow: initial;
+}
+
+.portfolio_content{
+    padding: 0 2.5rem;
+}
+
+.portfolio_img{
+    width: 310px;
+    border-radius: 1rem;
+    justify-self: center;
+}
+
+.portfolio_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon{
+    transform: translateX(.3rem);
+}

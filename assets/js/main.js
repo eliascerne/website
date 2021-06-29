@@ -88,5 +88,3 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
-
-/*===== PORTFOLIO SWIPER =====*/
