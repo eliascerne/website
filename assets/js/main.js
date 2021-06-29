@@ -90,7 +90,7 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*===== PORTFOLIO SWIPER =====*/
-var swiperPortfolio2 = document.getElementsByClassName('.portfolio_container',{
+let swiperPortfolio = new Swiper('.portfolio_container', {
     cssMode: true,
     loop: true,
     navigation: {
@@ -98,7 +98,7 @@ var swiperPortfolio2 = document.getElementsByClassName('.portfolio_container',{
       prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination"
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    keyboard: true,
-});
+})
