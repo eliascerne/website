@@ -16,6 +16,7 @@ This is the offical repository for the website eliascerne.com.
 - `create:` add a new file
 - `correct:` correcting a misspelled word or text
 - `delete:` deleting a file
+- `merge:` merge branches together
 
 ## Third party programs
 ### Iconscout: 
