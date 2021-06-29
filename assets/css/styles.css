@@ -705,3 +705,8 @@ img{
 .swiper-button-next::after{
     display: none;
 }
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
