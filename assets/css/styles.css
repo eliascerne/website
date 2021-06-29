@@ -687,3 +687,8 @@ img{
     border-radius: 1rem;
     justify-content: center;
 }
+
+.portfolio_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
