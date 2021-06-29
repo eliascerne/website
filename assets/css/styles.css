@@ -718,3 +718,7 @@ img{
 .swiper-button-next{
     right: -.5rem;
 }
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
