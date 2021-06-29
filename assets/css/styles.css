@@ -679,11 +679,11 @@ img{
 }
 
 .portfolio_content{
-    padding: 0 4.5rem;
+    padding: 0 2.5rem;
 }
 
 .portfolio_img{
-    width: 300px;
+    width: 320px;
     border-radius: 1rem;
     justify-content: center;
 }
