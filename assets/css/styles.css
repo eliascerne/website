@@ -674,3 +674,10 @@ img{
 }
 
 /*===== PORTFOLIO =====*/
+.portfolio_container{
+    overflow: initial;
+}
+
+.portfolio_content{
+    padding: 0 1.5rem;
+}
