@@ -722,3 +722,7 @@ img{
 .swiper-container-horizontal > .swiper-pagination-bullets{
     bottom: -2.5rem;
 }
+
+.swiper-pagination-bullet-active{
+    color: var(--first-color);
+}
