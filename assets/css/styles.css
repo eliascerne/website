@@ -692,3 +692,7 @@ img{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
 }
+
+.portfolio_description{
+    margin-bottom: var(--mb-0-75);
+}
