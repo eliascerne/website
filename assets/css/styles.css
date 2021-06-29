@@ -710,3 +710,11 @@ img{
     font-size: 2rem;
     color: var(--first-color);
 }
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
