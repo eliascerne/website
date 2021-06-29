@@ -726,3 +726,9 @@ img{
 .swiper-pagination-bullet-active{
     color: var(--first-color);
 }
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+    outline: none;
+}
