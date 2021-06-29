@@ -673,6 +673,7 @@ img{
     visibility: visible;
 }
 
+<<<<<<< HEAD
 /*==================== PORTFOLIO ====================*/
 /*This little script under .portfolio_container prevents that a scrolling bar appeares, it took me literally 1 hour to get over this, oh boy*/
 .portfolio_container{
@@ -738,3 +739,6 @@ img{
 .swiper-pagination-bullet{
     outline: none;
 }
+=======
+/*===== PORTFOLIO =====*/
+>>>>>>> main
