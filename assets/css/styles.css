@@ -1,11 +1,11 @@
-/*========== GOOGLE FONTS ==========*/
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*========== VARIABLES CSS ==========*/
+/* VARIABLES CSS */
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
+    /* Colors */
     /* Change base color */
     --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
@@ -21,7 +21,7 @@
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: white;
 
-    /*========== Font and typography ==========*/
+    /* Font and typography */
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -33,11 +33,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*========== Font weight ==========*/
+    /* Font weight */
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /* Margenes Bottom */
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -48,7 +48,7 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
+    /* z index */
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
@@ -67,7 +67,7 @@
     }
 }
 
-/*========== BASE ==========*/
+/* BASE */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -104,7 +104,7 @@ img{
     height: auto;
 }
 
-/*========== REUSABLE CSS CLASSES ==========*/
+/* REUSABLE CSS CLASSES */
 .section{
     padding: 2rem 0 4rem;
 }
@@ -124,7 +124,7 @@ img{
     text-align: center;
 }
 
-/*========== LAYOUT ==========*/
+/* LAYOUT */
 .container{
     max-width: 768px;
     margin-left: var(--mb-1-5);
@@ -145,7 +145,7 @@ img{
     background-color: var(--body-color);
 }
 
-/*========== NAV ==========*/
+/* NAV */
 .nav{
     max-width: 968px;
     height: var(--header-height);
@@ -227,7 +227,7 @@ img{
     bottom: 0;
 }
 
-/*========= HOME ==========*/
+/* HOME */
 .home_container{
     gap: 1rem;
 }
@@ -305,7 +305,7 @@ img{
     font-size: 1.25rem;
 }
 
-/*========== BUTTONS ==========*/
+/* BUTTONS */
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -345,7 +345,7 @@ img{
     color: var(--first-color-alt);
 }
 
-/*========== ABOUT ==========*/
+/* ABOUT */
 .about_img{
     width: 200px;
     border-radius: .5rem;
@@ -385,7 +385,7 @@ img{
     justify-content: center;
 }
 
-/*========== SKILLS ==========*/
+/* SKILLS */
 .skills_container{
     row-gap: 0;
 }
@@ -502,7 +502,7 @@ img{
     transform: rotate(-180deg);
 }
 
-/*===== QUALIFICATION =====*/
+/* QUALIFICATION */
 .qualification_tabs{
     display: flex;
     justify-content: space-evenly;
@@ -574,7 +574,7 @@ img{
     color: var(--first-color);
 }
 
-/*===== SERVICES =====*/
+/* SERVICES */
 .services_container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -673,7 +673,7 @@ img{
     visibility: visible;
 }
 
-/*===== PORTFOLIO =====*/
+/* PORTFOLIO */
 .portfolio_container{
     overflow: initial;
 }
