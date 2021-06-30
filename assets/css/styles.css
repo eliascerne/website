@@ -751,3 +751,8 @@ img{
 .project_description{
     margin-bottom: var(--mb-1-5);
 }
+
+.project_title,
+.project_description{
+    color: white;
+}
