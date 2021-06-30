@@ -1,23 +1,23 @@
-/*========== NAV HIDDEN ==========*/
+/* NAV HIDDEN */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
+/* MENU SHOW */
 if(navToggle){
     navToggle.addEventListener('click', () =>[
         navMenu.classList.add('show-menu')
     ])
 }
 
-/*===== MENU HIDE =====*/
+/* MENU HIDE */
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
     })
 }
 
-/*===== REMOVE MENU MOBILE =====*/
+/* REMOVE MENU MOBILE */
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
@@ -27,7 +27,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*===== SKILLS =====*/
+/* SKILLS */
 const skillsContent = document.getElementsByClassName('skills_content'),
       skillsHeader = document.querySelectorAll('.skills_header')
 
@@ -46,7 +46,7 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
-/*===== QUALIFICATION TABS =====*/
+/* QUALIFICATION TABS */
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -66,7 +66,7 @@ tabs.forEach(tab =>{
     })
 })
 
-/*===== SERVICES =====*/
+/* SERVICES */
 const modalViews = document.querySelectorAll('.services_modal'),
       modalBtns = document.querySelectorAll('.services_button'),
       modalCloses = document.querySelectorAll('.services_modal-close')
