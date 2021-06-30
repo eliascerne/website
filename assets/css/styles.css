@@ -756,3 +756,8 @@ img{
 .project_description{
     color: white;
 }
+
+.project_img{
+    width: 232px;
+    justify-self: center;
+}
