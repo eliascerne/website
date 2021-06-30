@@ -740,4 +740,10 @@ img{
 
 .project_bg{
     background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.project_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
 }
