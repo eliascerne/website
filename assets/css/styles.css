@@ -325,6 +325,15 @@ img{
     transition: .3s;
 }
 
+.button--white{
+    background-color: white;
+    color: var(--first-color);
+}
+
+.button--white:hover{
+    background-color: white;
+}
+
 .button--flex{
     display: inline-flex;
     align-items: center;
