@@ -732,3 +732,12 @@ img{
 .swiper-pagination-bullets{
     outline: none;
 }
+
+/* PROJECT IN MIND*/
+.project{
+    text-align: center;
+}
+
+.project_bg{
+    background-color: var(--first-color-second);
+}
