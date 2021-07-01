@@ -821,3 +821,9 @@ img{
     display: flex;
     margin-bottom: var(--mb-2);
 }
+
+.contact_icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
