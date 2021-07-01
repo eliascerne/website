@@ -816,3 +816,8 @@ img{
 .contact_container{
     row-gap: 3rem;
 }
+
+.contact_information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
