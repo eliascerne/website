@@ -892,3 +892,8 @@ img{
 .footer_link:hover{
     color: var(--first-color-lighter);
 }
+
+.footer_social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
