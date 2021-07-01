@@ -897,3 +897,7 @@ img{
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
 }
+
+.footer_social:hover{
+    color: var(--first-color-lighter);
+}
