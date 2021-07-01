@@ -624,7 +624,7 @@
             <h2 class="section_title">Portfolio</h2>
             <span class="section_subtitle">Most recent work</span>
 
-            <div class="portfolio_container container swiper-container mySwiper">
+            <div class="portfolio_container container swiper-container">
                 <div class="swiper-wrapper">
                     <!-- PORTFOLIO 1 -->
                     <div class="portfolio_content grid swiper-slide">
@@ -704,7 +704,7 @@
             <h2 class="section_title">Testimonial</h2>
             <span class="section_subtitle">My clients (not real)</span>
 
-            <div class="testimonial_container container swiper-container mySwiper">
+            <div class="testimonial_container container swiper-container">
                 <div class="swiper-wrapper">
                     <!-- TESTIMONIAL 1 -->
                     <div class="testimonial_content swiper-slide">
@@ -792,7 +792,8 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        /* Swiper for Portfolio */
+        var swiper = new Swiper(".portfolio_container", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -804,6 +805,32 @@
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        mousewheel: {
+        forceToAxis: true,
+        },
+        grabCursor: true,
+        effect: "slide",
+        });
+
+        /* Swiper for Testimonial*/
+        var swiper = new Swiper(".testimonial_container", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints:{
+            568:{
+                slidesPerView: 2,
+            },
         },
         mousewheel: {
         forceToAxis: true,
