@@ -776,3 +776,15 @@ img{
 .testimonial_header{
     display: flex;
 }
+
+.testimonial_data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
