@@ -878,3 +878,7 @@ img{
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
 }
+
+.footer_subtitle{
+    font-size: var(--small-font-size);
+}
