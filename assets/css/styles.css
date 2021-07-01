@@ -801,8 +801,13 @@ img{
 
 .testimonial_description{
     margin-bottom: var(--mb-2-5);
+    margin-left: var(--mb-1-5);
 }
 
 .testimonial_icon-star{
     color: var(--first-color);
+}
+
+.swiper-container .swiper-pagination-testimonial{
+    bottom: 0;
 }
