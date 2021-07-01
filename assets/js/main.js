@@ -88,3 +88,5 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
+
+/* SCROLL SECTIONS ACTIVE LINK */
