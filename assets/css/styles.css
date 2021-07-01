@@ -832,3 +832,8 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
+
+.contact_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
