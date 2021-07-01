@@ -793,3 +793,8 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
+
+.testimonial_client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
