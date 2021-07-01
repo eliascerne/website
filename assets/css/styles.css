@@ -798,3 +798,11 @@ img{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
+
+.testimonial_description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial_icon-star{
+    color: var(--first-color);
+}
