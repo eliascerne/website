@@ -827,3 +827,8 @@ img{
     color: var(--first-color);
     margin-right: var(--mb-0-75);
 }
+
+.contact_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
