@@ -811,3 +811,8 @@ img{
 .swiper-container .swiper-pagination-testimonial{
     bottom: 0;
 }
+
+/* CONTACT ME */
+.contact_container{
+    row-gap: 3rem;
+}
