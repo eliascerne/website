@@ -835,7 +835,7 @@ img{
 
 .contact_subtitle{
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 .contact_content{
@@ -844,10 +844,15 @@ img{
     padding: .75rem 1rem .25rem;
 }
 
+.contact_label{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
 .contact_input{
     width: 100%;
     background-color: var(--input-color);
-    color: var(--text-color);
+    color: var(--title-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     border: none;
