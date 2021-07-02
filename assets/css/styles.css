@@ -80,6 +80,10 @@
     cursor: pointer;
 }
 
+.chnage-theme:hover{
+    color: var(--first-color);
+}
+
 /* BASE */
 *{
     box-sizing: border-box;
