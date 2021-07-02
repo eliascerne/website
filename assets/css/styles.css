@@ -73,6 +73,13 @@
     align-items: center;
 }
 
+.chnage-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
 /* BASE */
 *{
     box-sizing: border-box;
