@@ -939,3 +939,8 @@ img{
 .scrollup:hover{
     background-color: var(--first-color-alt);
 }
+
+.scrollup_icon{
+    font-size: 1.5rem;
+    color: white;
+}
