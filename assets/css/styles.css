@@ -935,3 +935,7 @@ img{
     z-index: var(--z-tooltip);
     transition: .4s;
 }
+
+.scrollup:hover{
+    background-color: var(--first-color-alt);
+}
