@@ -67,6 +67,12 @@
     }
 }
 
+/* Button Dark/Light */
+.nav_btns{
+    display: flex;
+    align-items: center;
+}
+
 /* BASE */
 *{
     box-sizing: border-box;
