@@ -1016,4 +1016,8 @@ img{
     .home_blob{
         width: 200px;
     }
+
+    .nav_menu{
+        padding: 2rem .25rem 4rem;
+    }
 }
