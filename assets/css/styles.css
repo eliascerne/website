@@ -1032,4 +1032,8 @@ img{
     .skills_title{
         font-size: var(--normal-font-size);
     }
+
+    .qualification_data{
+        gap: .5rem;
+    }
 }
