@@ -1004,3 +1004,16 @@ img{
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--scroll-thumb-color-hover);
 }
+
+/* MEDIA QUERIES */
+/* SMALL DEVICES */
+@media screen and (max-width: 350px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .home_blob{
+        width: 200px;
+    }
+}
