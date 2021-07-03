@@ -1020,4 +1020,12 @@ img{
     .nav_menu{
         padding: 2rem .25rem 4rem;
     }
+
+    .nav_list{
+        column-gap: 0;
+    }
+
+    .home_content{
+        grid-template-columns: .25fr 3fr;
+    }
 }
