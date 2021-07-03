@@ -1041,4 +1041,8 @@ img{
         grid-template-columns: max-content;
         justify-content: center;
     }
+
+    .services_content{
+        padding-right: 3.5rem;
+    }
 }
