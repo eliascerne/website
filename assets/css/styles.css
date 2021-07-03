@@ -1036,4 +1036,9 @@ img{
     .qualification_data{
         gap: .5rem;
     }
+
+    .services_container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
 }
