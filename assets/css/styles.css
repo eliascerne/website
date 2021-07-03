@@ -981,3 +981,8 @@ img{
 }
 
 /* SCROLL BAR */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
