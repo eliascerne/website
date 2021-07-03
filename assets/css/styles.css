@@ -78,8 +78,9 @@ body.dark-theme{
     --input-color: hsl(var(--hue-color), 29%, 16%);
     --body-color: hsl(var(--hue-color), 28%, 12%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 30%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 20%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%)
 }
 
 /* Button Dark/Light */
@@ -992,4 +993,8 @@ img{
 ::-webkit-scrollbar-thumb{
     background-color: var(--scroll-thumb-color);
     border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--scroll-thumb-color-hover);
 }
