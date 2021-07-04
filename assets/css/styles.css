@@ -1090,4 +1090,8 @@ img{
     .home_blob{
         width: 220px;
     }
+
+    .about_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
