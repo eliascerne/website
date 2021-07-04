@@ -1094,4 +1094,8 @@ img{
     .about_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .skills_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
