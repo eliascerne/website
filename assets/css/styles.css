@@ -1086,4 +1086,8 @@ img{
         order: 1;
         justify-self: center;
     }
+
+    .home_blob{
+        width: 220px;
+    }
 }
