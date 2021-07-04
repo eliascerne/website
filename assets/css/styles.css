@@ -1053,4 +1053,10 @@ img{
     .project_img{
         width: 200px;
     }
+
+    .testimonial_data,
+    .testimonial_header{
+        flex-direction: column;
+        align-items: center;
+    }
 }
