@@ -1049,4 +1049,8 @@ img{
     .services_modal{
         padding: 0 .5rem;
     }
+
+    .project_img{
+        width: 200px;
+    }
 }
