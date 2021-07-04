@@ -1081,4 +1081,9 @@ img{
     .home_data{
         grid-column: initial;
     }
+
+    .home_img{
+        order: 1;
+        justify-self: center;
+    }
 }
