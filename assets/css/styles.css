@@ -1064,4 +1064,10 @@ img{
         margin-right: 0;
         margin-bottom: var(--mb-0-25);
     }
+
+    .testimonial_data,
+    .testimonial_description{
+        text-align: center;
+        margin-left: 0;
+    }
 }
