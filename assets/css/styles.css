@@ -1045,4 +1045,8 @@ img{
     .services_content{
         padding-right: 3.5rem;
     }
+
+    .services_modal{
+        padding: 0 .5rem;
+    }
 }
