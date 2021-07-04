@@ -1071,3 +1071,8 @@ img{
         margin-left: 0;
     }
 }
+
+/* MEDIUM DEVICES */
+@media screen and (min-width: 568px){
+    
+}
