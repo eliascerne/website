@@ -1104,4 +1104,8 @@ img{
         grid-template-columns: .7fr;
         justify-content: center;
     }
+
+    .portfolio_content{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
