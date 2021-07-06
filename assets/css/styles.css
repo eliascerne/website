@@ -1161,4 +1161,9 @@ img{
     .nav_toggle{
         display: none;
     }
+
+    .nav_list{
+        display: flex;
+        column-gap: 2rem;
+    }
 }
