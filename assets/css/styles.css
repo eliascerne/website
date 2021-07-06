@@ -1108,4 +1108,8 @@ img{
     .portfolio_content{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .project_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
