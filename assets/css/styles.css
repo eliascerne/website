@@ -1144,4 +1144,10 @@ img{
         top: 0;
         bottom: initial;
     }
+
+    .header,
+    .main,
+    .footer_container{
+        padding: 0 1rem ;
+    }
 }
