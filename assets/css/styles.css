@@ -1135,4 +1135,8 @@ img{
     .section{
         padding: 6rem 0 2rem;
     }
+
+    .section_subtitle{
+        margin-bottom: 4rem;
+    }
 }
