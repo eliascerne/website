@@ -1112,4 +1112,8 @@ img{
     .project_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
