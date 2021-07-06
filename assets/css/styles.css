@@ -1098,4 +1098,10 @@ img{
     .skills_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .qualification_sections{
+        display: grid;
+        grid-template-columns: .7fr;
+        justify-content: center;
+    }
 }
