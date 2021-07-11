@@ -1187,4 +1187,8 @@ img{
     .home_blob{
         width: 270px;
     }
+
+    .home_scroll{
+        display: block;
+    }
 }
