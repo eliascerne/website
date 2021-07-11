@@ -1207,4 +1207,8 @@ img{
     .about_description{
         text-align: initial;
     }
+
+    .about_info{
+        justify-content: space-between;
+    }
 }
