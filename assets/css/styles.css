@@ -1183,4 +1183,8 @@ img{
         padding-top: 5.5rem;
         column-gap: 2rem;
     }
+
+    .home_blob{
+        width: 270px;
+    }
 }
