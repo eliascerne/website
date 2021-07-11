@@ -1219,4 +1219,8 @@ img{
     .qualification_tabs{
         justify-content: center;
     }
+
+    .qualification_button{
+        margin: 0 var(--mb-1);
+    }
 }
