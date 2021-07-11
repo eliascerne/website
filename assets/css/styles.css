@@ -1178,4 +1178,9 @@ img{
     .home_container{
         row-gap: 5rem;
     }
+
+    .home_content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
 }
