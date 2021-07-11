@@ -1227,4 +1227,9 @@ img{
     .qualification_sections{
         grid-template-columns: .5fr;
     }
+
+    .services_container{
+        grid-template-columns: repeat(3, 218px);
+        justify-content: center;
+    }
 }
