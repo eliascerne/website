@@ -1170,4 +1170,8 @@ img{
     .nav_menu{
         margin-left: auto;
     }
+
+    .change-theme{
+        margin: 0;
+    }
 }
