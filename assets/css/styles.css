@@ -1215,4 +1215,8 @@ img{
     .about_buttons{
         justify-content: initial;
     }
+
+    .qualification_tabs{
+        justify-content: center;
+    }
 }
