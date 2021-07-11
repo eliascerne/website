@@ -1211,4 +1211,8 @@ img{
     .about_info{
         justify-content: space-between;
     }
+
+    .about_buttons{
+        justify-content: initial;
+    }
 }
