@@ -1203,4 +1203,8 @@ img{
     .about_img{
         width: 350px;
     }
+
+    .about_description{
+        text-align: initial;
+    }
 }
