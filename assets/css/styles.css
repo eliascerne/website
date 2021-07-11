@@ -1223,4 +1223,8 @@ img{
     .qualification_button{
         margin: 0 var(--mb-1);
     }
+
+    .qualification_sections{
+        grid-template-columns: .5fr;
+    }
 }
