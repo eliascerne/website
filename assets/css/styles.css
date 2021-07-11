@@ -1191,4 +1191,8 @@ img{
     .home_scroll{
         display: block;
     }
+
+    .home_scroll-button{
+        margin-left: 3rem;
+    }
 }
