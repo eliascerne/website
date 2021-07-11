@@ -1166,4 +1166,8 @@ img{
         display: flex;
         column-gap: 2rem;
     }
+
+    .nav_menu{
+        margin-left: auto;
+    }
 }
