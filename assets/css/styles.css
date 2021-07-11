@@ -1199,4 +1199,8 @@ img{
     .about_container{
         column-gap: 5rem;
     }
+
+    .about_img{
+        width: 350px;
+    }
 }
