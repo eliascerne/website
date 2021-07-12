@@ -1257,4 +1257,8 @@ img{
     .portfolio_content{
         align-items: center;
     }
+
+    .project{
+        text-align: initial;
+    }
 }
