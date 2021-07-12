@@ -1253,4 +1253,8 @@ img{
     .portfolio_img{
         width: 320px;
     }
+
+    .portfolio_content{
+        align-items: center;
+    }
 }
