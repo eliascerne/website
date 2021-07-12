@@ -1271,5 +1271,6 @@ img{
         border-radius: 1.5rem;
         padding: 3rem 2.5rem 0;
         grid-template-columns: 1fr max-content;
+        column-gap: 3rem;
     }
 }
