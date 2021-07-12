@@ -1249,4 +1249,8 @@ img{
     .services_modal-services{
         padding: .75rem 0 0rem 0rem;
     }
+
+    .portfolio_img{
+        width: 320px;
+    }
 }
