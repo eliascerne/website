@@ -1277,4 +1277,8 @@ img{
     .project_data{
         padding-top: .8rem;
     }
+
+    .footer_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
