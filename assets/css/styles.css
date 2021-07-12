@@ -1281,4 +1281,8 @@ img{
     .footer_container{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .footer_bg{
+        padding: 3rem 0 2.5rem;
+    }
 }
