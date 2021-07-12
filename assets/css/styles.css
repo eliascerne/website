@@ -1265,4 +1265,11 @@ img{
     .project_bg{
         background: none;
     }
+
+    .project_container{
+        background-color: var(--first-color-second);
+        border-radius: 1.5rem;
+        padding: 3rem 2.5rem 0;
+        grid-template-columns: 1fr max-content;
+    }
 }
