@@ -1261,4 +1261,8 @@ img{
     .project{
         text-align: initial;
     }
+
+    .project_bg{
+        background: none;
+    }
 }
