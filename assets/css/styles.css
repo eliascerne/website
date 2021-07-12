@@ -1236,4 +1236,8 @@ img{
     .services_icon{
         font-size: 2rem;
     }
+
+    .services_content{
+        padding: 4rem 0 2rem 2.5rem;
+    }
 }
