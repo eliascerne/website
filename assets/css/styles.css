@@ -1240,4 +1240,13 @@ img{
     .services_content{
         padding: 4rem 0 2rem 2.5rem;
     }
+
+    .services_modal-content{
+        width: 370px;
+        height: 280px;
+    }
+
+    .services_modal-services{
+        padding: .75rem 0 0rem 0rem;
+    }
 }
