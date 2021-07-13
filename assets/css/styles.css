@@ -1293,4 +1293,8 @@ img{
     .footer_socials{
         justify-self: flex-end;
     }
+
+    .footer_copy{
+        margin-top: 3.5rem;
+    }
 }
