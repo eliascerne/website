@@ -1308,4 +1308,8 @@ img{
     .footer_container{
         padding: 0;
     }
+
+    .home_blob{
+        width: 320px;
+    }
 }
