@@ -1300,3 +1300,8 @@ img{
         margin-top: 3.5rem;
     }
 }
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+    
+}
