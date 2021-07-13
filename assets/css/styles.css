@@ -1218,6 +1218,7 @@ img{
 
     .qualification_tabs{
         justify-content: center;
+        column-gap: 2rem;
     }
 
     .qualification_button{
