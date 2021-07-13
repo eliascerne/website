@@ -1332,4 +1332,8 @@ img{
     .swiper-button-prev{
         left: -2.5rem; /* currently not working because we have to overwrite the css from swiper-bundle.min.css */
     }
+
+    .swiper-button-next{
+        right: -3.5rem;
+    }
 }
