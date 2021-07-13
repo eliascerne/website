@@ -1336,4 +1336,8 @@ img{
     .swiper-button-next{
         right: -3.5rem;
     }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: -4.5rem;
+    }
 }
