@@ -1324,4 +1324,8 @@ img{
     .portfolio_content{
         column-gap: 5rem;
     }
+
+    .swiper-portfolio-icon{
+        font-size: 3.5rem;
+    }
 }
