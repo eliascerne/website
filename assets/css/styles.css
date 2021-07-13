@@ -1289,4 +1289,8 @@ img{
     .footer_links{
         flex-direction: row;
     }
+
+    .footer_socials{
+        justify-self: flex-end;
+    }
 }
