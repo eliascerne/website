@@ -1279,7 +1279,7 @@ img{
     }
 
     .footer_container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: auto max-content auto;
     }
 
     .footer_bg{
@@ -1289,6 +1289,7 @@ img{
     .footer_links{
         flex-direction: row;
         column-gap: 2rem;
+        transform: translateX(1.25rem);
     }
 
     .footer_socials{
