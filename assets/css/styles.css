@@ -1283,11 +1283,12 @@ img{
     }
 
     .footer_bg{
-        padding: 3rem 0 2.5rem;
+        padding: 3rem 0 3.5rem;
     }
 
     .footer_links{
         flex-direction: row;
+        column-gap: 2rem;
     }
 
     .footer_socials{
