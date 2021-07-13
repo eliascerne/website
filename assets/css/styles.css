@@ -1320,4 +1320,8 @@ img{
     .services_container{
         grid-template-columns: repeat(3, 238px);
     }
+
+    .portfolio_content{
+        column-gap: 5rem;
+    }
 }
