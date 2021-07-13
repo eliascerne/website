@@ -1316,4 +1316,8 @@ img{
     .home_social{
         transform: translateX(-6rem);
     }
+
+    .services_container{
+        grid-template-columns: repeat(3, 238px);
+    }
 }
