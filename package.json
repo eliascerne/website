@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/eliascerne/website/issues"
   },
-  "homepage": "https://www.eliascerne.com"
+  "homepage": "https://www.eliascerne.com",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "nodemailer": "^6.6.3"
+  }
 }
