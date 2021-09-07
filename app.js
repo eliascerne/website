@@ -7,6 +7,10 @@ const port = 3000
 
 const app = express();
 
+// View engine setup
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
 app.get('/', (req, res) =>{
     res.send('Hello');
 });
