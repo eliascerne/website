@@ -90,14 +90,14 @@ body.dark-theme{
     align-items: center;
 }
 
-.chnage-theme{
+.change-theme{
     font-size: 1.25rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
 }
 
-.chnage-theme:hover{
+.change-theme:hover{
     color: var(--first-color);
 }
 
