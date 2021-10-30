@@ -155,3 +155,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/* CONTACT ME EMAIL SENDER */
+function buttonPressed() {
+    var inputName = document.getElementById('inputName').value;
+    var inputEmail = document.getElementById('inputEmail').value;
+    var inputCompany = document.getElementById('inputCompany').value;
+    var inputMessage = document.getElementById('inputMessage').value;
+
+    console.log('Name: ' + inputName);
+    console.log('Email: ' + inputEmail);
+    console.log('Company: ' + inputCompany);
+    console.log('Message: ' + inputMessage);
+}

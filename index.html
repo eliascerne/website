@@ -823,24 +823,24 @@
                         <div class="contact_inputs grid">
                             <div class="contact_content">
                                 <label for="" class="contact_label">Name</label>
-                                <input type="text" class="contact_input">
+                                <input type="text" class="contact_input" id="inputName">
                             </div>
                             <div class="contact_content">
                                 <label for="" class="contact_label">Email</label>
-                                <input type="email" class="contact_input">
+                                <input type="email" class="contact_input" id="inputEmail">
                             </div>
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Company</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" class="contact_input" id="inputCompany">
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Message</label>
-                            <textarea style="resize: none;" name="" id="" cols="0" rows="4" class="contact_input"></textarea>
+                            <textarea style="resize: none;" name="" id="inputMessage" cols="0" rows="4" class="contact_input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <a href="#" class="button button--flex" id="send_button" onclick="buttonPressed();">
                                 Send Message
                                 <i class="uil uil-message button_icon"></i>
                             </a>
