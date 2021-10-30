@@ -89,7 +89,7 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-/* SCROLL SECTIONS ACTIVE LINK */
+/* SCROLL SECTIONS ACTIVE LINK (needs to be fixed / some weird errors)
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -108,6 +108,7 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+*/
 
 /* SHOW SCROLL TOP */
 function scrollUp(){
