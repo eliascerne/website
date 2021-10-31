@@ -23,7 +23,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 8%, 65%);
     --container-color: white;
-    --notification-success-color: hsl(114, 100%, 60%);
+    --notification-success-color: hsla(0, 0%, 97%, .9);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -281,6 +281,7 @@ img{
 .alert_email{
     display: flex;
     padding: 1.25rem 1.25rem;
+    background-color: var(--notification-success-color);
     width: 23.5rem;
     position: fixed;
     right: 50%;
@@ -288,8 +289,9 @@ img{
     transform: translate(-50%, .5rem);
     z-index: 2;
     border-radius: 1rem;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10rem);
+    backdrop-filter: blur(10rem);
+    box-shadow: 0 0px 100px rgba(0, 0, 0, .25);
 }
 
 /* HOME */
