@@ -280,7 +280,6 @@ img{
 
 .alert_email{
     display: flex;
-    background: var(--notification-success-color);
     padding: 1.25rem 1.25rem;
     width: 23.5rem;
     position: fixed;
@@ -289,6 +288,8 @@ img{
     transform: translate(-50%, .5rem);
     z-index: 2;
     border-radius: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 /* HOME */
