@@ -274,9 +274,18 @@ img{
 }
 
 /* NOTIFICATION EMAIL SEND */
+.alert_email_container{
+    display: absolute;
+}
+
 .alert_email{
     display: flex;
     background: var(--notification-success-color);
+    padding: 1.25rem 1.25rem;
+    min-width: 420px;
+    position: fixed;
+    z-index: 2;
+    right: 0;
 }
 
 /* HOME */
