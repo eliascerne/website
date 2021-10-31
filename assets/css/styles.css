@@ -56,6 +56,7 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+    --z-notification: 1010;
 }
 
 /* Font size for large devices */
@@ -286,7 +287,7 @@ img{
     right: 50%;
     left: 50%;
     transform: translate(-50%, .5rem);
-    z-index: 2;
+    z-index: var(--z-notification);
     border-radius: 1rem;
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
@@ -1355,6 +1356,13 @@ img{
 
 /* For large devices */
 @media screen and (min-width: 1024px){
+
+    .notification_email{
+        left: unset;
+        right: 1rem;
+        transform: unset;
+        margin-top: 5rem;
+    }
 
     .container{
         margin-left: auto;
