@@ -23,7 +23,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 8%, 65%);
     --container-color: white;
-    --notification-success-color: hsla(0, 0%, 97%, .9);
+    --notification-success-color: hsla(0, 0%, 97%, .8);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -274,13 +274,12 @@ img{
 }
 
 /* NOTIFICATION EMAIL SEND */
-.alert_email_container{
+.notification_email_container{
     display: absolute;
 }
 
-.alert_email{
-    display: flex;
-    padding: 1.25rem 1.25rem;
+.notification_email{
+    padding-left: .8rem;
     background-color: var(--notification-success-color);
     width: 23.5rem;
     position: fixed;
@@ -292,6 +291,34 @@ img{
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
     box-shadow: 0 0px 100px rgba(0, 0, 0, .25);
+}
+
+.notification_content{
+    display: flex;
+}
+
+.email_icon{
+    font-size: 3rem;
+    color: var(--text-color);
+    padding-right: .75rem;
+}
+
+.text_email{
+    margin-top: .65rem;
+    color: black;
+}
+
+.title_email{
+    font-weight: var(--font-semi-bold);
+}
+
+.progress_bar_email{
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-.1rem);
+    width: 100%;
+    height: .1rem;
+    background-color: greenyellow;
 }
 
 /* HOME */
