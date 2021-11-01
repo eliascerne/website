@@ -277,6 +277,7 @@ img{
 /* NOTIFICATION EMAIL SEND */
 .notification_email_container{
     display: absolute;
+    cursor: pointer;
 }
 
 .notification_email{
@@ -1186,6 +1187,10 @@ img{
 
     .section{
         padding: 6rem 0 2rem;
+    }
+
+    .notification_email{
+        transform: translate(-50%, 1rem);
     }
 
     .section_subtitle{
