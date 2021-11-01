@@ -190,6 +190,6 @@ function buttonPressed() {
             progress_bar_email.classList.remove('notification_show');
             // notification.classList.remove('notification_show');
             notification.classList.add('notification_hide');
-        }, 5000);
+        }, 6000);
     }
 }

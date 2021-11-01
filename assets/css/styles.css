@@ -320,7 +320,7 @@ img{
     position: absolute;
     transform: translateY(-.1rem);
     left: 0;
-    width: 100%;
+    width: 0%;
     height: .1rem;
     background-color: greenyellow;
 }
@@ -349,10 +349,13 @@ img{
 }
 
 .progress_bar.notification_show{
-    animation: progress_bar 5s ease forwards;
+    animation: progress_bar 6s ease forwards;
 }
 
 @keyframes progress_bar {
+    0% {
+        width: 130%;
+    }
     100% {
         width: 0%;
     }
