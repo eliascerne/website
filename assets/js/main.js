@@ -195,8 +195,16 @@ function buttonPressed() {
 /* SHOW NOTIFICATION FOR SUCCESSFULLY EMAIL DELIVER */
 const notificationSuccess = document.getElementById('notification_email_success');
 const progressBarEmailSuccess = document.getElementById('progress_bar_email_success');
+var inputName = document.getElementById('input_name');
+var inputEmail = document.getElementById('input_email');
+var inputCompany = document.getElementById('input_company');
+var inputMessage = document.getElementById('input_message');
 
 function showNotificationEmailSuccess() {
+    inputName.value = '';
+    inputEmail.value = '';
+    inputCompany.value = '';
+    inputMessage.value = '';
     notificationSuccess.classList.remove('notification_hide');
     notificationSuccess.classList.add('notification_show');
     progressBarEmailSuccess.classList.add('notification_show');
