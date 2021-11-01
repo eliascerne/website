@@ -28,18 +28,30 @@
     <!-- NOTIFICATION -->
     <!-- EMAIL SEND -->
     <div class="notification_container">
-        <div class="notification" id="notification_email">
+        <div class="notification" id="notification_email_success">
             <div class="notification_content">
-                <i class="uil uil-envelope email_icon"></i>
-                <div class="text_email">
-                    <p class="title_email">Contact</p>
-                    <p class="msg_email">Email send successfully</p>
-                    
+                <i class="uil uil-envelope notification_icon"></i>
+                <div class="text_notification">
+                    <p class="title_notification">Contact</p>
+                    <p class="msg_notification">Email send successfully</p>
                 </div>
             </div>
-            <span class="progress_bar" id="progress_bar_email"></span>
+            <span class="progress_bar_notification" id="progress_bar_email_success"></span>
         </div>
-        
+    </div>
+
+    <!-- EMAIL ERROR -->
+    <div class="notification_container">
+        <div class="notification" id="notification_email_error">
+            <div class="notification_content">
+                <i class="uil uil-envelope notification_icon"></i>
+                <div class="text_notification">
+                    <p class="title_notification">Contact</p>
+                    <p class="msg_notification">Email send successfully</p>
+                </div>
+            </div>
+            <span class="progress_bar_notification" id="progress_bar_email_error"></span>
+        </div>
     </div>
 
 
@@ -858,7 +870,7 @@
                         </div>
 
                         <div>
-                            <a class="button button--flex" id="contact_send_button">
+                            <a class="button button--flex" id="contact_send_button" onclick="buttonPressed()">
                                 Send Message
                                 <i class="uil uil-message button_icon"></i>
                             </a>
