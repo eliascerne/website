@@ -275,12 +275,12 @@ img{
 }
 
 /* NOTIFICATION EMAIL SEND */
-.notification_email_container{
+.notification_container{
     display: absolute;
     cursor: pointer;
 }
 
-.notification_email{
+.notification{
     padding-left: .8rem;
     background-color: var(--notification-success-color);
     width: 23.5rem;
