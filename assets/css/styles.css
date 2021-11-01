@@ -1007,6 +1007,16 @@ img{
     border: .1rem red solid;
 }
 
+.contact_button_container {
+    display: flex;
+}
+
+.email_active {
+    font-size: var(--smaller-font-size);
+    padding-left: 1rem;
+    align-self: flex-end;
+}
+
 /* FOOTER */
 .footer{
     padding-top: 2rem;
