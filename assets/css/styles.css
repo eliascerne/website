@@ -310,6 +310,7 @@ img{
 .text_notification{
     margin-top: .65rem;
     color: var(--title-color);
+    padding-bottom: .5rem;
 }
 
 .title_notification{
