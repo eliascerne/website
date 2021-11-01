@@ -181,29 +181,20 @@ function buttonPressed() {
             Body: `You have got a new message from ${inputName}. </br>
                 The Message: ${inputMessage}`
         }).then(
-            showNotification()
+            showNotificationEmailSuccess()
             //message => alert(message)
         );
     } else {
-        const notificationError = document.getElementById('notification_email_error');
-        const progressBarEmailError = document.getElementById('progress_bar_email_error');
         console.log('Parameters are not correct filled in');
-        notificationError.classList.remove('notification_hide');
-        notificationError.classList.add('notification_show');
-        progressBarEmailError.classList.add('notification_show');
-        setTimeout(() => {
-            progressBarEmailError.classList.remove('notification_show');
-            // notificationSuccess.classList.remove('notification_show');
-            notificationError.classList.add('notification_hide');
-        }, 6000);
+        showNotificationEmailError();
     }
 }
 
-/* SHOW NOTIFICATION */
+/* SHOW NOTIFICATION FOR SUCCESSFULLY EMAIL DELIVER */
 const notificationSuccess = document.getElementById('notification_email_success');
 const progressBarEmailSuccess = document.getElementById('progress_bar_email_success');
 
-function showNotification() {
+function showNotificationEmailSuccess() {
     notificationSuccess.classList.remove('notification_hide');
     notificationSuccess.classList.add('notification_show');
     progressBarEmailSuccess.classList.add('notification_show');
@@ -212,6 +203,22 @@ function showNotification() {
         // notificationSuccess.classList.remove('notification_show');
         notificationSuccess.classList.add('notification_hide');
     }, 6000);
+}
+
+/* SHOW NOTIFICATION FOR AN EMAIL DELIVER ERROR */
+const notificationError = document.getElementById('notification_email_error');
+const progressBarEmailError = document.getElementById('progress_bar_email_error');
+
+function showNotificationEmailError() {
+        notificationError.classList.remove('notification_hide');
+        notificationError.classList.add('notification_show');
+        progressBarEmailError.classList.add('notification_show');
+        
+        setTimeout(() => {
+            progressBarEmailError.classList.remove('notification_show');
+            // notificationSuccess.classList.remove('notification_show');
+            notificationError.classList.add('notification_hide');
+        }, 6000);
 }
 
 /* CONTACT ME EMAIL VALIDATOR */
