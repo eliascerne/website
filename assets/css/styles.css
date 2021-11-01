@@ -287,7 +287,8 @@ img{
     position: fixed;
     right: 50%;
     left: 50%;
-    transform: translate(-50%, .5rem);
+    top: -10%;
+    transform: translate(-50%, 1rem);
     z-index: var(--z-notification);
     border-radius: 1rem;
     -webkit-backdrop-filter: blur(1rem);
@@ -322,6 +323,26 @@ img{
     width: 100%;
     height: .1rem;
     background-color: greenyellow;
+}
+
+.notification.notification_show{
+    animation: notification_show 1s ease forwards;
+}
+
+@keyframes notification_show {
+    100% {
+        top: 0%;
+    }
+}
+
+.notification.notification_hide{
+    animation: notification_hide 1s ease forwards;
+}
+
+@keyframes notification_hide {
+    100% {
+        top: -10%;
+    }
 }
 
 /* HOME */
