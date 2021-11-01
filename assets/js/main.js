@@ -162,8 +162,6 @@ function buttonPressed() {
     var inputEmail = document.getElementById('inputEmail').value;
     var inputCompany = document.getElementById('inputCompany').value;
     var inputMessage = document.getElementById('inputMessage').value;
-    const notification = document.getElementById('notification_email');
-    const progress_bar_email = document.getElementById('progress_bar_email')
 
     console.log('Name: ' + inputName);
     console.log('Email: ' + inputEmail);
@@ -179,17 +177,25 @@ function buttonPressed() {
             Body: `You have got a new message from ${inputName}. </br>
                 The Message: ${inputMessage}`
         }).then(
+            showNotification()
             //message => alert(message)
         );
     } else {
         console.log('Parameters are not correct filled in');
-        notification.classList.remove('notification_hide');
-        notification.classList.add('notification_show');
-        progress_bar_email.classList.add('notification_show');
-        setTimeout(() => {
-            progress_bar_email.classList.remove('notification_show');
-            // notification.classList.remove('notification_show');
-            notification.classList.add('notification_hide');
-        }, 6000);
+        showNotification();
     }
+}
+
+const notification = document.getElementById('notification_email');
+const progress_bar_email = document.getElementById('progress_bar_email');
+
+function showNotification() {
+    notification.classList.remove('notification_hide');
+    notification.classList.add('notification_show');
+    progress_bar_email.classList.add('notification_show');
+    setTimeout(() => {
+        progress_bar_email.classList.remove('notification_show');
+        // notification.classList.remove('notification_show');
+        notification.classList.add('notification_hide');
+    }, 6000);
 }
