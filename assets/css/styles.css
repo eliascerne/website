@@ -1224,7 +1224,7 @@ img{
         padding: 6rem 0 2rem;
     }
 
-    .notification_email{
+    .notification{
         transform: translate(-50%, 1rem);
     }
 
@@ -1397,11 +1397,18 @@ img{
 /* For large devices */
 @media screen and (min-width: 1024px){
 
-    .notification_email{
+    .notification{
         left: unset;
-        right: 1rem;
+        right: -100%;
+        top: 0%;
         transform: unset;
         margin-top: 5rem;
+    }
+
+    @keyframes notification_show {
+        100% {
+            right: 1%;
+        }
     }
 
     .container{
