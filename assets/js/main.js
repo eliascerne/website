@@ -190,17 +190,17 @@ function buttonPressed() {
 }
 
 /* SHOW NOTIFICATION */
-const notification = document.getElementById('notification_email');
-const progress_bar_email = document.getElementById('progress_bar_email');
+const notificationSuccess = document.getElementById('notification_email_success');
+const progressBarEmailSuccess = document.getElementById('progress_bar_email_success');
 
 function showNotification() {
-    notification.classList.remove('notification_hide');
-    notification.classList.add('notification_show');
-    progress_bar_email.classList.add('notification_show');
+    notificationSuccess.classList.remove('notification_hide');
+    notificationSuccess.classList.add('notification_show');
+    progressBarEmailSuccess.classList.add('notification_show');
     setTimeout(() => {
-        progress_bar_email.classList.remove('notification_show');
-        // notification.classList.remove('notification_show');
-        notification.classList.add('notification_hide');
+        progressBarEmailSuccess.classList.remove('notification_show');
+        // notificationSuccess.classList.remove('notification_show');
+        notificationSuccess.classList.add('notification_hide');
     }, 6000);
 }
 
@@ -210,15 +210,15 @@ const contactEmail = document.getElementById('contact_email');
 
 inputEmail.addEventListener('change', function () {
         var Email = inputEmail.value;
-        var validEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/;
+        var validEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum|at)\b/;
 
         if(validEmail.test(Email)) {
             console.log('Email is valid');
-            contactEmail.classList.remove('contact_not_valid');
+            contactEmail.classList.remove('email_not_valid');
             sessionStorage.setItem('validEmail', 1);
         } else {
             console.log('Email is not valid');
-            contactEmail.classList.add('contact_not_valid');
+            contactEmail.classList.add('email_not_valid');
             sessionStorage.setItem('validEmail', 0);
         }
         // Debugging
