@@ -316,7 +316,7 @@ img{
     font-weight: var(--font-semi-bold);
 }
 
-.progress_bar_email{
+.progress_bar{
     position: absolute;
     transform: translateY(-.1rem);
     left: 0;
@@ -340,8 +340,21 @@ img{
 }
 
 @keyframes notification_hide {
+    0% {
+        top: 0%;
+    }
     100% {
         top: -100%;
+    }
+}
+
+.progress_bar.notification_show{
+    animation: progress_bar 5s ease forwards;
+}
+
+@keyframes progress_bar {
+    100% {
+        width: 0%;
     }
 }
 
