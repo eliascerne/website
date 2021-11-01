@@ -158,10 +158,10 @@ themeButton.addEventListener('click', () => {
 
 /* CONTACT ME EMAIL SENDER */
 function buttonPressed() {
-    var inputName = document.getElementById('inputName').value;
-    var inputEmail = document.getElementById('inputEmail').value;
-    var inputCompany = document.getElementById('inputCompany').value;
-    var inputMessage = document.getElementById('inputMessage').value;
+    var inputName = document.getElementById('input_name').value;
+    var inputEmail = document.getElementById('input_email').value;
+    var inputCompany = document.getElementById('input_company').value;
+    var inputMessage = document.getElementById('input_message').value;
 
     console.log('Name: ' + inputName);
     console.log('Email: ' + inputEmail);
@@ -199,3 +199,22 @@ function showNotification() {
         notification.classList.add('notification_hide');
     }, 6000);
 }
+
+/* CONTACT ME EMAIL VALIDATOR */
+const inputEmail = document.getElementById('input_email');
+const contactEmail = document.getElementById('contact_email');
+
+inputEmail.addEventListener('change', function () {
+        var Email = inputEmail.value;
+        var validEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/;
+        
+        if(validEmail.test(Email)) {
+            console.log('Email is valid');
+            contactEmail.classList.remove('contact_not_valid');
+        } else {
+            console.log('Email is not valid');
+            contactEmail.classList.add('contact_not_valid');
+        }
+        // Debugging
+        // return validEmail.test(Email);
+});
