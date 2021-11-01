@@ -301,22 +301,22 @@ img{
     display: flex;
 }
 
-.email_icon{
+.notification_icon{
     font-size: 3rem;
     color: var(--text-color);
     padding-right: .75rem;
 }
 
-.text_email{
+.text_notification{
     margin-top: .65rem;
     color: var(--title-color);
 }
 
-.title_email{
+.title_notification{
     font-weight: var(--font-semi-bold);
 }
 
-.progress_bar{
+.progress_bar_notification{
     position: absolute;
     transform: translateY(-.1rem);
     left: 0;
@@ -348,7 +348,7 @@ img{
     }
 }
 
-.progress_bar.notification_show{
+.progress_bar_notification.notification_show{
     animation: progress_bar 6s ease forwards;
 }
 
@@ -995,7 +995,7 @@ img{
     padding: .25rem .5rem .5rem 0;
 }
 
-.contact_not_valid{
+.email_not_valid{
     border: .1rem red solid;
 }
 
