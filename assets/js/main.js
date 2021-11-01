@@ -189,6 +189,7 @@ function buttonPressed() {
     }
 }
 
+/* SHOW NOTIFICATION */
 const notification = document.getElementById('notification_email');
 const progress_bar_email = document.getElementById('progress_bar_email');
 
@@ -222,4 +223,4 @@ inputEmail.addEventListener('change', function () {
         }
         // Debugging
         // return validEmail.test(Email);
-})
+});
