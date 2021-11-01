@@ -322,7 +322,14 @@ img{
     left: 0;
     width: 0%;
     height: .1rem;
+}
+
+#progress_bar_email_success{
     background-color: greenyellow;
+}
+
+#progress_bar_email_error{
+    background-color: red;
 }
 
 .notification.notification_show{
