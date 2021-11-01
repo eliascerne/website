@@ -162,21 +162,27 @@ function buttonPressed() {
     var inputEmail = document.getElementById('inputEmail').value;
     var inputCompany = document.getElementById('inputCompany').value;
     var inputMessage = document.getElementById('inputMessage').value;
+    const notification = document.getElementById('email_notification');
 
     console.log('Name: ' + inputName);
     console.log('Email: ' + inputEmail);
     console.log('Company: ' + inputCompany);
     console.log('Message: ' + inputMessage);
 
-    Email.send({
-        SecureToken : "92255cd6-f4f4-482e-bf1e-1a6040acfd91",
-        To : 'elias.cerne@icloud.com',
-        From : 'elias@eliascerne.com',
-        Subject : 'eliascerne.com: New Message',
-        Body : `You have got a new message from ${inputName}. </br>
+    if (inputName && inputEmail && inputCompany && inputMessage) {
+        Email.send({
+            SecureToken: "92255cd6-f4f4-482e-bf1e-1a6040acfd91",
+            To: 'elias.cerne@icloud.com',
+            From: 'elias@eliascerne.com',
+            Subject: 'eliascerne.com: New Message',
+            Body: `You have got a new message from ${inputName}. </br>
                 The Message: ${inputMessage}`
-    }).then(
-        console.log('Email sent successfully')
-      //message => alert(message)
-    );
+        }).then(
+            notification.classList.add('notification_show')
+            //message => alert(message)
+        );
+    } else {
+        console.log('Parameters are not correct filled in');
+        notification.classList.add('notification_show');
+    }
 }
