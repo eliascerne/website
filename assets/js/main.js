@@ -179,6 +179,8 @@ function buttonPressed() {
             From: 'elias@eliascerne.com',
             Subject: 'eliascerne.com: New Message',
             Body: `You have got a new message from ${inputName}. </br>
+                    Email Address: ${inputEmail} </br>
+                    Company: ${inputCompany} </br>
                 The Message: ${inputMessage}`
         }).then(
             showNotificationEmailSuccess()
@@ -213,7 +215,7 @@ function showNotificationEmailError() {
         notificationError.classList.remove('notification_hide');
         notificationError.classList.add('notification_show');
         progressBarEmailError.classList.add('notification_show');
-        
+
         setTimeout(() => {
             progressBarEmailError.classList.remove('notification_show');
             // notificationSuccess.classList.remove('notification_show');
