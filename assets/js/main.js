@@ -1,3 +1,7 @@
+sessionStorage.removeItem('validEmail');
+
+
+
 /* NAV HIDDEN */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -168,7 +172,7 @@ function buttonPressed() {
     console.log('Company: ' + inputCompany);
     console.log('Message: ' + inputMessage);
 
-    if (inputName && inputEmail && inputCompany && inputMessage) {
+    if (inputName && sessionStorage.getItem('validEmail') == true && inputCompany && inputMessage) {
         Email.send({
             SecureToken: "92255cd6-f4f4-482e-bf1e-1a6040acfd91",
             To: 'elias.cerne@icloud.com',
@@ -182,7 +186,6 @@ function buttonPressed() {
         );
     } else {
         console.log('Parameters are not correct filled in');
-        showNotification();
     }
 }
 
@@ -201,20 +204,22 @@ function showNotification() {
 }
 
 /* CONTACT ME EMAIL VALIDATOR */
-const inputEmail = document.getElementById('input_email');
+var inputEmail = document.getElementById('input_email');
 const contactEmail = document.getElementById('contact_email');
 
 inputEmail.addEventListener('change', function () {
         var Email = inputEmail.value;
         var validEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/;
-        
+
         if(validEmail.test(Email)) {
             console.log('Email is valid');
             contactEmail.classList.remove('contact_not_valid');
+            sessionStorage.setItem('validEmail', 1);
         } else {
             console.log('Email is not valid');
             contactEmail.classList.add('contact_not_valid');
+            sessionStorage.setItem('validEmail', 0);
         }
         // Debugging
         // return validEmail.test(Email);
-});
+})
