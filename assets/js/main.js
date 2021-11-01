@@ -185,7 +185,17 @@ function buttonPressed() {
             //message => alert(message)
         );
     } else {
+        const notificationError = document.getElementById('notification_email_error');
+        const progressBarEmailError = document.getElementById('progress_bar_email_error');
         console.log('Parameters are not correct filled in');
+        notificationError.classList.remove('notification_hide');
+        notificationError.classList.add('notification_show');
+        progressBarEmailError.classList.add('notification_show');
+        setTimeout(() => {
+            progressBarEmailError.classList.remove('notification_show');
+            // notificationSuccess.classList.remove('notification_show');
+            notificationError.classList.add('notification_hide');
+        }, 6000);
     }
 }
 
