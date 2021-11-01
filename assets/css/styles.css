@@ -23,7 +23,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 8%, 65%);
     --container-color: white;
-    --notification-success-color: hsla(0, 0%, 97%, .8);
+    --notification-success-color: hsla(0, 0%, 97%, .5);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -84,7 +84,7 @@ body.dark-theme{
     --scroll-bar-color: hsl(var(--hue-color), 12%, 20%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%);
-    --notification-success-color: hsla(var(--hue-color), 29%, 16%, .8);
+    --notification-success-color: hsla(var(--hue-color), 29%, 25%, .5);
 }
 
 /* Button Dark/Light */
