@@ -26,7 +26,7 @@
     --container-color: white;
     --notification-success-color: hsla(0, 0%, 97%, .5);
     --terminal-top-color: hsl(265, 13.6%, 17.3%);
-    --terminal-bottom-color: rgb(28, 28, 28);
+    --terminal-main-color: rgb(28, 28, 28);
     --terminal-title-color: hsl(265, 5%, 42%);
     --terminal-button-red: red;
     --terminal-button-yellow: yellow;
@@ -93,7 +93,7 @@ body.dark-theme{
     --scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%);
     --notification-success-color: hsla(var(--hue-color), 29%, 25%, .5);
     --terminal-top-color: hsl(265, 13.6%, 17.3%);
-    --terminal-bottom-color: rgb(28, 28, 28);
+    --terminal-main-color: rgb(28, 28, 28);
     --terminal-title-color: hsl(265, 5%, 42%);
 }
 
@@ -1041,7 +1041,7 @@ img{
     height: 2rem;
     width: 26rem;
     text-align: center;
-    padding-top: .41rem;
+    padding-top: .40005rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     gap: 1rem;
@@ -1056,7 +1056,7 @@ img{
 .terminal_buttons {
     display: flex;
     margin-left: .75rem;
-    margin-top: .30rem;
+    margin-top: .25rem;
     gap: .35rem;
 }
 
@@ -1079,6 +1079,14 @@ img{
     width: .75rem;
     height: .75rem;
     border-radius: 50%;
+}
+
+.terminal_main {
+    background-color: var(--terminal-main-color);
+    width: 26rem;
+    height: 14rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 
