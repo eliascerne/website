@@ -47,7 +47,25 @@
                 <i class="uil uil-envelope notification_icon"></i>
                 <div class="text_notification">
                     <p class="title_notification">Contact</p>
-                    <p class="msg_notification">Please whether the form has been filled correctly.</p>
+                    <p class="msg_notification">Please check whether the form has been filled correctly.</p>
+                </div>
+            </div>
+            <span class="progress_bar_notification" id="progress_bar_email_error"></span>
+        </div>
+    </div>
+
+    <!-- COUNTER ERROR -->
+    <div class="notification_container">
+        <div class="notification" id="notification_counter_error">
+            <div class="notification_content">
+                <i class="uil uil-envelope notification_icon"></i>
+                <div class="text_notification">
+                    <p class="title_notification">Contact</p>
+                    <div class="notification_counter">
+                        <p class="msg_notifcation">Please wait</p>
+                        <p class="msg_notification" id="email_active_time"></p>
+                        <p class="msg_notification">seconds.</p>
+                    </div>
                 </div>
             </div>
             <span class="progress_bar_notification" id="progress_bar_email_error"></span>
@@ -874,7 +892,6 @@
                                 Send Message
                                 <i class="uil uil-message button_icon"></i>
                             </a>
-                            <p class="email_active" id="email_active">Please wait</p><p class="email_active email_active_time" id="email_active_time"></p><p class="email_active" id="email_active2">seconds</p>
                         </div>
                     </form>
                 </div>

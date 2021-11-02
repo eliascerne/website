@@ -1011,15 +1011,15 @@ img{
     display: flex;
 }
 
-.email_active {
-    font-size: var(--smaller-font-size);
-    padding-left: 1rem;
-    align-self: flex-end;
-    display: none;
-}
+
 
 .email_active_show {
     display: unset;
+}
+
+.notification_counter {
+    display: flex;
+    gap: .3rem;
 }
 
 /* FOOTER */

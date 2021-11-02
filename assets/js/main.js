@@ -1,5 +1,50 @@
 sessionStorage.removeItem('validEmail');
-localStorage.setItem('emailActive', 1);
+
+// localStorage.setItem('emailHardReload', 0);
+
+
+if (localStorage.getItem('emailHardReload') == true && localStorage.getItem('counterActive') == true) {
+    console.log('counter is active and hard reload detacted');
+    localStorage.setItem('counterHardReload', 1);
+
+    const notificationCounter = document.getElementById('notification_counter_error');
+    const emailActiveTime = document.getElementById('email_active_time');
+    notificationCounter.classList.add('notification_show');
+    emailActiveTime.innerHTML = localStorage.getItem('counterNumber');
+
+    var i = localStorage.getItem('counterNumber');
+
+    function myLoop() {
+        setTimeout(function () {
+            const emailActiveTime = document.getElementById('email_active_time');
+            const notificationCounter = document.getElementById('notification_counter_error');
+
+            emailActiveTime.innerHTML = i;
+            localStorage.setItem('counterNumber', i);
+
+            i--;
+            if (i >= 0) {
+                myLoop();
+            } else {
+                notificationCounter.classList.remove('notification_show');
+                notificationCounter.classList.add('notification_hide');
+                localStorage.setItem('emailActive', 1);
+                localStorage.setItem('counterActive', 0);
+                // sessionStorage.removeItem('emailActiveTime');
+            }
+        }, 1000)
+    }
+
+    myLoop();
+
+
+    console.log('counter is active');
+}
+else {
+    localStorage.setItem('emailActive', 1);
+    localStorage.setItem('emailHardReload', 1);
+    localStorage.setItem('counterHardReload', 0);
+}
 
 
 
@@ -189,39 +234,75 @@ function buttonPressed() {
         );
     }
 
-    else if (localStorage.getItem('emailActive') == false) {
-        var emailActiveTime = Date.now();
-        sessionStorage.setItem('emailActiveTime', emailActiveTime);
-        console.log(sessionStorage.getItem('emailActiveTime'));
-        const emailActiveHTML = document.getElementById('email_active');
-        const emailActiveTimeHTML = document.getElementById('email_active_time');
-        const emailActive2HTML = document.getElementById('email_active2');
-        emailActiveHTML.classList.add('email_active_show');
-        emailActiveTimeHTML.classList.add('email_active_show');
-        emailActive2HTML.classList.add('email_active_show');
-        var i = 1;
+    else if (inputName && sessionStorage.getItem('validEmail') == true && inputCompany && inputMessage && localStorage.getItem('emailActive') == false && localStorage.getItem('counterActive') == false) {
 
+        const emailActiveTime = document.getElementById('email_active_time');
+        const notificationCounter = document.getElementById('notification_counter_error');
+
+        notificationCounter.classList.remove('notification_hide');
+
+        localStorage.setItem('counterActive', 1);
+        console.log('counter is active')
+        
+        notificationCounter.classList.add('notification_show');
+        var i = localStorage.getItem('initialCounterNumber');
+        
         function myLoop() {
-            
-            var currentTime = new Date();
-            currentTime.setSeconds(currentTime.getSeconds() - 10);
-            setTimeout(function (date) {
+            setTimeout(function () {
+                emailActiveTime.innerHTML = i;
+                localStorage.setItem('counterNumber', i);
 
-
-                var timePassed = sessionStorage.getItem('emailActiveTime') - currentTime;
-                console.log(timePassed);
-                document.getElementById('email_active_time').innerHTML = Math.floor(timePassed / 1000);
-                i++;
-                if (i < 10) {
+                i--;
+                if (i >= 0) {
                     myLoop();
                 } else {
+                    notificationCounter.classList.remove('notification_show');
+                    notificationCounter.classList.add('notification_hide');
                     localStorage.setItem('emailActive', 1);
-                    sessionStorage.removeItem('emailActiveTime');
+                    localStorage.setItem('counterActive', 0);
+                    // sessionStorage.removeItem('emailActiveTime');
                 }
             }, 1000)
         }
 
         myLoop();
+    }
+
+    // else if (localStorage.getItem('emailActive') == false && localStorage.getItem('counterActive') == true && localStorage.getItem('counterHardReload') == true) {
+
+    //     const notificationCounter = document.getElementById('notification_counter_error');
+    //     const emailActiveTime = document.getElementById('email_active_time');
+    //     notificationCounter.classList.add('notification_show');
+    //     emailActiveTime.innerHTML = localStorage.getItem('counterNumber');
+
+    //     var i = localStorage.getItem('counterNumber');
+        
+    //     function myLoop() {
+    //         setTimeout(function () {
+    //             emailActiveTime.innerHTML = i;
+    //             localStorage.setItem('counterNumber', i);
+
+    //             i--;
+    //             if (i >= 0) {
+    //                 myLoop();
+    //             } else {
+    //                 notificationCounter.classList.remove('notification_show');
+    //                 notificationCounter.classList.add('notification_hide');
+    //                 localStorage.setItem('emailActive', 1);
+    //                 localStorage.setItem('counterActive', 0);
+    //                 // sessionStorage.removeItem('emailActiveTime');
+    //             }
+    //         }, 1000)
+    //     }
+
+    //     myLoop();
+
+
+    //     console.log('counter is active');
+    // }
+
+    else if (localStorage.getItem('emailActive') == false && localStorage.getItem('counterActive') == true) {
+        
     }
 
     else {
@@ -239,9 +320,10 @@ var inputCompany = document.getElementById('input_company');
 var inputMessage = document.getElementById('input_message');
 
 function showNotificationEmailSuccess() {
-    var emailActiveTime = Date.now();
-    sessionStorage.setItem('emailActiveTime', emailActiveTime);
-    console.log(emailActiveTime);
+
+    localStorage.setItem('emailActive', 0);
+    localStorage.setItem('counterActive', 0);
+
     inputName.value = '';
     inputEmail.value = '';
     inputCompany.value = '';
@@ -254,6 +336,22 @@ function showNotificationEmailSuccess() {
         // notificationSuccess.classList.remove('notification_show');
         notificationSuccess.classList.add('notification_hide');
     }, 6000);
+
+    var i = 50;
+
+    function myLoop() {
+        setTimeout(function () {
+            localStorage.setItem('initialCounterNumber', i);
+
+            i--;
+            if (i >= 0) {
+                myLoop();
+            } else {
+                localStorage.setItem('emailActive', 1);
+            }
+        }, 1000)
+    }
+    myLoop();
 }
 
 /* SHOW NOTIFICATION FOR AN EMAIL DELIVER ERROR */
@@ -261,7 +359,6 @@ const notificationError = document.getElementById('notification_email_error');
 const progressBarEmailError = document.getElementById('progress_bar_email_error');
 
 function showNotificationEmailError() {
-    localStorage.setItem('emailActive', 0);
 
     notificationError.classList.remove('notification_hide');
     notificationError.classList.add('notification_show');
@@ -272,6 +369,7 @@ function showNotificationEmailError() {
         // notificationSuccess.classList.remove('notification_show');
         notificationError.classList.add('notification_hide');
     }, 6000);
+    
 }
 
 /* CONTACT ME EMAIL VALIDATOR */
