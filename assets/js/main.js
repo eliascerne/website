@@ -39,11 +39,39 @@ if (localStorage.getItem('emailHardReload') == true && localStorage.getItem('cou
 
 
     console.log('counter is active');
+} 
+
+else if (localStorage.getItem('emailHardReload') == true && localStorage.getItem('counterActive') == false && localStorage.getItem('initialCounterReady') == true) {
+    localStorage.setItem('emailActive', 0);
 }
+
 else {
     localStorage.setItem('emailActive', 1);
     localStorage.setItem('emailHardReload', 1);
     localStorage.setItem('counterHardReload', 0);
+}
+
+if (localStorage.getItem('emailHardReload') == true && localStorage.getItem('counterActive') == false && localStorage.getItem('initialCounterReady') == true) {
+    var i = localStorage.getItem('initialCounterNumber');
+
+    function myLoop() {
+        setTimeout(function () {
+            localStorage.setItem('counterNumber', i);
+
+            i--;
+            if (i >= 0) {
+                myLoop();
+            } else {
+                localStorage.setItem('emailActive', 1);
+                localStorage.setItem('counterActive', 0);
+                localStorage.setItem('counterHardReloadReady', 0);
+                // sessionStorage.removeItem('emailActiveTime');
+            }
+        }, 1000)
+    }
+
+    myLoop();
+    localStorage.setItem('counterHardReloadReady', 1);
 }
 
 
@@ -245,7 +273,12 @@ function buttonPressed() {
         console.log('counter is active')
         
         notificationCounter.classList.add('notification_show');
-        var i = localStorage.getItem('initialCounterNumber');
+        if (localStorage.getItem('counterHardReloadReady') == true) {
+            var i = localStorage.getItem('counterNumber');
+        }
+        else {
+            var i = localStorage.getItem('initialCounterNumber');
+        }
         
         function myLoop() {
             setTimeout(function () {
@@ -305,6 +338,45 @@ function buttonPressed() {
         
     }
 
+    else if (localStorage.getItem('emailActive') == false && localStorage.getItem('counterActive') == false) {
+        const emailActiveTime = document.getElementById('email_active_time');
+        const notificationCounter = document.getElementById('notification_counter_error');
+
+        notificationCounter.classList.remove('notification_hide');
+
+        localStorage.setItem('counterActive', 1);
+        console.log('counter is active')
+        
+        notificationCounter.classList.add('notification_show');
+
+        if (localStorage.getItem('counterHardReloadReady') == true) {
+            var i = localStorage.getItem('counterNumber');
+        }
+        else {
+            var i = localStorage.getItem('initialCounterNumber');
+        }
+        console.log(i);
+        function myLoop() {
+            setTimeout(function () {
+                emailActiveTime.innerHTML = i;
+                localStorage.setItem('counterNumber', i);
+
+                i--;
+                if (i >= 0) {
+                    myLoop();
+                } else {
+                    notificationCounter.classList.remove('notification_show');
+                    notificationCounter.classList.add('notification_hide');
+                    localStorage.setItem('emailActive', 1);
+                    localStorage.setItem('counterActive', 0);
+                    // sessionStorage.removeItem('emailActiveTime');
+                }
+            }, 1000)
+        }
+
+        myLoop();
+    }
+
     else {
         console.log('Parameters are not correct filled in');
         showNotificationEmailError();
@@ -352,6 +424,7 @@ function showNotificationEmailSuccess() {
         }, 1000)
     }
     myLoop();
+    localStorage.setItem('initialCounterReady', 1);
 }
 
 /* SHOW NOTIFICATION FOR AN EMAIL DELIVER ERROR */
