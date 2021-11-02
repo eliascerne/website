@@ -1,3 +1,5 @@
+import { typeWriter } from "./typewriter.js";
+
 /* NAV HIDDEN */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
