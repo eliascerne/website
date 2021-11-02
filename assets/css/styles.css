@@ -28,6 +28,9 @@
     --terminal-top-color: hsl(265, 13.6%, 17.3%);
     --terminal-bottom-color: rgb(28, 28, 28);
     --terminal-title-color: hsl(265, 5%, 42%);
+    --terminal-button-red: red;
+    --terminal-button-yellow: yellow;
+    --terminal-button-green: rgb(0, 255, 0);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -1033,19 +1036,49 @@ img{
 }
 
 .terminal_top {
+    display: flex;
     background-color: var(--terminal-top-color);
     height: 2rem;
     width: 26rem;
     text-align: center;
-    padding-top: .2rem;
+    padding-top: .41rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    gap: 1rem;
 }
 
 .terminal_title {
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--terminal-title-color);
+}
+
+.terminal_buttons {
+    display: flex;
+    margin-left: .75rem;
+    margin-top: .30rem;
+    gap: .35rem;
+}
+
+.terminal_button_red {
+    background-color: var(--terminal-button-red);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+}
+
+.terminal_button_yellow {
+    background-color: var(--terminal-button-yellow);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+}
+
+.terminal_button_green {
+    background-color: var(--terminal-button-green);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
 }
 
 
