@@ -1015,6 +1015,11 @@ img{
     font-size: var(--smaller-font-size);
     padding-left: 1rem;
     align-self: flex-end;
+    display: none;
+}
+
+.email_active_show {
+    display: unset;
 }
 
 /* FOOTER */
