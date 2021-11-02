@@ -31,6 +31,7 @@
     --terminal-button-red: red;
     --terminal-button-yellow: yellow;
     --terminal-button-green: rgb(0, 255, 0);
+    --terminal-caret-color: hsl(0, 0%, 61%);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -1087,6 +1088,27 @@ img{
     height: 14rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+.terminal_command_container {
+    display: flex;
+}
+
+.terminal_command {
+    font-size: var(--smaller-font-size);
+}
+
+.terminal_input {
+    padding-left: .5rem;
+    background-color: var(--terminal-main-color);
+    border: none;
+    outline: none;
+}
+
+.terminal_caret {
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
 }
 
 
