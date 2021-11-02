@@ -1,4 +1,5 @@
 sessionStorage.removeItem('validEmail');
+localStorage.setItem('emailActive', 1);
 
 
 
@@ -172,7 +173,7 @@ function buttonPressed() {
     console.log('Company: ' + inputCompany);
     console.log('Message: ' + inputMessage);
 
-    if (inputName && sessionStorage.getItem('validEmail') == true && inputCompany && inputMessage) {
+    if (inputName && sessionStorage.getItem('validEmail') == true && inputCompany && inputMessage && localStorage.getItem('emailActive') == true) {
         Email.send({
             SecureToken: "92255cd6-f4f4-482e-bf1e-1a6040acfd91",
             To: 'elias.cerne@icloud.com',
@@ -186,7 +187,44 @@ function buttonPressed() {
             showNotificationEmailSuccess()
             //message => alert(message)
         );
-    } else {
+    }
+
+    else if (localStorage.getItem('emailActive') == false) {
+        var emailActiveTime = Date.now();
+        sessionStorage.setItem('emailActiveTime', emailActiveTime);
+        console.log(sessionStorage.getItem('emailActiveTime'));
+        const emailActiveHTML = document.getElementById('email_active');
+        const emailActiveTimeHTML = document.getElementById('email_active_time');
+        const emailActive2HTML = document.getElementById('email_active2');
+        emailActiveHTML.classList.add('email_active_show');
+        emailActiveTimeHTML.classList.add('email_active_show');
+        emailActive2HTML.classList.add('email_active_show');
+        var i = 1;
+
+        function myLoop() {
+            
+            var currentTime = new Date();
+            currentTime.setSeconds(currentTime.getSeconds() - 10);
+            setTimeout(function (date) {
+
+
+                var timePassed = sessionStorage.getItem('emailActiveTime') - currentTime;
+                console.log(timePassed);
+                document.getElementById('email_active_time').innerHTML = Math.floor(timePassed / 1000);
+                i++;
+                if (i < 10) {
+                    myLoop();
+                } else {
+                    localStorage.setItem('emailActive', 1);
+                    sessionStorage.removeItem('emailActiveTime');
+                }
+            }, 1000)
+        }
+
+        myLoop();
+    }
+
+    else {
         console.log('Parameters are not correct filled in');
         showNotificationEmailError();
     }
@@ -201,6 +239,9 @@ var inputCompany = document.getElementById('input_company');
 var inputMessage = document.getElementById('input_message');
 
 function showNotificationEmailSuccess() {
+    var emailActiveTime = Date.now();
+    sessionStorage.setItem('emailActiveTime', emailActiveTime);
+    console.log(emailActiveTime);
     inputName.value = '';
     inputEmail.value = '';
     inputCompany.value = '';
@@ -220,15 +261,17 @@ const notificationError = document.getElementById('notification_email_error');
 const progressBarEmailError = document.getElementById('progress_bar_email_error');
 
 function showNotificationEmailError() {
-        notificationError.classList.remove('notification_hide');
-        notificationError.classList.add('notification_show');
-        progressBarEmailError.classList.add('notification_show');
+    localStorage.setItem('emailActive', 0);
 
-        setTimeout(() => {
-            progressBarEmailError.classList.remove('notification_show');
-            // notificationSuccess.classList.remove('notification_show');
-            notificationError.classList.add('notification_hide');
-        }, 6000);
+    notificationError.classList.remove('notification_hide');
+    notificationError.classList.add('notification_show');
+    progressBarEmailError.classList.add('notification_show');
+
+    setTimeout(() => {
+        progressBarEmailError.classList.remove('notification_show');
+        // notificationSuccess.classList.remove('notification_show');
+        notificationError.classList.add('notification_hide');
+    }, 6000);
 }
 
 /* CONTACT ME EMAIL VALIDATOR */
