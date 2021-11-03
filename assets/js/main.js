@@ -159,3 +159,15 @@ themeButton.addEventListener('click', () => {
 })
 
 /* Terminal CLI */
+const terminalInput = document.getElementById('terminal_input');
+
+terminalInput.addEventListener('keyup', e => {
+    var scWidth = e.target.scrollWidth;
+    terminalInput.style.width = `${scWidth}px`;
+
+    var scHeight = e.target.scrollHeight;
+
+    
+    console.log(scWidth);
+    console.log(scHeight);
+})
