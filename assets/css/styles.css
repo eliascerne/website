@@ -32,6 +32,7 @@
     --terminal-button-yellow: yellow;
     --terminal-button-green: rgb(0, 255, 0);
     --terminal-caret-color: hsl(0, 0%, 61%);
+    --terminal-main-text-color: hsl(0, 0%, 100%);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -1101,13 +1102,21 @@ img{
 .terminal_input {
     padding-left: .5rem;
     background-color: var(--terminal-main-color);
+    color: var(--terminal-main-text-color);
+    font-size: var(--smaller-font-size);
+    font-family: 'Roboto Mono', monospace;
     border: none;
     outline: none;
+    box-sizing: border-box;
+    width: 1rem;
+    /* max-width: 26rem; */
+    overflow-wrap: break-word;
+    overflow: visible;
 }
 
 .terminal_caret {
-    background-color: red;
-    width: 1rem;
+    background-color: var(--terminal-caret-color);
+    width: .5rem;
     height: 1rem;
 }
 
