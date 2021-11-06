@@ -1092,11 +1092,13 @@ img{
 }
 
 .terminal_command_container {
-    display: flex;
+    background-color: blue;
+    display: flex block;
 }
 
 .terminal_command {
     font-size: var(--smaller-font-size);
+    display: inline-block;
 }
 
 .terminal_input {
@@ -1108,17 +1110,30 @@ img{
     border: none;
     outline: none;
     box-sizing: border-box;
-    width: 1rem;
+    height: 100%;
+    width: 100%;
     /* max-width: 26rem; */
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
     overflow: visible;
+    resize: none;
+    /* scroll-behavior: none; */
 }
 
-.terminal_caret {
+.terminal_input::-webkit-scrollbar {
+    display: none;
+  }
+
+.terminal_command_text {
+    display: block;
+    max-width: 26rem;
+    word-wrap: break-word;
+}
+
+/* .terminal_caret {
     background-color: var(--terminal-caret-color);
     width: .5rem;
     height: 1rem;
-}
+} */
 
 
 /* FOOTER */
