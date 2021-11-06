@@ -1,5 +1,6 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 
 /* VARIABLES CSS */
 :root {
@@ -23,6 +24,15 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 8%, 65%);
     --container-color: white;
+    --notification-success-color: hsla(0, 0%, 97%, .5);
+    --terminal-top-color: hsl(265, 13.6%, 17.3%);
+    --terminal-main-color: rgb(28, 28, 28);
+    --terminal-title-color: hsl(265, 5%, 42%);
+    --terminal-button-red: red;
+    --terminal-button-yellow: yellow;
+    --terminal-button-green: rgb(0, 255, 0);
+    --terminal-caret-color: hsl(0, 0%, 61%);
+    --terminal-main-text-color: hsl(0, 0%, 100%);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -55,6 +65,7 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+    --z-notification: 1010;
 }
 
 /* Font size for large devices */
@@ -82,6 +93,10 @@ body.dark-theme{
     --scroll-bar-color: hsl(var(--hue-color), 12%, 20%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%);
+    --notification-success-color: hsla(var(--hue-color), 29%, 25%, .5);
+    --terminal-top-color: hsl(265, 13.6%, 17.3%);
+    --terminal-main-color: rgb(28, 28, 28);
+    --terminal-title-color: hsl(265, 5%, 42%);
 }
 
 /* Button Dark/Light */
@@ -271,6 +286,101 @@ img{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
+/* NOTIFICATION EMAIL SEND */
+.notification_container{
+    display: absolute;
+    cursor: pointer;
+}
+
+.notification{
+    padding-left: .8rem;
+    background-color: var(--notification-success-color);
+    width: 23.5rem;
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, 1rem);
+    z-index: var(--z-notification);
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0px 100px rgba(0, 0, 0, .25);
+    overflow: hidden;
+}
+
+.notification_content{
+    display: flex;
+}
+
+.notification_icon{
+    font-size: 3rem;
+    color: var(--text-color);
+    padding-right: .75rem;
+}
+
+.text_notification{
+    margin-top: .65rem;
+    color: var(--title-color);
+    padding-bottom: .5rem;
+}
+
+.title_notification{
+    font-weight: var(--font-semi-bold);
+}
+
+.progress_bar_notification{
+    position: absolute;
+    transform: translateY(-.1rem);
+    left: 0;
+    width: 0%;
+    height: .1rem;
+}
+
+#progress_bar_email_success{
+    background-color: greenyellow;
+}
+
+#progress_bar_email_error{
+    background-color: red;
+}
+
+.notification.notification_show{
+    animation: notification_show 1s ease forwards;
+}
+
+@keyframes notification_show {
+    100% {
+        top: 0%;
+    }
+}
+
+.notification.notification_hide{
+    animation: notification_hide 2s ease forwards;
+}
+
+@keyframes notification_hide {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+.progress_bar_notification.notification_show{
+    animation: progress_bar 6s ease forwards;
+}
+
+@keyframes progress_bar {
+    0% {
+        width: 130%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
 /* HOME */
 .home_container{
     gap: 1rem;
@@ -357,6 +467,7 @@ img{
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    cursor: pointer;
 }
 
 .button:hover{
@@ -904,6 +1015,127 @@ img{
     padding: .25rem .5rem .5rem 0;
 }
 
+.email_not_valid{
+    border: .1rem red solid;
+}
+
+.contact_button_container {
+    display: flex;
+}
+
+.email_active_show {
+    display: unset;
+}
+
+.notification_counter {
+    display: flex;
+    gap: .3rem;
+}
+
+.terminal_container {
+    transform: translateX(-3rem);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.terminal_top {
+    display: flex;
+    background-color: var(--terminal-top-color);
+    height: 2rem;
+    width: 26rem;
+    text-align: center;
+    padding-top: .40005rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    gap: 1rem;
+}
+
+.terminal_title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--terminal-title-color);
+}
+
+.terminal_buttons {
+    display: flex;
+    margin-left: .75rem;
+    margin-top: .25rem;
+    gap: .35rem;
+}
+
+.terminal_button_red {
+    background-color: var(--terminal-button-red);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+}
+
+.terminal_button_yellow {
+    background-color: var(--terminal-button-yellow);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+}
+
+.terminal_button_green {
+    background-color: var(--terminal-button-green);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+}
+
+.terminal_main {
+    background-color: var(--terminal-main-color);
+    width: 26rem;
+    height: 14rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.terminal_command_container {
+    background-color: blue;
+    display: flex block;
+}
+
+.terminal_command {
+    font-size: var(--smaller-font-size);
+    display: inline-block;
+}
+
+.terminal_input {
+    padding-left: .5rem;
+    background-color: var(--terminal-main-color);
+    color: var(--terminal-main-text-color);
+    font-size: var(--smaller-font-size);
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    /* max-width: 26rem; */
+    /* overflow-wrap: break-word; */
+    overflow: visible;
+    resize: none;
+    /* scroll-behavior: none; */
+}
+
+.terminal_input::-webkit-scrollbar {
+    display: none;
+  }
+
+.terminal_command_text {
+    display: block;
+    max-width: 26rem;
+    word-wrap: break-word;
+}
+
+/* .terminal_caret {
+    background-color: var(--terminal-caret-color);
+    width: .5rem;
+    height: 1rem;
+} */
+
+
 /* FOOTER */
 .footer{
     padding-top: 2rem;
@@ -1136,6 +1368,10 @@ img{
         padding: 6rem 0 2rem;
     }
 
+    .notification{
+        transform: translate(-50%, 1rem);
+    }
+
     .section_subtitle{
         margin-bottom: 4rem;
     }
@@ -1304,6 +1540,29 @@ img{
 
 /* For large devices */
 @media screen and (min-width: 1024px){
+
+    .notification{
+        left: unset;
+        right: -100%;
+        top: 0%;
+        transform: unset;
+        margin-top: 5rem;
+    }
+
+    @keyframes notification_show {
+        100% {
+            right: 1%;
+        }
+    }
+
+    @keyframes notification_hide {
+        0% {
+            right: 0%;
+        }
+        100% {
+            right: -100%;
+        }
+    }
 
     .container{
         margin-left: auto;

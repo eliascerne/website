@@ -1,3 +1,5 @@
+import { typeWriter } from "./typewriter.js";
+
 /* NAV HIDDEN */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -89,7 +91,7 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-/* SCROLL SECTIONS ACTIVE LINK */
+/* SCROLL SECTIONS ACTIVE LINK (needs to be fixed / some weird errors)
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -108,6 +110,7 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+*/
 
 /* SHOW SCROLL TOP */
 function scrollUp(){
@@ -154,3 +157,26 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/* Terminal CLI */
+// const terminalInput = document.getElementById('terminal_input');
+
+// terminalInput.addEventListener('keyup', e => {
+//     var scWidth = e.target.scrollWidth;
+//     terminalInput.style.width = `${scWidth}px`;
+
+//     var scHeight = e.target.scrollHeight;
+//     terminalInput.style.width = `${scWidth}px`;
+
+    
+//     console.log(scWidth);
+//     console.log(scHeight);
+// })
+
+const terminalInput = document.getElementById('terminal_input');
+const teriminalText = document.getElementById('terminal_command_text');
+
+terminalInput.addEventListener('input', function() {
+    teriminalText.innerHTML = terminalInput.value;
+    console.log(terminalInput.value);
+}, false);
