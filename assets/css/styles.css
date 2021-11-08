@@ -33,6 +33,7 @@
     --terminal-button-green: rgb(0, 255, 0);
     --terminal-caret-color: hsl(0, 0%, 61%);
     --terminal-main-text-color: hsl(0, 0%, 100%);
+    --terminal-border-color: hsl(276, 6.2%, 31.4%);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -104,6 +105,7 @@ body.dark-theme{
     --terminal-button-green: rgb(0, 255, 0);
     --terminal-caret-color: hsl(0, 0%, 61%);
     --terminal-main-text-color: hsl(0, 0%, 100%);
+    --terminal-border-color: hsl(276, 6.2%, 31.4%);
 }
 
 /* Button Dark/Light */
@@ -1039,14 +1041,13 @@ img{
     gap: .3rem;
 }
 
-/* .terminal_container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: 'Roboto Mono', monospace;
+.terminal_container {
+    background-color: black;
+    border: solid var(--terminal-border-color) .001rem;
+    border-radius: 1rem;
 }
 
-.terminal_content {
+/* .terminal_content {
     width: max-content;
 } */
 
