@@ -1119,19 +1119,7 @@ img{
 }
 
 .terminal_command {
-    width:auto;
-}
-
-.terminal_input {
-    padding-left: .5rem;
-    background-color: var(--terminal-main-color);
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    overflow: visible;
-    resize: none;
+    width: auto;
 }
 
 .terminal_input::-webkit-scrollbar {
@@ -1141,16 +1129,35 @@ img{
 .terminal_command_text {
     width: max-content;
     word-wrap: break-word;
+    white-space: 1px;
 }
 
 .terminal_caret {
     display: inline-block;
-    background-color: var(--terminal-caret-color);
+    border: solid var(--terminal-caret-color) .5px;
     width: .5rem;
     height: 1rem;
-    transform: translate(-.4rem, .2rem);
+    transform: translate(-.2rem, .2rem);
 }
 
+.terminal_caret_focus {
+    background-color: var(--terminal-caret-color);
+    transform: translate(-.2rem, .2rem);
+    border: none;
+}
+
+.terminal_input {
+    position: absolute;
+    padding-left: .5rem;
+    background-color: var(--terminal-main-color);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    height: 0%;
+    width: 100%;
+    overflow: visible;
+    resize: none;
+}
 
 /* FOOTER */
 .footer{
