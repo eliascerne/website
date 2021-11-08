@@ -34,6 +34,9 @@
     --terminal-caret-color: hsl(0, 0%, 61%);
     --terminal-main-text-color: hsl(0, 0%, 100%);
     --terminal-border-color: hsl(276, 6.2%, 31.4%);
+    --terminal-scroll-bar-color: hsl(var(--hue-color), 12%, 20%);
+    --terminal-scroll-thumb-color: hsl(var(--hue-color), 12%, 38%);
+    --terminal-scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -106,6 +109,9 @@ body.dark-theme{
     --terminal-caret-color: hsl(0, 0%, 61%);
     --terminal-main-text-color: hsl(0, 0%, 100%);
     --terminal-border-color: hsl(276, 6.2%, 31.4%);
+    --terminal-scroll-bar-color: hsl(var(--hue-color), 12%, 20%);
+    --terminal-scroll-thumb-color: hsl(var(--hue-color), 12%, 38%);
+    --terminal-scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%);
 }
 
 /* Button Dark/Light */
@@ -1105,6 +1111,19 @@ img{
     height: 14rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    overflow-y: scroll;
+}
+
+.terminal_main::-webkit-scrollbar {
+    background-color: var(--terminal-scroll-bar-color);
+}
+
+.terminal_main::-webkit-scrollbar-thumb{
+    background-color: var(--terminal-scroll-thumb-color);
+}
+
+.terminal_main::-webkit-scrollbar-thumb:hover{
+    background-color: var(--terminal-scroll-thumb-color-hover);
 }
 
 .terminal_command_container {
@@ -1124,7 +1143,7 @@ img{
 
 .terminal_input::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .terminal_command_text {
     width: max-content;
@@ -1154,7 +1173,7 @@ img{
     outline: none;
     box-sizing: border-box;
     height: 0%;
-    width: 100%;
+    width: 0%;
     overflow: visible;
     resize: none;
 }

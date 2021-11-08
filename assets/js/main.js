@@ -186,6 +186,7 @@ terminalInput.addEventListener('input', function() {
     teriminalText.innerHTML = terminalInput.value;
     console.log(terminalInput.value);
     terminalCaret.style.transform = "translate(-.3rem, .2rem)";
+    terminalMain.scrollTop = terminalMain.scrollHeight;
 }, false);
 
 
@@ -230,7 +231,7 @@ terminalMain.addEventListener('click', function () {
 
 // Disables arrow keys because there is no need for them now (the caret has to move with the arrow keys which is not implemented yet)
 terminalInput.addEventListener("keydown", function(e) {
-    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+    if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
         e.preventDefault();
     }
 }, false);
