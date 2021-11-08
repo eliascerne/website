@@ -25,8 +25,8 @@
     --scroll-thumb-color-hover: hsl(var(--hue-color), 8%, 65%);
     --container-color: white;
     --notification-success-color: hsla(0, 0%, 97%, .5);
-    --terminal-top-color: hsl(265, 13.6%, 17.3%);
-    --terminal-main-color: rgb(28, 28, 28);
+    --terminal-top-color: rgb(56, 52, 60);
+    --terminal-main-color: rgb(37, 41, 45);
     --terminal-title-color: hsl(0, 0%, 61%);
     --terminal-button-red: red;
     --terminal-button-yellow: yellow;
@@ -97,8 +97,8 @@ body.dark-theme{
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color-hover: hsl(var(--hue-color), 12%, 48%);
     --notification-success-color: hsla(var(--hue-color), 29%, 25%, .5);
-    --terminal-top-color: hsl(265, 13.6%, 17.3%);
-    --terminal-main-color: rgb(28, 28, 28);
+    --terminal-top-color: rgb(56, 52, 60);
+    --terminal-main-color: rgb(30, 30, 30);
     --terminal-title-color: hsl(0, 0%, 61%);
     --terminal-button-red: red;
     --terminal-button-yellow: yellow;
