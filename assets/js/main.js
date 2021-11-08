@@ -180,3 +180,18 @@ terminalInput.addEventListener('input', function() {
     teriminalText.innerHTML = terminalInput.value;
     console.log(terminalInput.value);
 }, false);
+
+
+const terminalMain = document.getElementById('terminal_main');
+const terminalWidthHTML = document.getElementById('terminal_width');
+
+var terminalWidth = function terminalWidth() {
+    // Calculates from px to rem (1px = 0.06rem)
+    var terminalWidth = Math.round(terminalMain.offsetWidth * 0.06);
+
+    terminalWidthHTML.innerHTML = terminalWidth;
+
+    console.log(terminalWidth);
+};
+window.addEventListener('resize', terminalWidth);
+terminalWidth();
