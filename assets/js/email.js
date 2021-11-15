@@ -94,10 +94,7 @@ function buttonPressed() {
             To: 'elias.cerne@icloud.com',
             From: 'elias@eliascerne.com',
             Subject: 'eliascerne.com: New Message',
-            Body: `You have got a new message from ${inputName}. </br>
-                    Email Address: ${inputEmail} </br>
-                    Company: ${inputCompany} </br>
-                The Message: ${inputMessage}`
+            Body: ``
         }).then(
             showNotificationEmailSuccess()
             //message => alert(message)
