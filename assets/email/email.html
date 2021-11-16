@@ -73,7 +73,7 @@
     /* Rounded corners for advanced mail clients only */
     @media all and (min-width: 560px) {
       .container {
-        border-radius: 8px;
+        border-radius: 1rem;
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
         -khtml-border-radius: 8px;
@@ -89,6 +89,16 @@
     .footer a,
     .footer a:hover {
       color: #828999;
+    }
+
+    .header {
+      font-size: 2.75rem;
+    }
+
+    @media screen and (max-width: 420px) {
+      .header {
+        font-size: 2rem;
+      }
     }
   </style>
 
@@ -137,11 +147,28 @@
                   style="
 				color: #FFFFFF;
 				font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;" /></a> -->
-                <a href="https://eliascerne.com" target="_blank" style="text-decoration: none; font-size: 1.5rem; font-weight: 500; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;">eliascerne.com</a>
+                <!-- <a href="https://eliascerne.com" target="_blank" style="text-decoration: none; font-size: 1.5rem; font-weight: 500; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;">eliascerne.com</a> -->
 
             </td>
           </tr>
 
+
+          <!-- HEADER -->
+          <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;  padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-weight: bold; line-height: 130%;
+			padding-top: 0rem;
+			color: #FFFFFF;" class="header">
+              New Message
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;  padding-left: 6.25%; padding-right: 6.25%; padding-bottom: 2rem; width: 87.5%; font-size: 1rem; font-weight: 500; line-height: 130%;
+            color: #FFFFFF;">
+              by <a href="https://eliascerne.com" target="_blank" style="text-decoration: none;">eliascerne.com</a>
+            </td>
+          </tr>
           <!-- HERO IMAGE -->
           <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 (wrapper x2). Do not set height for flexible images (including "auto"). URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Ìmage-Name}}&utm_campaign={{Campaign-Name}} -->
           <tr>
@@ -157,7 +184,7 @@
 
           <!-- HEADER -->
           <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
-          <tr>
+          <!-- <tr>
             <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;  padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 2rem; font-weight: bold; line-height: 130%;
 			padding-top: 1.5rem;
 			color: #FFFFFF;" class="header">
@@ -170,7 +197,7 @@
             color: #FFFFFF;">
               by <a href="https://eliascerne.com" target="_blank" style="text-decoration: none;">eliascerne.com</a>
             </td>
-          </tr>
+          </tr> -->
 
           <!-- PARAGRAPH -->
           <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
