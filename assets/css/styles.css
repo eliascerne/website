@@ -33,6 +33,7 @@
     --terminal-button-green: rgb(0, 255, 0);
     --terminal-caret-color: hsl(0, 0%, 61%);
     --terminal-main-text-color: hsl(0, 0%, 100%);
+    --country-code-color: rgb(96, 96, 96);
 
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -45,6 +46,7 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
+    --nav-font-size: 1.25rem;
 
     /* Font weight */
     --font-medium: 500;
@@ -78,6 +80,7 @@
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
+        --nav-font-size: 1.3rem;
     }
 }
 
@@ -97,6 +100,7 @@ body.dark-theme{
     --terminal-top-color: hsl(265, 13.6%, 17.3%);
     --terminal-main-color: rgb(28, 28, 28);
     --terminal-title-color: hsl(265, 5%, 42%);
+    --country-code-color: rgb(170, 170, 170);
 }
 
 /* Button Dark/Light */
@@ -205,8 +209,10 @@ img{
 
 .nav_logo,
 .nav_toggle{
+    display: flex;
+    font-size: var(--nav-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
 }
 
 .nav_logo:hover{
@@ -220,6 +226,13 @@ img{
 
 .nav_toggle:hover{
     color: var(--first-color);
+}
+
+.country_code {
+    font-size: calc(var(--smaller-font-size) - .1rem);
+    font-weight: 100;
+    padding-left: 0rem;
+    color: var(--country-code-color);
 }
 
 @media screen and (max-width: 767px){

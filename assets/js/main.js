@@ -159,10 +159,12 @@ themeButton.addEventListener('click', () => {
 })
 
 const api_url = 'https://api.ipgeolocation.io/ipgeo?apiKey=2c3a4ea379de4c2b8c7e3f23e3d664dd';
+const countryCodeHTML = document.getElementById('country_code');
 
 async function getIpAddress(url){
     const response = await fetch(url);
     var data = await response.json();
     console.log(data.country_code2);
+    countryCodeHTML.innerHTML = data.country_code2;
 }
 getIpAddress(api_url);
