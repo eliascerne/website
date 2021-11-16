@@ -157,3 +157,12 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+const api_url = 'https://api.ipgeolocation.io/ipgeo?apiKey=2c3a4ea379de4c2b8c7e3f23e3d664dd';
+
+async function getIpAddress(url){
+    const response = await fetch(url);
+    var data = await response.json();
+    console.log(data.country_code2);
+}
+getIpAddress(api_url);
