@@ -158,13 +158,27 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+// dark-mode media query matched or not
+let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (matched) {
+    // Add or remove the dark / icon theme
+    document.body.classList.add(darkTheme);
+    themeButton.classList.add(iconTheme);
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+}
+else {
+    pass;
+}
+
 const api_url = 'https://api.ipgeolocation.io/ipgeo?apiKey=2c3a4ea379de4c2b8c7e3f23e3d664dd';
 const countryCodeHTML = document.getElementById('country_code');
 
 async function getIpAddress(url){
     const response = await fetch(url);
     var data = await response.json();
-    console.log(data.country_code2);
     countryCodeHTML.innerHTML = data.country_code2;
 }
 getIpAddress(api_url);
