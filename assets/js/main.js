@@ -184,7 +184,7 @@ const terminalCaret = document.getElementById('terminal_caret');
 // and moves the caret towards its normal position when writing (caret changes in the function below)
 terminalInput.addEventListener('input', function() {
     teriminalText.innerHTML = terminalInput.value;
-    console.log(terminalInput.value);
+    //console.log(terminalInput.value);
     terminalCaret.style.transform = "translate(-.3rem, .2rem)";
     terminalMain.scrollTop = terminalMain.scrollHeight;
 }, false);
@@ -198,7 +198,7 @@ var terminalWidth = function terminalWidth() {
 
     terminalWidthHTML.innerHTML = terminalWidth;
 
-    console.log(terminalWidth);
+    //console.log(terminalWidth);
 };
 window.addEventListener('resize', terminalWidth);
 terminalWidth();
@@ -235,3 +235,22 @@ terminalInput.addEventListener("keydown", function(e) {
         e.preventDefault();
     }
 }, false);
+
+// Terminal
+const terminalPop = document.getElementById('terminal-pop');
+const terminalHTML = document.getElementById('terminal');
+const terminalButtonRed = document.getElementById('terminal_button_red');
+
+var counter = 0;
+terminalPop.addEventListener('click', function(e) {
+    counter += 1;
+    //console.log(counter);
+    if (counter === 5) {
+        terminalHTML.classList.remove('hide');
+    };
+});
+
+terminalButtonRed.addEventListener('click', function(e) {
+    terminalHTML.classList.add('hide');
+    counter = 0;
+});

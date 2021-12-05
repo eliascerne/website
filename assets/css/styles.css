@@ -1047,6 +1047,14 @@ img{
     gap: .3rem;
 }
 
+.temrminal {
+    display: auto;
+}
+
+.hide {
+    display: none;
+}
+
 .terminal_container {
     background-color: black;
     border: solid var(--terminal-border-color) .001rem;
