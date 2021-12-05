@@ -170,7 +170,7 @@ if (matched) {
     localStorage.setItem('selected-icon', getCurrentIcon());
 }
 else {
-    pass;
+    //pass;
 }
 
 const api_url = 'https://api.ipgeolocation.io/ipgeo?apiKey=2c3a4ea379de4c2b8c7e3f23e3d664dd';
@@ -180,5 +180,12 @@ async function getIpAddress(url){
     const response = await fetch(url);
     var data = await response.json();
     countryCodeHTML.innerHTML = data.country_code2;
+
+    // if (data.country_code2 === 'AT') {
+    //     window.history.replaceState('AT', 'AT', 'at.html');
+    // }
+    // else {
+    //     //pass;
+    // }
 }
 getIpAddress(api_url);
