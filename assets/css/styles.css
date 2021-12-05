@@ -1113,6 +1113,24 @@ img{
     border-radius: 50%;
 }
 
+.terminal_buttons:hover .close_button_1 {
+    background-color: black;
+    width: .05rem;
+    height: .57rem;
+    margin-left: .357rem;
+    margin-top: .065rem;
+    transform: rotate(45deg);
+}
+
+.terminal_buttons:hover .close_button_2 {
+    background-color: black;
+    width: .05rem;
+    height: .57rem;
+    margin-left: .357rem;
+    margin-top: .09rem;
+    transform: rotate(-45deg) translateY(-.48rem) translateX(.45rem) !important;
+}
+
 .terminal_main {
     background-color: var(--terminal-main-color);
     width: 100%;
@@ -1180,6 +1198,7 @@ img{
     border: none;
     outline: none;
     box-sizing: border-box;
+    transform: translateY(-20rem);
     height: 0%;
     width: 0%;
     overflow: visible;
