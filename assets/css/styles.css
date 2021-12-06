@@ -902,13 +902,13 @@ img{
     /* grid-template-rows: repeat(2, 1fr); */
     background-color: var(--container-color);
     padding: 0rem 2rem 1.25rem 2rem;
-    margin: 0 2rem 5rem 2rem;
+    margin: 0 1.5rem 5rem 1.5rem;
     border-radius: 1.25rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 55px rgba(0, 0, 0, .25);
 }
 
 .card_left {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
     order: 2;
     display: grid;
@@ -930,12 +930,12 @@ img{
 }
 
 .card_header {
-    font-size: calc(var(--h1-font-size) + .5rem);
+    font-size: calc(var(--h1-font-size) + 0rem);
 }
 
 .card_subheader {
     text-transform: uppercase;
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     transform: translateY(-.2rem);
 }
 
