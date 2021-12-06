@@ -1263,7 +1263,7 @@ img{
     box-sizing: border-box;
     transform: translateY(-20rem);
     height: 0%;
-    width: 0%;
+    width: 100%;
     overflow: visible;
     resize: none;
 }
