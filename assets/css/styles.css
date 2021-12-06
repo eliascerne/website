@@ -882,29 +882,51 @@ img{
 
 .card_1_container {
     position: relative;
-    display: flex;
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
     background-color: var(--container-color);
-    padding: 2.5rem .5rem 1.25rem 2.5rem;
+    padding: 0rem 2.5rem 1.25rem 2.5rem;
     margin: 0 2rem 5rem 2rem;
     border-radius: 1.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
 }
 
 .card_left {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    order: 2;
     display: grid;
+    width: 50%;
+}
+
+.card_right {
+    order: 1;
+    padding-top: 3rem;
+}
+
+.card_img {
+    margin-left: 15%;
+    width: 70%;
+    border-radius: 1.25rem;
 }
 
 .card_icon {
+    display: none;
     font-size: calc(var(--big-font-size) + 1rem);
 }
 
 .card_header {
-    font-size: var(--h1-font-size);
+    font-size: calc(var(--h1-font-size) + 1rem);
 }
 
 .card_subheader {
     text-transform: uppercase;
     font-size: var(--small-font-size);
+}
+
+.card_text {
+    margin-top: 1.5rem;
 }
 
 .swiper-button-prev::after,
