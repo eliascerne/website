@@ -904,7 +904,7 @@ img{
     padding: 0rem 3rem 1.25rem 3rem;
     margin: 0 2rem 5rem 2rem;
     border-radius: 1.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .25);
 }
 
 .card_left {
@@ -921,8 +921,8 @@ img{
 }
 
 .card_img {
-    margin-left: 15%;
-    width: 70%;
+    margin-left: 10%;
+    width: 80%;
     border-radius: 1.25rem;
 }
 
@@ -938,10 +938,11 @@ img{
 .card_subheader {
     text-transform: uppercase;
     font-size: var(--small-font-size);
+    transform: translateY(-.2rem);
 }
 
 .card_text {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .swiper-button-prev::after,
