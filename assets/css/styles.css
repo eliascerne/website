@@ -1440,7 +1440,6 @@ img{
     }
 
     .card_container {
-        background-color: var(--container-color);
         padding: 0rem 1rem 1.35rem 1rem;
         margin: 0 .5rem 5rem .5rem;
     }
@@ -1502,6 +1501,33 @@ img{
 
     .footer_container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card_container {
+        display: flex;
+        padding: 0rem .5rem 0rem 2rem;
+        margin: 0 1.5rem 5rem 1.5rem;
+    }
+
+    .card_left {
+        order: 1;
+    }
+
+    .card_right {
+        order: 2;
+    }
+
+    .card_icon {
+        display: unset;
+    }
+
+    .card_text {
+        margin-right: 1rem;
+    }
+    
+    .card_img {
+        margin-bottom: 15%;
+        width: 95%;
     }
 }
 
