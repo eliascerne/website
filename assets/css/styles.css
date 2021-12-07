@@ -911,7 +911,6 @@ img{
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     order: 2;
-    display: grid;
 }
 
 .card_right {
@@ -926,6 +925,7 @@ img{
 
 .card_icon {
     display: none;
+    height: max-content;
     font-size: calc(var(--big-font-size) + 1rem);
 }
 
@@ -1712,6 +1712,30 @@ img{
 
     .footer_copy{
         margin-top: 3.5rem;
+    }
+
+    .card_container {
+        margin: 0 2.5rem 5rem 2.5rem;
+        padding: .75rem 0rem 1.25rem 2rem;
+    }
+
+    .card_header {
+        font-size: calc(var(--h1-font-size) + .2rem);
+        margin-bottom: .005rem;
+    }
+
+    .card_subheader {
+        font-size: calc(var(--smaller-font-size) - .05rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .card_text {
+        margin-top: 0rem;
+        font-size: calc(var(--normal-font-size) - .05rem);
+    }
+
+    .card_img {
+        margin-bottom: 10%;
     }
 }
 
