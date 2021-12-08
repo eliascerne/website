@@ -8,6 +8,8 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import ProjectInMind from './components/ProjectInMind'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Terminal from './components/Terminal'
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       <Portfolio />
       <ProjectInMind />
       <Contact />
+      <Terminal />
     </main>
+    <Footer />
     </>
   );
 }
