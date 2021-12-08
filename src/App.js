@@ -1,3 +1,4 @@
+import react, {useState} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -6,16 +7,19 @@ import Skills from './components/Skills';
 import Qualification from './components/Qualification';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
-import ProjectInMind from './components/ProjectInMind'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Terminal from './components/Terminal'
+import ProjectInMind from './components/ProjectInMind';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Terminal from './components/Terminal';
 
 function App() {
+
+  const [showNavMenu, setShowNavMenu] = useState(false);
+
   return (
     <>
-    <Header />
-    <main className="main">
+    <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} />
+    <main className="main" onClick={showNavMenu ? () => setShowNavMenu(false) : ''}>
       <Home />
       <AboutMe />
       <Skills />
