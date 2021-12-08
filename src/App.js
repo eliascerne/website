@@ -1,4 +1,4 @@
-import react, {useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -16,10 +16,14 @@ function App() {
 
   const [showNavMenu, setShowNavMenu] = useState(false);
 
+  function hideMenu() {
+    setShowNavMenu(false);
+  }
+
   return (
     <>
     <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} />
-    <main className="main" onClick={showNavMenu ? () => setShowNavMenu(false) : ''}>
+    <main className="main" onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}>
       <Home />
       <AboutMe />
       <Skills />

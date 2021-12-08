@@ -4,7 +4,7 @@ import { UilInstagram, UilGithubAlt, UilMessage, UilAngleDown } from '@iconscout
 
 function Home() {
     return (
-        <section className="home section" id="section">
+        <section className="home section" id="home">
             <div className="home_container container grid">
                 <div className="home_content grid">
                     <div className="home_social">
