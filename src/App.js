@@ -7,6 +7,7 @@ import Qualification from './components/Qualification';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import ProjectInMind from './components/ProjectInMind'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Portfolio />
       <ProjectInMind />
+      <Contact />
     </main>
     </>
   );
