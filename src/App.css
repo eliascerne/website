@@ -444,7 +444,9 @@ img{
 }
 
 .home_blob-img{
-    width: 170px;
+    width: 250px;
+    border-radius: 2rem;
+    
 }
 
 .home_data{
