@@ -948,7 +948,6 @@ img{
 
 .card_icon {
     display: none;
-    height: max-content;
     font-size: calc(var(--big-font-size) + 1rem);
 }
 
@@ -1542,6 +1541,7 @@ img{
 
     .card_icon {
         display: unset;
+        margin: .75rem 0 1rem 0;
     }
 
     .card_text {
@@ -1879,6 +1879,11 @@ img{
         max-height: 90%;
         margin-left: 5%;
         margin-top: 4%;
+    }
+
+    .card_icon {
+        display: unset;
+        margin: 2rem 0 1rem 0;
     }
 }
 

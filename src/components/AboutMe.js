@@ -20,13 +20,13 @@ function AboutMe() {
                         </div>
 
                         <div>
-                            <span class="about_info-title">02+</span>
-                            <span class="about_info-name">Completed <br /> Projects</span>
+                            <span className="about_info-title">02+</span>
+                            <span className="about_info-name">Completed <br /> Projects</span>
                         </div>
 
                         <div>
-                            <span class="about_info-title">02+</span>
-                            <span class="about_info-name">Companies <br /> Worked</span>
+                            <span className="about_info-title">02+</span>
+                            <span className="about_info-name">Companies <br /> Worked</span>
                         </div>
                     </div>
                     <div className="about_buttons">
