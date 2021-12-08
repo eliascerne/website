@@ -11,48 +11,48 @@ function Header() {
                     <ul className="nav_list grid">
                         <li className="nav_item">
                             <a href="#home" className="nav_link active-link">
-                                <UilEstate size="1.2rem" className="nav_icon" /> Home
+                                <UilEstate size="19.2" className="nav_icon" /> Home
                             </a>
                         </li>
 
                         <li className="nav_item">
                             <a href="#home" className="nav_link">
-                                <UilUser size="1.2rem" className="nav_icon" /> About
+                                <UilUser size="19.2" className="nav_icon" /> About
                             </a>
                         </li>
 
                         <li className="nav_item">
                             <a href="#home" className="nav_link">
-                                <UilFileAlt size="1.2rem" className="nav_icon" /> Skills
+                                <UilFileAlt size="19.2" className="nav_icon" /> Skills
                             </a>
                         </li>
 
                         <li className="nav_item">
                             <a href="#home" className="nav_link">
-                                <UilBag size="1.2rem" className="nav_icon" /> Qualification
+                                <UilBag size="19.2" className="nav_icon" /> Qualification
                             </a>
                         </li>
 
                         <li className="nav_item">
                             <a href="#home" className="nav_link">
-                                <UilBag size="1.2rem" className="nav_icon" /> Services
+                                <UilBag size="19.2" className="nav_icon" /> Services
                             </a>
                         </li>
 
                         <li className="nav_item">
                             <a href="#home" className="nav_link">
-                                <UilUser size="1.2rem" className="nav_icon" /> Contact me
+                                <UilUser size="19.2" className="nav_icon" /> Contact me
                             </a>
                         </li>
                     </ul>
-                    <UilTimes size="1.5rem" className="nav_close" id="nav-close" />
+                    <UilTimes size="24" className="nav_close" id="nav-close" />
                 </div>
 
                 <div className="nav_btns">
-                    <UilMoon size="1.25rem" className="change-theme" id="theme-button" />
+                    <UilMoon size="20" className="change-theme" id="theme-button" />
 
                     <div className="nav_toggle" id="nav-toggle">
-                        <UilApps size="1.1rem" />
+                        <UilApps size="17.6" />
                     </div>
                 </div>
             </nav>
