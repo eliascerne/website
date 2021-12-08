@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Qualification from './components/Qualification';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
+import ProjectInMind from './components/ProjectInMind'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Qualification />
       <Services />
       <Portfolio />
+      <ProjectInMind />
     </main>
     </>
   );

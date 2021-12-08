@@ -1024,6 +1024,8 @@ img{
 .project_img{
     width: 232px;
     justify-self: center;
+    border-radius: 1.25rem;
+    margin-bottom: 3rem;
 }
 
 /* TESTIMONIAL */
