@@ -1,4 +1,5 @@
 import React from 'react'
+import { UilFileAlt } from '@iconscout/react-unicons'
 
 function AboutMe() {
     return (
@@ -27,6 +28,11 @@ function AboutMe() {
                             <span class="about_info-title">02+</span>
                             <span class="about_info-name">Companies <br /> Worked</span>
                         </div>
+                    </div>
+                    <div className="about_buttons">
+                        <a download="" href="" className="button button--flex">
+                            Download cv <UilFileAlt size="20" className="button_icon"/>
+                        </a>
                     </div>
                 </div>
             </div>
