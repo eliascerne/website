@@ -2,6 +2,29 @@ import React from 'react'
 import { UilWebGrid, UilAngleRight, UilTimes, UilServer } from '@iconscout/react-unicons'
 
 function Services() {
+
+    const modalViews = document.querySelectorAll('.services_modal'),
+        modalBtns = document.querySelectorAll('.services_button'),
+        modalCloses = document.querySelectorAll('.services_modal-close')
+
+    let modal = function (modalClick) {
+        modalViews[modalClick].classList.add('active-modal')
+    }
+
+    modalBtns.forEach((modalBtn, i) => {
+        modalBtn.addEventListener('click', () => {
+            modal(i)
+        })
+    })
+
+    modalCloses.forEach((modalClose) => {
+        modalClose.addEventListener('click', () => {
+            modalViews.forEach((modalView) => {
+                modalView.classList.remove('active-modal')
+            })
+        })
+    })
+
     return (
         <section className="services section" id="services">
             <h2 className="section_title">Services</h2>
