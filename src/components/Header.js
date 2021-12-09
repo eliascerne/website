@@ -1,16 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {UilEstate, UilUser, UilFileAlt, UilBag, UilTimes, UilMoon, UilSun, UilApps} from '@iconscout/react-unicons'
 
 function Header({showNavMenu, setShowNavMenu}) {
+
+    const [darkerHeader, setDarkerHeader] = useState(false);
 
     function toggleMenu() {
         setShowNavMenu(!showNavMenu);
     }
 
+    useEffect (() => {
+        document.addEventListener('scroll', () => {
+            var scroll = window.scrollY;
 
+            if (scroll >= 80) {
+                setDarkerHeader(true);
+            } else {
+                setDarkerHeader(false);
+            }
+        })
+    }, [])
 
     return (
-        <header className="header" id="header">
+        <header className={"header " + (darkerHeader ? 'scroll-header' : undefined)} id="header">
             <nav className="nav container">
                 <a href="/" className="nav_logo">Elias Cerne <p className="country_code">AT</p></a>
 
