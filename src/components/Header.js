@@ -3,13 +3,11 @@ import {UilEstate, UilUser, UilFileAlt, UilBag, UilTimes, UilMoon, UilSun, UilAp
 
 function Header({showNavMenu, setShowNavMenu}) {
 
-    function showMenu() {
-        setShowNavMenu(true);
+    function toggleMenu() {
+        setShowNavMenu(!showNavMenu);
     }
 
-    function hideMenu() {
-        setShowNavMenu(false);
-    }
+
 
     return (
         <header className="header" id="header">
@@ -17,7 +15,7 @@ function Header({showNavMenu, setShowNavMenu}) {
                 <a href="/" className="nav_logo">Elias Cerne <p className="country_code">AT</p></a>
 
                 <div className={"nav_menu " + (showNavMenu ? "show-menu" : "")} id="nav-menu">
-                    <ul className="nav_list grid" onClick={hideMenu}>
+                    <ul className="nav_list grid" onClick={toggleMenu}>
                         <li className="nav_item">
                             <a href="#home" className="nav_link active-link">
                                 <UilEstate size="19.2" className="nav_icon" /> Home
@@ -54,14 +52,14 @@ function Header({showNavMenu, setShowNavMenu}) {
                             </a>
                         </li>
                     </ul>
-                    <UilTimes size="24" className="nav_close" id="nav-close" onClick={hideMenu} />
+                    <UilTimes size="24" className="nav_close" id="nav-close" onClick={toggleMenu} />
                     {/* <div className="nav_close-area"></div> */}
                 </div>
 
                 <div className="nav_btns">
                     <UilMoon size="20" className="change-theme" id="theme-button" />
 
-                    <div className="nav_toggle" id="nav-toggle" onClick={showMenu}>
+                    <div className="nav_toggle" id="nav-toggle" onClick={toggleMenu}>
                         <UilApps size="17.6" />
                     </div>
                 </div>
