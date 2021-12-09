@@ -11,6 +11,7 @@ import ProjectInMind from './components/ProjectInMind';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Terminal from './components/Terminal';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Terminal />
     </main>
     <Footer />
+    <ScrollUp />
     </>
   );
 }
