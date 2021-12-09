@@ -16,10 +16,6 @@ function App() {
 
   const [showNavMenu, setShowNavMenu] = useState(false);
 
-  function hideMenu() {
-    setShowNavMenu(false);
-  }
-
   return (
     <>
     <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} />
