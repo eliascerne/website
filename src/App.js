@@ -11,14 +11,11 @@ import ProjectInMind from './components/ProjectInMind';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Terminal from './components/Terminal';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
 
   const [showNavMenu, setShowNavMenu] = useState(false);
-
-  function hideMenu() {
-    setShowNavMenu(false);
-  }
 
   return (
     <>
@@ -35,6 +32,7 @@ function App() {
       <Terminal />
     </main>
     <Footer />
+    <ScrollUp />
     </>
   );
 }

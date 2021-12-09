@@ -1,7 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { UilBracketsCurly, UilAngleDown, UilServer } from '@iconscout/react-unicons'
 
 function Skills() {
+
+    const [showSkills1, setShowSkills1] = useState(true);
+    const [showSkills2, setShowSkills2] = useState(false);
+
+    const skillsContent = document.getElementsByClassName('skills_content');
+
+    function toggleSkills1() {
+        setShowSkills1(!showSkills1);
+        setShowSkills2(false);
+    }
+
+    function toggleSkills2() {
+        setShowSkills2(!showSkills2);
+        setShowSkills1(false);
+    }
+
     return (
         <section className="skills section" id="skills">
             <h2 className="section_title">Skills</h2>
@@ -10,8 +26,8 @@ function Skills() {
             <div className="skills_container container grid">
                 <div>
                     {/* SKILL 1 */}
-                    <div className="skills_content skills_open">
-                        <div className="skills_header">
+                    <div className={"skills_content " + (showSkills1 ? 'skills_open' : 'skills_close')}>
+                        <div className="skills_header" onClick={toggleSkills1}>
                             <UilBracketsCurly className="skills_icon" size="32" />
 
                             <div>
@@ -46,8 +62,8 @@ function Skills() {
                     </div>
 
                     {/* SKILL 2 */}
-                    <div className="skills_content skills_close">
-                        <div className="skills_header">
+                    <div className={"skills_content " + (showSkills2 ? 'skills_open' : 'skills_close')}>
+                        <div className="skills_header" onClick={toggleSkills2}>
                             <UilServer className="skills_icon" size="32" />
 
                             <div>
