@@ -2,25 +2,37 @@ import React, {useState} from 'react'
 import { UilGraduationCap, UilBriefcaseAlt, UilWebGrid } from '@iconscout/react-unicons'
 
 function Qualification() {
-    const tabs = document.querySelectorAll('[data-target]'),
-        tabContents = document.querySelectorAll('[data-content]')
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const target = document.querySelector(tab.dataset.target)
+    const [showQualification1, setShowQualification1] = useState(true);
+    const [showQualification2, setShowQualification2] = useState(false);
+    const [showQualification3, setShowQualification3] = useState(false);
 
-            tabContents.forEach(tabContent => {
-                tabContent.classList.remove('qualification_active')
-            })
-            target.classList.add('qualification_active')
+    function toggleQualification1() {
+        if (!showQualification1) {
+            setShowQualification1(true);
+        } else { }
 
-            tabs.forEach(tab => {
-                tab.classList.remove('qualification_active')
-            })
-            tab.classList.add('qualification_active')
-        })
-    })
+        setShowQualification2(false);
+        setShowQualification3(false);
+    }
 
+    function toggleQualification2() {
+        if (!showQualification2) {
+            setShowQualification2(true);
+        } else { }
+
+        setShowQualification1(false);
+        setShowQualification3(false);
+    }
+
+    function toggleQualification3() {
+        if (!showQualification3) {
+            setShowQualification3(true);
+        } else { }
+
+        setShowQualification1(false);
+        setShowQualification2(false);
+    }
 
 
     return (
@@ -30,17 +42,17 @@ function Qualification() {
 
             <div className="qualification_container container">
                 <div className="qualification_tabs">
-                    <div className="qualification_button button--flex qualification_active" data-target='#education'>
+                    <div className={"qualification_button button--flex " + (showQualification1 ? 'qualification_active' : undefined)} onClick={toggleQualification1} data-target='#education'>
                         <UilGraduationCap className="qualification_icon" size="28.8" />
                         Education
                     </div>
 
-                    <div className="qualification_button button--flex" data-target="#work">
+                    <div className={"qualification_button button--flex " + (showQualification2 ? 'qualification_active' : undefined)} onClick={toggleQualification2} data-target="#work">
                     <UilBriefcaseAlt className="qualification_icon" size="28.8" />
                         Work
                     </div>
 
-                    <div className="qualification_button button--flex" data-target="#fun">
+                    <div className={"qualification_button button--flex " + (showQualification3 ? 'qualification_active' : undefined)} onClick={toggleQualification3} data-target="#fun">
                     <UilWebGrid className="qualification_icon" size="28.8" />
                         Fun
                     </div>
@@ -48,7 +60,7 @@ function Qualification() {
 
                 <div className="qualification_sections">
                     {/* QUALIFICATION CONTENT Education */}
-                    <div className="qualification_content qualification_active" data-content id="education">
+                    <div className={"qualification_content "+ (showQualification1 ? 'qualification_active' : undefined)} data-content id="education">
                         {/* QUALIFICATION 1 */}
                         <div className="qualification_data">
                             <div>
@@ -104,7 +116,7 @@ function Qualification() {
                     </div>
 
                     {/* QUALIFICATION CONTENT Work */}
-                    <div className="qualification_content" data-content id="work">
+                    <div className={"qualification_content "+ (showQualification2 ? 'qualification_active' : undefined)} data-content id="work">
                         {/* QUALIFICATION 1 */}
                         <div className="qualification_data">
                             <div>
@@ -148,7 +160,7 @@ function Qualification() {
                     </div>
 
                     {/* QUALIFICATION CONTENT Fun */}
-                    <div className="qualification_content" data-content id="fun">
+                    <div className={"qualification_content "+ (showQualification3 ? 'qualification_active' : undefined)} data-content id="fun">
                         {/* QUALIFICATION 1 */}
                         <div className="qualification_data">
                             <div>
