@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import {UilEstate, UilUser, UilFileAlt, UilBag, UilTimes, UilMoon, UilSun, UilApps} from '@iconscout/react-unicons'
+import { UilEstate, UilUser, UilFileAlt, UilBag, UilTimes, UilMoon, UilSun, UilApps } from '@iconscout/react-unicons'
 
-function Header({showNavMenu, setShowNavMenu}) {
+function Header({ showNavMenu, setShowNavMenu, darkMode, setDarkMode }) {
 
     const [darkerHeader, setDarkerHeader] = useState(false);
 
@@ -20,6 +20,12 @@ function Header({showNavMenu, setShowNavMenu}) {
             }
         })
     }, [])
+
+    function toggleTheme() {
+        setDarkMode(!darkMode);
+        localStorage.setItem('darkMode', !darkMode);
+        darkMode ? document.body.classList.remove('dark-theme') : document.body.classList.add('dark-theme')
+    }
 
     return (
         <header className={"header " + (darkerHeader ? 'scroll-header' : undefined)} id="header">
@@ -69,7 +75,7 @@ function Header({showNavMenu, setShowNavMenu}) {
                 </div>
 
                 <div className="nav_btns">
-                    <UilMoon size="20" className="change-theme" id="theme-button" />
+                    <UilMoon size="20" className="change-theme" id="theme-button" onClick={toggleTheme} />
 
                     <div className="nav_toggle" id="nav-toggle" onClick={toggleMenu}>
                         <UilApps size="17.6" />
