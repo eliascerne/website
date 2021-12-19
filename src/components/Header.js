@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { UilEstate, UilUser, UilFileAlt, UilBag, UilTimes, UilMoon, UilSun, UilApps } from '@iconscout/react-unicons'
 
-function Header({ showNavMenu, setShowNavMenu, darkMode, setDarkMode }) {
+function Header({ showNavMenu, setShowNavMenu, selectedTheme, setSelectedTheme }) {
 
     const [darkerHeader, setDarkerHeader] = useState(false);
+    // const [IconTheme, setIconTheme] = useState('UilSun');
 
     function toggleMenu() {
         setShowNavMenu(!showNavMenu);
@@ -21,10 +22,16 @@ function Header({ showNavMenu, setShowNavMenu, darkMode, setDarkMode }) {
         })
     }, [])
 
+    
+
     function toggleTheme() {
-        setDarkMode(!darkMode);
-        localStorage.setItem('darkMode', !darkMode);
-        darkMode ? document.body.classList.remove('dark-theme') : document.body.classList.add('dark-theme')
+        if (selectedTheme === 'dark') {
+            setSelectedTheme('')
+            localStorage.setItem('selectedTheme', 'white');
+        } else {
+            setSelectedTheme('dark')
+            localStorage.setItem('selectedTheme', 'dark');
+        }
     }
 
     return (
@@ -75,7 +82,8 @@ function Header({ showNavMenu, setShowNavMenu, darkMode, setDarkMode }) {
                 </div>
 
                 <div className="nav_btns">
-                    <UilMoon size="20" className="change-theme" id="theme-button" onClick={toggleTheme} />
+                    {selectedTheme === 'dark' ? <UilSun size="20" className="change-theme" id="theme-button" onClick={toggleTheme} /> : <UilMoon size="20" className="change-theme" id="theme-button" onClick={toggleTheme} />}
+                    
 
                     <div className="nav_toggle" id="nav-toggle" onClick={toggleMenu}>
                         <UilApps size="17.6" />

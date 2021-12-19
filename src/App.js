@@ -18,44 +18,42 @@ function App() {
   
 
   const [showNavMenu, setShowNavMenu] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [selectedTheme, setSelectedTheme] = useState('');
 
   
   useEffect(() => {
-    setDarkMode(localStorage.getItem('darkMode'));
-    window.onload = function () {
-      if (localStorage.hasOwnProperty('darkMode')) {
-        darkMode ? document.body.classList.add('dark-theme') : document.body.classList.add('undefined')
-      } else {
-        let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        matched ? setDarkMode(true) : setDarkMode(false);
-        localStorage.setItem('darkMode', matched);
-        document.body.classList.add('dark-undefined');
-      }
-      
-    }
+    const selectedTheme = localStorage.getItem('selectedTheme');
 
-  })
-  console.log(darkMode);
-  
+    if (selectedTheme) {
+      selectedTheme === 'dark' ? setSelectedTheme('dark') : setSelectedTheme('white')
+    } 
+    else {
+      let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (matched) {
+        setSelectedTheme('dark')
+        localStorage.setItem('selectedTheme', 'dark')
+      }
+    }
+  }, []);
+
 
   return (
-    <>
-    <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} darkMode={darkMode} setDarkMode={setDarkMode} />
-    <main className="main" onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}>
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Qualification />
-      <Services />
-      <Portfolio />
-      <ProjectInMind />
-      <Contact />
-      <Terminal />
-    </main>
-    <Footer />
-    <ScrollUp />
-    </>
+    <body className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
+      <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} />
+      <main className="main" onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}>
+        <Home />
+        <AboutMe />
+        <Skills />
+        <Qualification />
+        <Services />
+        <Portfolio />
+        <ProjectInMind />
+        <Contact />
+        <Terminal />
+      </main>
+      <Footer />
+      <ScrollUp />
+    </body>
   );
 }
 
