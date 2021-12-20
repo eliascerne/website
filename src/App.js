@@ -24,6 +24,7 @@ function App() {
   const [language, setLanguage] = useState('en');
   const [loading, setLoading] = useState(true);
   const [languageJSON, setLanguageJSON] = useState(0);
+  const [terminalShow, setTerminalShow] = useState(false);
 
 
   useLayoutEffect(() => {
@@ -56,8 +57,7 @@ function App() {
 
   }, []);
 
-  useEffect(() => {
-    }, []);
+
 
 
 
@@ -83,9 +83,9 @@ function App() {
         <Portfolio languageJSON={languageJSON} />
         <ProjectInMind languageJSON={languageJSON} />
         <Contact languageJSON={languageJSON} />
-        <Terminal />
+        <Terminal terminalShow={terminalShow} setTerminalShow={setTerminalShow} />
       </main>
-      <Footer languageJSON={languageJSON} />
+      <Footer languageJSON={languageJSON} setTerminalShow={setTerminalShow} />
       <ScrollUp />
     </body>
   );

@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { UilInstagram, UilGithubAlt } from '@iconscout/react-unicons'
 import Data from '../Data.json'
 
-function Footer({ languageJSON }) {
+function Footer({ languageJSON, setTerminalShow }) {
     const currentYear = new Date().getFullYear();
+    const [counter, setCounter] = useState(0);
+
+    function TerminalShow () {
+        console.log(1);
+        setCounter(counter +1);
+        if (counter >= 4) {
+            setTerminalShow(true);
+            setCounter(0);
+        }
+    }
 
     return (
         <footer className="footer">
@@ -39,7 +49,7 @@ function Footer({ languageJSON }) {
                 </div>
             </div>
 
-            <p className="footer_copy"><span id="terminal-pop">@ 2021</span>-{currentYear} Elias Cerne. All Rights Reserved!</p>
+            <p className="footer_copy"><span id="terminal-pop" onClick={() => TerminalShow()}>@ 2021</span>-{currentYear} Elias Cerne. All Rights Reserved!</p>
         </div>
     </footer>
     )
