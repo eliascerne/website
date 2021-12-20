@@ -293,6 +293,7 @@ img{
     font-weight: 100;
     padding-left: 0rem;
     color: var(--country-code-color);
+    text-transform: uppercase
 }
 
 @media screen and (max-width: 767px){
@@ -357,6 +358,54 @@ img{
 /* CHANGE BACKGROUND HEADER */
 .scroll-header{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
+
+/* Language Switch */
+.language_switch_container {
+    position: absolute;
+    left: 10rem;
+    bottom: 2rem;
+}
+
+.language_switch_box {
+    background-color: var(--notification-success-color);
+    width: 10rem;
+    height: 4.5rem;
+    border-radius: .75rem;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    z-index: 3;
+}
+
+.language_switch_content {
+    display: flex;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    z-index: 4;
+    cursor: pointer;
+    color: var(--title-color);
+}
+
+.language_en:hover {
+    color: var(--first-color) !important;
+}
+
+.language_de:hover {
+    color: var(--first-color) !important;
+}
+
+.language_flag {
+    width: 50px;
+    height: 33px;
+    border-radius: .25rem;
+}
+
+.language_title {
+    color: auto;
+    font-size: var(--small-font-size);
+    text-align: center;
 }
 
 /* NOTIFICATION EMAIL SEND */
@@ -1676,6 +1725,23 @@ img{
         margin-left: auto;
     }
 
+    .language_switch_container {
+        position: absolute;
+        left: 9.5rem;
+        top: 1.5rem;
+    }
+    
+    .language_switch_box {
+        background-color: var(--notification-success-color);
+        width: 10rem;
+        height: 4.5rem;
+        border-radius: .75rem;
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+        z-index: 3;
+    }
+
     .change-theme{
         margin: 0;
     }
@@ -1953,6 +2019,14 @@ img{
     .card_icon {
         display: unset;
         margin: 2rem 0 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1235px){
+    .language_switch_container {
+        position: unset;
+        margin-top: 2.75rem;
+        margin-left: -.5rem;
     }
 }
 
