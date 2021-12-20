@@ -52,7 +52,7 @@ function Header({ showNavMenu, setShowNavMenu, selectedTheme, setSelectedTheme, 
 
     function changeLanguageToDE() {
         setLanguageSwitch(false);
-        setLanguage('at')
+        setLanguage(')
         setLanguageJSON(1);
         localStorage.setItem('selectedLanguage', 'de')
     }
