@@ -22,6 +22,15 @@
         },
         {
             "type": "german",
+            "header": {
+                "heading": "Elias Cerne",
+                "navLink1": "Home",
+                "navLink2": "Über mich",
+                "navLink3": "Fähigkeiten",
+                "navLink4": "Qualifikation",
+                "navLink5": "Services",
+                "navLink6": "Kontakt"
+            },
             "home": {
                 
                 "heading": "Elias Cerne",
@@ -65,7 +74,7 @@
                 ]
             },
             "qualification": {
-                "heading": "Qualification",
+                "heading": "Qualifikation",
                 "subheading": "Mein Weg",
                 "tabs": [
                     {
@@ -171,6 +180,13 @@
                 "company": "Firma",
                 "message": "Nachricht",
                 "button": "Senden"
+            },
+            "footer": {
+                "heading": "Elias",
+                "subheading": "Schüler",
+                "pinnedLink1": "Services",
+                "pinnedLink2": "Portfolio",
+                "pinnedLink3": "Kontakt"
             }
         }
     ]
