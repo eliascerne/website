@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import { UilInstagram, UilGithubAlt, UilMessage, UilAngleDown } from '@iconscout/react-unicons'
+import Data from '../Data.json'
 
 
-function Home() {
+function Home({ language, languageJSON }) {
+    // const [languageJSON, setLanguageJSON] = useState(0);
+    
+    // useLayoutEffect(() => {
+    //    language === "de" ? setLanguageJSON(1) : setLanguageJSON(0) 
+    // })
+    
+
     return (
         <section className="home section" id="home">
             <div className="home_container container grid">
@@ -22,12 +30,12 @@ function Home() {
                     </div>
 
                     <div className="home_data">
-                        <h1 className="home_title">Hey, I'm Elias</h1>
-                        <h3 className="home_subtitle">Student</h3>
-                        <p className="home_description">A programming enthusiastic Student at HTL Mödling.</p>
+                        <h1 className="home_title">{Data.language[languageJSON].home.heading}</h1>
+                        <h3 className="home_subtitle">{Data.language[languageJSON].home.subheading}</h3>
+                        <p className="home_description">{Data.language[languageJSON].home.description}</p>
 
                         <a href="#contact" className="button button--flex">
-                            Contact Me
+                        {Data.language[languageJSON].home.button}
                             <UilMessage className="button_icon" size="20" />
                         </a>
                     </div>
@@ -36,7 +44,7 @@ function Home() {
                 <div className="home_scroll">
                     <a href="#about" className="home_scroll-button button--flex">
                         <UilAngleDown size="20" className="home_scroll-arrow" />
-                        <span className="home_scroll-name">Scroll down</span>
+                        <span className="home_scroll-name">{Data.language[languageJSON].home.scrollDown}</span>
                     </a>
                 </div>
             </div>

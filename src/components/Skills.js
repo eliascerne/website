@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { UilBracketsCurly, UilAngleDown, UilServer } from '@iconscout/react-unicons'
+import Data from '../Data.json'
 
-function Skills() {
+function Skills({ languageJSON }) {
 
     const [showSkills1, setShowSkills1] = useState(true);
     const [showSkills2, setShowSkills2] = useState(false);
@@ -20,8 +21,8 @@ function Skills() {
 
     return (
         <section className="skills section" id="skills">
-            <h2 className="section_title">Skills</h2>
-            <span className="section_subtitle">My technical level</span>
+            <h2 className="section_title">{Data.language[languageJSON].skills.heading}</h2>
+            <span className="section_subtitle">{Data.language[languageJSON].skills.subheading}</span>
 
             <div className="skills_container container grid">
                 <div>
@@ -31,8 +32,8 @@ function Skills() {
                             <UilBracketsCurly className="skills_icon" size="32" />
 
                             <div>
-                                <h1 className="skills_title">Web Development</h1>
-                                <span className="skills_subtitle">More than 2 years</span>
+                                <h1 className="skills_title">{Data.language[languageJSON].skills.tabs[0].heading}</h1>
+                                <span className="skills_subtitle">{Data.language[languageJSON].skills.tabs[0].subheading}</span>
                             </div>
 
                             <UilAngleDown className="skills_arrow" size="32" />
@@ -41,8 +42,8 @@ function Skills() {
                         <div className="skills_list grid">
                             <div className="skills_data">
                                 <div className="skills_titles">
-                                    <h3 className="skills_name">React</h3>
-                                    <span className="skills_number">50%</span>
+                                    <h3 className="skills_name">{Data.language[languageJSON].skills.tabs[0].skill1}</h3>
+                                    <span className="skills_number">{Data.language[languageJSON].skills.tabs[0].skill1Percent}</span>
                                 </div>
                                 <div className="skills_bar">
                                     <span className="skills_percentage skills_sub1Skill1"></span>
@@ -51,8 +52,18 @@ function Skills() {
 
                             <div className="skills_data">
                                 <div className="skills_titles">
-                                    <h3 className="skills_name">Nodejs</h3>
-                                    <span className="skills_number">50%</span>
+                                    <h3 className="skills_name">{Data.language[languageJSON].skills.tabs[0].skill2}</h3>
+                                    <span className="skills_number">{Data.language[languageJSON].skills.tabs[0].skill2Percent}</span>
+                                </div>
+                                <div className="skills_bar">
+                                    <span className="skills_percentage skills_sub2Skill1"></span>
+                                </div>
+                            </div>
+
+                            <div className="skills_data">
+                                <div className="skills_titles">
+                                    <h3 className="skills_name">{Data.language[languageJSON].skills.tabs[0].skill3}</h3>
+                                    <span className="skills_number">{Data.language[languageJSON].skills.tabs[0].skill3Percent}</span>
                                 </div>
                                 <div className="skills_bar">
                                     <span className="skills_percentage skills_sub2Skill1"></span>
@@ -67,8 +78,8 @@ function Skills() {
                             <UilServer className="skills_icon" size="32" />
 
                             <div>
-                                <h1 className="skills_title">Automating</h1>
-                                <span className="skills_subtitle">Workflows</span>
+                                <h1 className="skills_title">{Data.language[languageJSON].skills.tabs[1].heading}</h1>
+                                <span className="skills_subtitle">{Data.language[languageJSON].skills.tabs[1].subheading}</span>
                             </div>
 
                             <UilAngleDown className="skills_arrow" size="32" />
@@ -77,8 +88,8 @@ function Skills() {
                         <div className="skills_list grid">
                             <div className="skills_data">
                                 <div className="skills_titles">
-                                    <h3 className="skills_name">Python</h3>
-                                    <span className="skills_number">50%</span>
+                                    <h3 className="skills_name">{Data.language[languageJSON].skills.tabs[1].skill1}</h3>
+                                    <span className="skills_number">{Data.language[languageJSON].skills.tabs[1].skill1Percent}</span>
                                 </div>
                                 <div className="skills_bar">
                                     <span className="skills_percentage skills_sub1Skill2"></span>

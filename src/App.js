@@ -21,8 +21,9 @@ function App() {
 
   const [showNavMenu, setShowNavMenu] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState('');
-  const [language, setLanguage] = useState('english');
+  const [language, setLanguage] = useState('en');
   const [loading, setLoading] = useState(true);
+  const [languageJSON, setLanguageJSON] = useState(0);
 
 
   useLayoutEffect(() => {
@@ -40,16 +41,18 @@ function App() {
     }
     setLoading(false);
 
-    var ipgeolocationApi = new IPGeolocationAPI('2c3a4ea379de4c2b8c7e3f23e3d664dd', false);
-    ipgeolocationApi.getGeolocation(handleResponse);
-    function handleResponse(json) {
-      console.log(json.country_code2);
-      if (json.country_code2 === 'AT' | 'DE') {
-        console.log(1);
-        setLanguage('german');
-        
-      }
-    }
+    // var ipgeolocationApi = new IPGeolocationAPI('2c3a4ea379de4c2b8c7e3f23e3d664dd', false);
+    // ipgeolocationApi.getGeolocation(handleResponse);
+    // function handleResponse(json) {
+    //   console.log(json.country_code2);
+    //   if (json.country_code2 === 'AT' | 'DE') {
+    //     console.log(1);
+    //     setLanguage('german');
+    //     setLanguageJSON(1);
+    //   }
+    // }
+    setLanguage('de');
+    setLanguageJSON(1);
 
   }, []);
 
@@ -70,19 +73,19 @@ function App() {
 
       :
       <body className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
-      <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} />
+      <Header showNavMenu={showNavMenu} setShowNavMenu={setShowNavMenu} selectedTheme={selectedTheme} setSelectedTheme={setSelectedTheme} languageJSON={languageJSON} />
       <main className="main" onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}>
-        <Home />
-        <AboutMe />
-        <Skills />
-        <Qualification />
-        <Services />
-        <Portfolio />
-        <ProjectInMind />
-        <Contact />
+        <Home languageJSON={languageJSON} />
+        <AboutMe languageJSON={languageJSON} />
+        <Skills languageJSON={languageJSON} />
+        <Qualification languageJSON={languageJSON} />
+        <Services languageJSON={languageJSON} />
+        <Portfolio languageJSON={languageJSON} />
+        <ProjectInMind languageJSON={languageJSON} />
+        <Contact languageJSON={languageJSON} />
         <Terminal />
       </main>
-      <Footer />
+      <Footer languageJSON={languageJSON} />
       <ScrollUp />
     </body>
   );
