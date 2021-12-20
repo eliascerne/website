@@ -1,37 +1,38 @@
 import React from 'react'
 import { UilFileAlt } from '@iconscout/react-unicons'
+import Data from '../Data.json'
 
-function AboutMe() {
+function AboutMe({ languageJSON }) {
     return (
         <section className="about section" id="about">
-            <h2 className="section_title">About Me</h2>
-            <span className="section_subtitle">My introduction</span>
+            <h2 className="section_title">{Data.language[languageJSON].aboutMe.heading}</h2>
+            <span className="section_subtitle">{Data.language[languageJSON].aboutMe.subheading}</span>
 
             <div className="about_container container grid">
                 <img src="" alt="" className="about_img" />
 
                 <div className="about_data">
-                    <p className="about_description">Since the last couple of years I developed skills in web development, especially working with Ract and Nodejs but also automating workflows with Python.</p>
+                    <p className="about_description">{Data.language[languageJSON].aboutMe.description}</p>
 
                     <div className="about_info">
                         <div>
-                            <span className="about_info-title">02+</span>
-                            <span className="about_info-name">Years <br /> experience</span>
+                            <span className="about_info-title">{Data.language[languageJSON].aboutMe.info1Sub}</span>
+                            <span className="about_info-name">{Data.language[languageJSON].aboutMe.info1}</span>
                         </div>
 
                         <div>
-                            <span className="about_info-title">02+</span>
-                            <span className="about_info-name">Completed <br /> Projects</span>
+                            <span className="about_info-title">{Data.language[languageJSON].aboutMe.info2Sub}</span>
+                            <span className="about_info-name">{Data.language[languageJSON].aboutMe.info2}</span>
                         </div>
 
                         <div>
-                            <span className="about_info-title">02+</span>
-                            <span className="about_info-name">Companies <br /> Worked</span>
+                            <span className="about_info-title">{Data.language[languageJSON].aboutMe.info3Sub}</span>
+                            <span className="about_info-name">{Data.language[languageJSON].aboutMe.info3}</span>
                         </div>
                     </div>
                     <div className="about_buttons">
                         <a download="" href="" className="button button--flex">
-                            Download cv <UilFileAlt size="20" className="button_icon"/>
+                        {Data.language[languageJSON].aboutMe.button} <UilFileAlt size="20" className="button_icon"/>
                         </a>
                     </div>
                 </div>
