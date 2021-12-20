@@ -1,7 +1,8 @@
 import React from 'react'
 import { UilInstagram, UilGithubAlt } from '@iconscout/react-unicons'
+import Data from '../Data.json'
 
-function Footer() {
+function Footer({ languageJSON }) {
     const currentYear = new Date().getFullYear();
 
     return (
@@ -9,21 +10,21 @@ function Footer() {
         <div className="footer_bg">
             <div className="footer_container container grid">
                 <div>
-                    <h1 className="footer_title">Elias</h1>
-                    <span className="footer_subtitle">Student</span>
+                    <h1 className="footer_title">{Data.language[languageJSON].footer.heading}</h1>
+                    <span className="footer_subtitle">{Data.language[languageJSON].footer.subheading}</span>
                 </div>
 
                 <ul className="footer_links">
                     <li>
-                        <a href="#services" className="footer_link">Services</a>
+                        <a href="#services" className="footer_link">{Data.language[languageJSON].footer.pinnedLink1}</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" className="footer_link">Portfolio</a>
+                        <a href="#portfolio" className="footer_link">{Data.language[languageJSON].footer.pinnedLink2}</a>
                     </li>
 
                     <li>
-                        <a href="#contact" className="footer_link">Contact Me</a>
+                        <a href="#contact" className="footer_link">{Data.language[languageJSON].footer.pinnedLink3}</a>
                     </li>
                 </ul>
 
