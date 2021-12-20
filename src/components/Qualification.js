@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { UilGraduationCap, UilBriefcaseAlt, UilWebGrid } from '@iconscout/react-unicons'
+import Data from '../Data.json';
 
-function Qualification() {
+function Qualification({ languageJSON }) {
 
     const [showQualification1, setShowQualification1] = useState(true);
     const [showQualification2, setShowQualification2] = useState(false);
@@ -37,24 +38,24 @@ function Qualification() {
 
     return (
         <section className="qualification section" id="qualification">
-            <h2 className="section_title">Qualification</h2>
-            <span className="section_subtitle">My personal journey</span>
+            <h2 className="section_title">{Data.language[languageJSON].qualification.heading}</h2>
+            <span className="section_subtitle">{Data.language[languageJSON].qualification.subheading}</span>
 
             <div className="qualification_container container">
                 <div className="qualification_tabs">
                     <div className={"qualification_button button--flex " + (showQualification1 ? 'qualification_active' : undefined)} onClick={toggleQualification1} data-target='#education'>
                         <UilGraduationCap className="qualification_icon" size="28.8" />
-                        Education
+                        {Data.language[languageJSON].qualification.tabs[0].heading}
                     </div>
 
                     <div className={"qualification_button button--flex " + (showQualification2 ? 'qualification_active' : undefined)} onClick={toggleQualification2} data-target="#work">
                     <UilBriefcaseAlt className="qualification_icon" size="28.8" />
-                        Work
+                    {Data.language[languageJSON].qualification.tabs[1].heading}
                     </div>
 
                     <div className={"qualification_button button--flex " + (showQualification3 ? 'qualification_active' : undefined)} onClick={toggleQualification3} data-target="#fun">
                     <UilWebGrid className="qualification_icon" size="28.8" />
-                        Fun
+                    {Data.language[languageJSON].qualification.tabs[2].heading}
                     </div>
                 </div>
 
@@ -64,11 +65,11 @@ function Qualification() {
                         {/* QUALIFICATION 1 */}
                         <div className="qualification_data">
                             <div>
-                                <h3 className="qualification_title">Elementary Scool</h3>
-                                <span className="qualification_subtitle">Volksschule II Neu Guntramsdorf</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[0].title1}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[0].subheading1}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    2010 - 2014
+                                    {Data.language[languageJSON].qualification.tabs[0].date1}
                                 </div>
                             </div>
 
@@ -88,11 +89,11 @@ function Qualification() {
                             </div>
 
                             <div>
-                                <h3 className="qualification_title">Grammar School</h3>
-                                <span className="qualification_subtitle">BG/BRG Frauengasse</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[0].title2}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[0].subheading2}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    2014- 2018
+                                    {Data.language[languageJSON].qualification.tabs[0].date2}
                                 </div>
                             </div>
                         </div>
@@ -100,11 +101,11 @@ function Qualification() {
                         {/* QUALIFICATION 3 */}
                         <div className="qualification_data">
                             <div>
-                                <h3 className="qualification_title">ELectrical Engineering School</h3>
-                                <span className="qualification_subtitle">HTL-Mödling</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[0].title3}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[0].subheading3}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    2018 - now
+                                    {Data.language[languageJSON].qualification.tabs[0].date3}
                                 </div>
                             </div>
 
@@ -120,11 +121,11 @@ function Qualification() {
                         {/* QUALIFICATION 1 */}
                         <div className="qualification_data">
                             <div>
-                                <h3 className="qualification_title">Internship at Elin</h3>
-                                <span className="qualification_subtitle">Worked with AutoCad</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[1].title1}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[1].subheading1}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    July 2021
+                                    {Data.language[languageJSON].qualification.tabs[1].date1}
                                 </div>
                             </div>
 
@@ -144,11 +145,11 @@ function Qualification() {
                             </div>
 
                             <div>
-                                <h3 className="qualification_title">Internship at Fleck</h3>
-                                <span className="qualification_subtitle">Installed photovoltaic modules</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[1].title2}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[1].subheading2}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    August 2021
+                                    {Data.language[languageJSON].qualification.tabs[1].date2}
                                 </div>
                             </div>
 
@@ -164,11 +165,11 @@ function Qualification() {
                         {/* QUALIFICATION 1 */}
                         <div className="qualification_data">
                             <div>
-                                <h3 className="qualification_title">Editing Videos</h3>
-                                <span className="qualification_subtitle">Primarily for fun and creating commercials with Davinci Resolve</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[2].title1}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[2].subheading1}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    Since 2017
+                                    {Data.language[languageJSON].qualification.tabs[2].date1}
                                 </div>
                             </div>
 
@@ -188,11 +189,11 @@ function Qualification() {
                             </div>
 
                             <div>
-                                <h3 className="qualification_title">Programming</h3>
-                                <span className="qualification_subtitle">Web-Development and Automating</span>
+                                <h3 className="qualification_title">{Data.language[languageJSON].qualification.tabs[2].title2}</h3>
+                                <span className="qualification_subtitle">{Data.language[languageJSON].qualification.tabs[2].subheading2}</span>
                                 <div className="qualification_calendar">
                                     <i className="uil uil-calender"></i>
-                                    Since 2021
+                                    {Data.language[languageJSON].qualification.tabs[2].date2}
                                 </div>
                             </div>
 
