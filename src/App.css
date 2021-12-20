@@ -623,6 +623,8 @@ img{
 
 .about_info-name{
     font-size: var(--smaller-font-size);
+    white-space: pre-line;  
+    vertical-align: bottom;
 }
 
 .about_info-title,
@@ -861,6 +863,8 @@ img{
 }
 
 .services_title{
+    white-space: pre-line;  
+    vertical-align: bottom;
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
@@ -911,6 +915,8 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
+    white-space: pre-line;  
+    vertical-align: bottom;
 }
 
 .services_modal-close{
