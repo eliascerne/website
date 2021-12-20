@@ -38,12 +38,12 @@ function Header({ showNavMenu, setShowNavMenu, selectedTheme, setSelectedTheme, 
     return (
         <header className={"header " + (darkerHeader ? 'scroll-header' : undefined)} id="header">
             <nav className="nav container">
-                <a href="/" className="nav_logo">{Data.language[languageJSON].header.heading} <p className="country_code">AT</p></a>
+                <a href="#home" className="nav_logo">{Data.language[languageJSON].header.heading} <p className="country_code">AT</p></a>
 
                 <div className={"nav_menu " + (showNavMenu ? "show-menu" : "")} id="nav-menu">
                     <ul className="nav_list grid" onClick={toggleMenu}>
                         <li className="nav_item">
-                            <a href="#home" className="nav_link active-link">
+                            <a href="#home" className="nav_link">
                                 <UilEstate size="19.2" className="nav_icon" /> {Data.language[languageJSON].header.navLink1}
                             </a>
                         </li>
