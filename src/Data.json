@@ -5,39 +5,39 @@
             "header": {
                 "heading": "Elias Cerne",
                 "navLink1": "Home",
-                "navLink2": "Über mich",
-                "navLink3": "Fähigkeiten",
-                "navLink4": "Qualifikation",
+                "navLink2": "About",
+                "navLink3": "Skills",
+                "navLink4": "Qualification",
                 "navLink5": "Services",
-                "navLink6": "Kontakt"
+                "navLink6": "Contact me"
             },
             "home": {
                 
-                "heading": "Elias Martin Cerne",
-                "subheading": "Schüler",
-                "description": "Ein Schüler aus der HTL Mödling.",
-                "button": "Kontakt",
+                "heading": "Hey, I'm Elias",
+                "subheading": "Student",
+                "description": "A Student at HTL Mödling",
+                "button": "Contact me",
                 "scrollDown": "Über mich"
             },
             "aboutMe": {
-                "heading": "Über mich",
-                "subheading": "Elias Cerne",
-                "description": "N/A",
-                "info1": "Jahre \n Erfahrung",
+                "heading": "About me",
+                "subheading": "My introduction",
+                "description": "Since the last couple of years I developed skills in web development, especially working with Ract and Nodejs but also automating workflows with Python.",
+                "info1": "Years \n experience",
                 "info1Sub": "02+",
-                "info2": "Projekte",
+                "info2": "Completed \n Projects",
                 "info2Sub": "02+",
-                "info3": "Firmen",
+                "info3": "Companies \n Worked",
                 "info3Sub": "02+",
-                "button": "CV Herunterladen"
+                "button": "Download cv"
             },
             "skills": {
-                "heading": "Fähigkeiten",
-                "subheading": "Mein Wissen",
+                "heading": "Skills",
+                "subheading": "My technican level",
                 "tabs": [
                     {
                         "heading": "Web Development",
-                        "subheading": "Mehr als zwei Jahre",
+                        "subheading": "More than two years",
                         "skill1": "JavaScript",
                         "skill1Percent": "50%",
                         "skill2": "React",
@@ -46,7 +46,7 @@
                         "skill3Percent": "50%"
                     },
                     {
-                        "heading": "Automatisieren",
+                        "heading": "Automating",
                         "subheading": "Workflows",
                         "skill1": "Python",
                         "skill1Percent": "50%"
@@ -54,56 +54,56 @@
                 ]
             },
             "qualification": {
-                "heading": "Qualifikation",
-                "subheading": "Mein Weg",
+                "heading": "Qualification",
+                "subheading": "My personal journey",
                 "tabs": [
                     {
-                        "heading": "Ausbildung",
-                        "title1": "Volksschule",
+                        "heading": "Education",
+                        "title1": "Elementary Scool",
                         "subheading1": "Volksschule II Neu Guntramsdorf",
                         "date1": "2010 - 2014",
-                        "title2": "Gymnasium",
+                        "title2": "Grammar School",
                         "subheading2": "BG/BRG Frauengasse",
                         "date2": "2014- 2018",
-                        "title3": "Höhere",
+                        "title3": "Electrical Engineering School",
                         "subheading3": "HTL-Mödling",
                         "date3": "2018 - now"
                     },
                     {
-                        "heading": "Arbeit",
-                        "title1": "Ferienjob bei Elin",
-                        "subheading1": "Mit AutoCad gearbeitet",
+                        "heading": "Work",
+                        "title1": "Intern at Elin",
+                        "subheading1": "Worked with AutoCad",
                         "date1": "July 2021",
-                        "title2": "Ferienjob bei Fleck",
-                        "subheading2": "Photovoltaik module auf dem Dach installiert.",
+                        "title2": "Intern at Fleck",
+                        "subheading2": "Installed photovoltaik modules.",
                         "date2": "August 2021"
                     },
                     {
-                        "heading": "Spaß",
-                        "title1": "Videos schneiden",
-                        "subheading1": "Hauptsächlich für Spaß, mit Davinci Resolve",
-                        "date1": "Seit 2017",
-                        "title2": "Porgrammieren",
-                        "subheading2": "Web-Development und Automatisieren",
-                        "date2": "Seit 2021"
+                        "heading": "Fun",
+                        "title1": "cutting videos",
+                        "subheading1": "Primarily for fun, with Davinci Resolve",
+                        "date1": "Since 2017",
+                        "title2": "Programming",
+                        "subheading2": "Web-Development and Automating workflows",
+                        "date2": "Since 2021"
                     }
                 ]
             },
             "services": {
                 "heading": "Services",
-                "subheading": "Was ich Anbiete",
+                "subheading": "What I offer",
                 "tabs": [
                     {
-                        "heading": "Ui/Ux \n Designer",
-                        "button": "Mehr",
-                        "text1": "I develop the user interface.",
-                        "text2": "Web page development.",
-                        "text3": "I position your company brand.",
-                        "text4": "Fun to play with modern design."
+                        "heading": "Electrical \n Engineer",
+                        "button": "More",
+                        "text1": "Planning with AutoCAD",
+                        "text2": "Compliance with the norms.",
+                        "text3": "Documentation",
+                        "text4": "Compliance your ideas into reality."
                     },
                     {
                         "heading": "Frontend \n Developer",
-                        "button": "Mehr",
+                        "button": "More",
                         "text1": "I develop the user interface.",
                         "text2": "Web page development.",
                         "text3": "I position your company brand.",
@@ -111,29 +111,29 @@
                     },
                     {
                         "heading": "Backend \n Developer",
-                        "button": "Mehr",
-                        "text1": "I develop the user interface.",
-                        "text2": "Web page development.",
-                        "text3": "I position your company brand.",
-                        "text4": "Fun to play with modern design."
+                        "button": "More",
+                        "text1": "Working with the MERN Stack.",
+                        "text2": "Nothing is too complicated",
+                        "text3": "Solving problems",
+                        "text4": "Always having a backup"
                     }
                 ]
             },
             "portfolio": {
                 "heading": "Portfolio",
-                "subheading": "Projekte",
+                "subheading": "Most recent work",
                 "tabs": [
                     {
                         "heading": "Website",
                         "subheading": "Personal Website",
                         "button": "Mehr",
-                        "description": "My personal website, I am just adding more text to see hiow tiumy first and my first and actually contact with HTML, CSS and JS."
+                        "description": "This was my first contact with HTML, CSS and JS which I further improved over three months with Reactjs."
                     },
                     {
-                        "heading": "Website",
-                        "subheading": "Personal Website",
-                        "button": "Mehr",
-                        "description": "My personal website, I am just adding more text to see hiow tiumy first and my first and actually contact with HTML, CSS and JS."
+                        "heading": "PacMan",
+                        "subheading": "Online PacMan Game",
+                        "button": "Play Online PacMan Game",
+                        "description": "A funny and challenging game from the old days which runs in the browser."
                     },
                     {
                         "heading": "Website",
@@ -144,29 +144,29 @@
                 ]
             },
             "projectInMind": {
-                "heading": "Neues Projekt? Sonstige Fragen?",
-                "description": "Nehmen Sie hier Kontakt mit mir auf!",
-                "button": "Kontakt"
+                "heading": "You have a new project?",
+                "description": "Contact Me now :)",
+                "button": "Contact me"
             },
             "contactMe": {
-                "heading": "Kontakt",
+                "heading": "Contact Me",
                 "subheading": "Get in touch",
-                "phoneText": "Telefon",
+                "phoneText": "Call Me",
                 "phoneNumber": "0676 4903757",
-                "emailText": "E-Mail",
+                "emailText": "Mail me",
                 "emailAddress": "elias@eliascerne.com",
                 "name": "Name",
                 "email": "Email",
-                "company": "Firma",
-                "message": "Nachricht",
-                "button": "Senden"
+                "company": "Company",
+                "message": "Message",
+                "button": "Send Message"
             },
             "footer": {
                 "heading": "Elias",
-                "subheading": "Schüler",
+                "subheading": "Student",
                 "pinnedLink1": "Services",
                 "pinnedLink2": "Portfolio",
-                "pinnedLink3": "Kontakt"
+                "pinnedLink3": "Contact Me"
             }
         },
         {
@@ -191,7 +191,7 @@
             "aboutMe": {
                 "heading": "Über mich",
                 "subheading": "Elias Cerne",
-                "description": "N/A",
+                "description": "In meiner Freizeit liebe ich es zu programmieren, vorallem als Web Developer.",
                 "info1": "Jahre \n Erfahrung",
                 "info1Sub": "02+",
                 "info2": "Projekte",
@@ -296,13 +296,13 @@
                         "heading": "Website",
                         "subheading": "Personal Website",
                         "button": "Mehr",
-                        "description": "My personal website, I am just adding more text to see hiow tiumy first and my first and actually contact with HTML, CSS and JS."
+                        "description": "Diese Website war mein Einstieg mit HTML, CSS und JavaScript. Über drei Monate habe ich die Website verbessert, bis sie so aussieht."
                     },
                     {
-                        "heading": "Website",
-                        "subheading": "Personal Website",
-                        "button": "Mehr",
-                        "description": "My personal website, I am just adding more text to see hiow tiumy first and my first and actually contact with HTML, CSS and JS."
+                        "heading": "PacMan",
+                        "subheading": "Online PacMan Spiel",
+                        "button": "Spiele Online PacMan",
+                        "description": "Das alt bekannte Spiel PacMan im Browser. Schaffst du es bis Level 256?"
                     },
                     {
                         "heading": "Website",

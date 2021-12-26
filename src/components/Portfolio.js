@@ -34,6 +34,7 @@ function Portfolio({ languageJSON }) {
                             <p className="card_subheader">{Data.language[languageJSON].portfolio.tabs[1].subheading}</p>
 
                             <p className="card_text">{Data.language[languageJSON].portfolio.tabs[1].description}</p>
+                            <a href="https://pacm.io" className="button card_button">{Data.language[languageJSON].portfolio.tabs[1].button}</a>
                         </div>
                         <div className="card_right">
                             <img className="card_img" src="/images/portfolio1.jpg" alt="" />
@@ -41,7 +42,7 @@ function Portfolio({ languageJSON }) {
                     </div>
                 </div>
 
-                <div className="card">
+                {/* <div className="card">
                     <div className="card_container">
                         <div className="card_left">
                             <UilBrowser className="card_icon" size="64" />
@@ -49,12 +50,13 @@ function Portfolio({ languageJSON }) {
                             <p className="card_subheader">{Data.language[languageJSON].portfolio.tabs[2].subheading}</p>
 
                             <p className="card_text">{Data.language[languageJSON].portfolio.tabs[2].description}</p>
+                            <a href="" className="button card_button">{Data.language[languageJSON].portfolio.tabs[2].button}</a>
                         </div>
                         <div className="card_right">
                             <img className="card_img" src="/images/portfolio1.jpg" alt="" />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

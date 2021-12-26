@@ -1042,9 +1042,9 @@ img{
     border-radius: 1.25rem;
     box-shadow: 0 2px 50px rgba(0, 0, 0, .15);
 }
-/* 
-.card_spacer {
-    height: 10rem;
+
+/* .card_spacer {
+    height: 30rem;
 } */
 
 .card_left {
@@ -1080,6 +1080,11 @@ img{
 }
 
 .card_text {
+    margin-top: 1rem;
+}
+
+.card_button {
+    padding: .7rem;
     margin-top: 1rem;
 }
 
