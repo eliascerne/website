@@ -22,14 +22,15 @@
             "aboutMe": {
                 "heading": "About me",
                 "subheading": "My introduction",
-                "description": "Since the last couple of years I developed skills in web development, especially working with Ract and Nodejs but also automating workflows with Python.",
+                "description": "Since the last couple of years I developed skills in web development, especially working with Ract and Nodejs but also automating workflows with Python. \n I am a German Student, however my English is C level, convince for yourself at the button below.",
                 "info1": "Years \n experience",
                 "info1Sub": "02+",
                 "info2": "Completed \n Projects",
                 "info2Sub": "02+",
                 "info3": "Companies \n Worked",
                 "info3Sub": "02+",
-                "button": "Download cv"
+                "button": "Download cv",
+                "button2": "English Level"
             },
             "skills": {
                 "heading": "Skills",
@@ -191,14 +192,15 @@
             "aboutMe": {
                 "heading": "Über mich",
                 "subheading": "Elias Cerne",
-                "description": "In meiner Freizeit liebe ich es zu programmieren, vorallem als Web Developer.",
+                "description": "In meiner Freizeit liebe ich es zu programmieren, vorallem als Web Developer. Mein Englisch Level ist im Bereich C. Falls du dich überzeugen willst, klicke den Button unten.",
                 "info1": "Jahre \n Erfahrung",
                 "info1Sub": "02+",
                 "info2": "Projekte",
                 "info2Sub": "02+",
                 "info3": "Firmen",
                 "info3Sub": "02+",
-                "button": "CV Herunterladen"
+                "button": "CV Herunterladen",
+                "button2": "Englisch Level"
             },
             "skills": {
                 "heading": "Fähigkeiten",

@@ -656,6 +656,8 @@ img{
 .about_description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
+    white-space: pre-line;  
+    vertical-align: bottom;
 }
 
 .about_info{
@@ -685,6 +687,7 @@ img{
 .about_buttons{
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
 /* SKILLS */

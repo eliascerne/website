@@ -31,8 +31,11 @@ function AboutMe({ languageJSON }) {
                         </div>
                     </div>
                     <div className="about_buttons">
-                        <a download="" href="" className="button button--flex">
+                        <a download="" className="button button--flex">
                         {Data.language[languageJSON].aboutMe.button} <UilFileAlt size="20" className="button_icon"/>
+                        </a>
+                        <a href="https://www.efset.org/cert/8F3Yzc" target="_blank" rel="noreferrer" className="button button--flex">
+                        {Data.language[languageJSON].aboutMe.button2} <UilFileAlt size="20" className="button_icon"/>
                         </a>
                     </div>
                 </div>
