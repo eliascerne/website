@@ -1253,6 +1253,16 @@ img{
     display: flex;
 }
 
+.form_button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: transparent;
+    padding: 0rem;
+    border-radius: 0rem;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
 .email_active_show {
     display: unset;
 }
