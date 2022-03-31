@@ -11,7 +11,7 @@ import { SectionAboutMe } from '@eliascerne/section/about-me';
 // import Portfolio from './components/Portfolio';
 // import ProjectInMind from './components/ProjectInMind';
 import { SectionContact } from '@eliascerne/section/contact';
-// import Footer from './components/Footer';
+import { SectionFooter } from '@eliascerne/section/footer';
 // import Terminal from './components/Terminal';
 // import ScrollUp from './components/ScrollUp';
 // import BinaryClock from './components/BinaryClock';
@@ -56,11 +56,11 @@ function App() {
     if (selectedLanguage && selectedLanguage === 'de') {
       setLanguage('at');
       setLanguageJSON(1);
-      console.log(1);
+      // console.log(1);
     } else if (selectedLanguage && selectedLanguage === 'en') {
       setLanguage('en');
       setLanguageJSON(0);
-      console.log(2);
+      // console.log(2);
     }
 
     // If we get the local Preset of the user
@@ -72,11 +72,11 @@ function App() {
     ) {
       setLanguage('at');
       setLanguageJSON(1);
-      console.log(3);
+      // console.log(3);
     } else if (!selectedLanguage && lang) {
       setLanguage('en');
       setLanguageJSON(0);
-      console.log(6);
+      // console.log(6);
     }
     // If everything goes wrong (fail-save methode) get the language from the ipaddress
     // else if (!selectedLanguage && !lang) {
@@ -128,8 +128,8 @@ function App() {
           setTerminalShow={setTerminalShow}
         /> */}
       </main>
-      {/* <Footer languageJSON={languageJSON} setTerminalShow={setTerminalShow} />
-      <ScrollUp /> */}
+      <SectionFooter languageJSON={languageJSON} setTerminalShow={setTerminalShow} />
+      {/* <ScrollUp /> */}
     </main>
   );
 }
