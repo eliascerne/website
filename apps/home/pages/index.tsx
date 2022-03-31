@@ -10,7 +10,7 @@ import { SectionAboutMe } from '@eliascerne/section/about-me';
 // import Services from './components/Services';
 // import Portfolio from './components/Portfolio';
 // import ProjectInMind from './components/ProjectInMind';
-// import Contact from './components/Contact';
+import { SectionContact } from '@eliascerne/section/contact';
 // import Footer from './components/Footer';
 // import Terminal from './components/Terminal';
 // import ScrollUp from './components/ScrollUp';
@@ -117,13 +117,13 @@ function App() {
       >
         <SectionHome languageJSON={languageJSON} />
         <SectionAboutMe languageJSON={languageJSON} />
-        {/* <Skills languageJSON={languageJSON} />
-        <Qualification languageJSON={languageJSON} />
-        <Services languageJSON={languageJSON} />
-        <Portfolio languageJSON={languageJSON} />
-        <ProjectInMind languageJSON={languageJSON} />
-        <Contact languageJSON={languageJSON} />
-        <Terminal
+        {/* <Skills languageJSON={languageJSON} /> */}
+        {/* <Qualification languageJSON={languageJSON} /> */}
+        {/* <Services languageJSON={languageJSON} /> */}
+        {/* <Portfolio languageJSON={languageJSON} /> */}
+        {/* <ProjectInMind languageJSON={languageJSON} /> */}
+        <SectionContact languageJSON={languageJSON} />
+        {/* <Terminal
           terminalShow={terminalShow}
           setTerminalShow={setTerminalShow}
         /> */}
