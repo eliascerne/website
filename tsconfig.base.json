@@ -20,6 +20,7 @@
       "@eliascerne/section/binary-clock": [
         "libs/section/binary-clock/src/index.ts"
       ],
+      "@eliascerne/section/contact": ["libs/section/contact/src/index.ts"],
       "@eliascerne/section/home": ["libs/section/home/src/index.ts"]
     }
   },

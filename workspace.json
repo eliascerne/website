@@ -6,6 +6,7 @@
     "home-e2e": "apps/home-e2e",
     "section-about-me": "libs/section/about-me",
     "section-binary-clock": "libs/section/binary-clock",
+    "section-contact": "libs/section/contact",
     "section-home": "libs/section/home"
   }
 }
