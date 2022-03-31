@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@eliascerne/data": ["libs/data/src/index.ts"],
       "@eliascerne/section/home": ["libs/section/home/src/index.ts"]
     }
   },
