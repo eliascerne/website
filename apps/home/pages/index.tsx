@@ -6,7 +6,7 @@ import { SectionHome } from '@eliascerne/section/home';
 import { SectionAboutMe } from '@eliascerne/section/about-me';
 // import Skills from './components/Skills';
 import { SectionQualification } from '@eliascerne/section/qualification';
-// import Services from './components/Services';
+import { SectionServices } from '@eliascerne/section/services';
 import { SectionPortfolio } from '@eliascerne/section/portfolio';
 import { SectionProjectInMind } from '@eliascerne/section/project-in-mind';
 import { SectionContact } from '@eliascerne/section/contact';
@@ -118,7 +118,7 @@ function App() {
         <SectionAboutMe languageJSON={languageJSON} />
         {/* <Skills languageJSON={languageJSON} /> */}
         <SectionQualification languageJSON={languageJSON} />
-        {/* <Services languageJSON={languageJSON} /> */}
+        <SectionServices languageJSON={languageJSON} />
         <SectionPortfolio languageJSON={languageJSON} />
         <SectionProjectInMind languageJSON={languageJSON} />
         <SectionContact languageJSON={languageJSON} />
