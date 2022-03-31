@@ -8,6 +8,7 @@
     "section-binary-clock": "libs/section/binary-clock",
     "section-contact": "libs/section/contact",
     "section-footer": "libs/section/footer",
+    "section-header": "libs/section/header",
     "section-home": "libs/section/home"
   }
 }
