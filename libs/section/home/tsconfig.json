@@ -1,6 +1,7 @@
 {
   "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
+    "resolveJsonModule": true,
     "jsx": "react-jsx",
     "allowJs": true,
     "esModuleInterop": true,
@@ -12,6 +13,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   },
+  "typeRoots": ["./node_modules/@types", "./index.d.ts"],
   "files": [],
   "include": [],
   "references": [
