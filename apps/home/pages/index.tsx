@@ -12,7 +12,7 @@ import { SectionProjectInMind } from '@eliascerne/section/project-in-mind';
 import { SectionContact } from '@eliascerne/section/contact';
 import { SectionFooter } from '@eliascerne/section/footer';
 // import Terminal from './components/Terminal';
-// import ScrollUp from './components/ScrollUp';
+import { SectionScrollUp } from '@eliascerne/section/scroll-up';
 // import BinaryClock from './components/BinaryClock';
 
 function App() {
@@ -131,7 +131,7 @@ function App() {
         languageJSON={languageJSON}
         setTerminalShow={setTerminalShow}
       />
-      {/* <ScrollUp /> */}
+      <SectionScrollUp />
     </main>
   );
 }
