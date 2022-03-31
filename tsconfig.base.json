@@ -30,7 +30,8 @@
       ],
       "@eliascerne/section/qualification": [
         "libs/section/qualification/src/index.ts"
-      ]
+      ],
+      "@eliascerne/section/scroll-up": ["libs/section/scroll-up/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
