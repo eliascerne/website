@@ -9,6 +9,7 @@
     "section-contact": "libs/section/contact",
     "section-footer": "libs/section/footer",
     "section-header": "libs/section/header",
-    "section-home": "libs/section/home"
+    "section-home": "libs/section/home",
+    "section-portfolio": "libs/section/portfolio"
   }
 }

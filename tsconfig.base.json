@@ -23,7 +23,8 @@
       "@eliascerne/section/contact": ["libs/section/contact/src/index.ts"],
       "@eliascerne/section/footer": ["libs/section/footer/src/index.ts"],
       "@eliascerne/section/header": ["libs/section/header/src/index.ts"],
-      "@eliascerne/section/home": ["libs/section/home/src/index.ts"]
+      "@eliascerne/section/home": ["libs/section/home/src/index.ts"],
+      "@eliascerne/section/portfolio": ["libs/section/portfolio/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
