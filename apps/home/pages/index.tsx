@@ -8,7 +8,7 @@ import { SectionAboutMe } from '@eliascerne/section/about-me';
 // import Qualification from './components/Qualification';
 // import Services from './components/Services';
 import { SectionPortfolio } from '@eliascerne/section/portfolio';
-// import ProjectInMind from './components/ProjectInMind';
+import { SectionProjectInMind } from '@eliascerne/section/project-in-mind';
 import { SectionContact } from '@eliascerne/section/contact';
 import { SectionFooter } from '@eliascerne/section/footer';
 // import Terminal from './components/Terminal';
@@ -120,7 +120,7 @@ function App() {
         {/* <Qualification languageJSON={languageJSON} /> */}
         {/* <Services languageJSON={languageJSON} /> */}
         <SectionPortfolio languageJSON={languageJSON} />
-        {/* <ProjectInMind languageJSON={languageJSON} /> */}
+        <SectionProjectInMind languageJSON={languageJSON} />
         <SectionContact languageJSON={languageJSON} />
         {/* <Terminal
           terminalShow={terminalShow}
