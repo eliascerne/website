@@ -11,7 +11,7 @@ import { SectionPortfolio } from '@eliascerne/section/portfolio';
 import { SectionProjectInMind } from '@eliascerne/section/project-in-mind';
 import { SectionContact } from '@eliascerne/section/contact';
 import { SectionFooter } from '@eliascerne/section/footer';
-// import Terminal from './components/Terminal';
+import { SectionTerminal } from '@eliascerne/section/terminal';
 import { SectionScrollUp } from '@eliascerne/section/scroll-up';
 // import BinaryClock from './components/BinaryClock';
 
@@ -99,7 +99,7 @@ function App() {
   // );
 
   return (
-    <main className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
+    <body className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
       <SectionHeader
         showNavMenu={showNavMenu}
         setShowNavMenu={setShowNavMenu}
@@ -122,17 +122,17 @@ function App() {
         <SectionPortfolio languageJSON={languageJSON} />
         <SectionProjectInMind languageJSON={languageJSON} />
         <SectionContact languageJSON={languageJSON} />
-        {/* <Terminal
+        <SectionTerminal
           terminalShow={terminalShow}
           setTerminalShow={setTerminalShow}
-        /> */}
+        />
       </main>
       <SectionFooter
         languageJSON={languageJSON}
         setTerminalShow={setTerminalShow}
       />
       <SectionScrollUp />
-    </main>
+    </body>
   );
 }
 

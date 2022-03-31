@@ -6,11 +6,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to home!</title>
+        <title>Elias Cerne</title>
       </Head>
-      <main className="app">
+      <body className="app">
         <Component {...pageProps} />
-      </main>
+      </body>
     </>
   );
 }

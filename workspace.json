@@ -15,6 +15,7 @@
     "section-qualification": "libs/section/qualification",
     "section-scroll-up": "libs/section/scroll-up",
     "section-services": "libs/section/services",
-    "section-skills": "libs/section/skills"
+    "section-skills": "libs/section/skills",
+    "section-terminal": "libs/section/terminal"
   }
 }

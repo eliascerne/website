@@ -33,7 +33,8 @@
       ],
       "@eliascerne/section/scroll-up": ["libs/section/scroll-up/src/index.ts"],
       "@eliascerne/section/services": ["libs/section/services/src/index.ts"],
-      "@eliascerne/section/skills": ["libs/section/skills/src/index.ts"]
+      "@eliascerne/section/skills": ["libs/section/skills/src/index.ts"],
+      "@eliascerne/section/terminal": ["libs/section/terminal/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
