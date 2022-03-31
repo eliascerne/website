@@ -4,7 +4,7 @@ import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { SectionHeader } from '@eliascerne/section/header';
 import { SectionHome } from '@eliascerne/section/home';
 import { SectionAboutMe } from '@eliascerne/section/about-me';
-// import Skills from './components/Skills';
+import { SectionSkills } from '@eliascerne/section/skills';
 import { SectionQualification } from '@eliascerne/section/qualification';
 import { SectionServices } from '@eliascerne/section/services';
 import { SectionPortfolio } from '@eliascerne/section/portfolio';
@@ -116,7 +116,7 @@ function App() {
       >
         <SectionHome languageJSON={languageJSON} />
         <SectionAboutMe languageJSON={languageJSON} />
-        {/* <Skills languageJSON={languageJSON} /> */}
+        <SectionSkills languageJSON={languageJSON} />
         <SectionQualification languageJSON={languageJSON} />
         <SectionServices languageJSON={languageJSON} />
         <SectionPortfolio languageJSON={languageJSON} />
