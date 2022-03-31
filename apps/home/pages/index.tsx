@@ -3,6 +3,7 @@ import React, { useState, useEffect, useLayoutEffect } from 'react';
 // import './App.css';
 // import Header from './components/Header';
 import { SectionHome } from '@eliascerne/section/home';
+import { SectionAboutMe } from '@eliascerne/section/about-me';
 // import AboutMe from './components/AboutMe';
 // import Skills from './components/Skills';
 // import Qualification from './components/Qualification';
@@ -114,9 +115,9 @@ function App() {
         className="main"
         onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}
       >
-        <SectionHome language={language} languageJSON={languageJSON} />
-        {/* <AboutMe languageJSON={languageJSON} />
-        <Skills languageJSON={languageJSON} />
+        <SectionHome languageJSON={languageJSON} />
+        <SectionAboutMe languageJSON={languageJSON} />
+        {/* <Skills languageJSON={languageJSON} />
         <Qualification languageJSON={languageJSON} />
         <Services languageJSON={languageJSON} />
         <Portfolio languageJSON={languageJSON} />

@@ -1,0 +1,41 @@
+/* Binary Clock */
+.inactive
+{
+	background-color:rgb(68, 77, 88);
+}
+
+.active
+{
+	background-color:rgb(45, 179, 90);
+}		
+
+.inactive, .active, .res
+{
+	width: .5rem;
+	height: .5rem;
+	color: black;
+	border-radius: 50%;
+	font-size: 0rem;
+}
+
+.res
+{
+	font-weight:bold;
+	background-color:black;
+	color:white;
+	display: none;
+	font-size: 0rem;
+}
+
+.onProgress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.onProgressContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}

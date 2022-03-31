@@ -10,12 +10,11 @@ import Data from '@eliascerne/data';
 
 /* eslint-disable-next-line */
 export interface SectionHomeProps {
-  language: any;
   languageJSON: any;
 }
 
 export function SectionHome(props: SectionHomeProps) {
-  const { language, languageJSON } = props;
+  const { languageJSON } = props;
 
   return (
     <section className="home section" id="home">

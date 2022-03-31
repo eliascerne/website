@@ -16,6 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@eliascerne/data": ["libs/data/src/index.ts"],
+      "@eliascerne/section/about-me": ["libs/section/about-me/src/index.ts"],
+      "@eliascerne/section/binary-clock": [
+        "libs/section/binary-clock/src/index.ts"
+      ],
       "@eliascerne/section/home": ["libs/section/home/src/index.ts"]
     }
   },
