@@ -13,6 +13,7 @@
     "section-portfolio": "libs/section/portfolio",
     "section-project-in-mind": "libs/section/project-in-mind",
     "section-qualification": "libs/section/qualification",
-    "section-scroll-up": "libs/section/scroll-up"
+    "section-scroll-up": "libs/section/scroll-up",
+    "section-services": "libs/section/services"
   }
 }
