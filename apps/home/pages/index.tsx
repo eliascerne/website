@@ -2,7 +2,7 @@ import React, { useState, useEffect, useLayoutEffect } from 'react';
 // import IPGeolocationAPI from 'ip-geolocation-api-javascript-sdk';
 // import './App.css';
 // import Header from './components/Header';
-// import Home from './components/Home';
+import { SectionHome } from '@eliascerne/section/home';
 // import AboutMe from './components/AboutMe';
 // import Skills from './components/Skills';
 // import Qualification from './components/Qualification';
@@ -99,8 +99,8 @@ function App() {
   // );
 
   return (
-    <body className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
-      <Header
+    <main className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
+      {/* <Header
         showNavMenu={showNavMenu}
         setShowNavMenu={setShowNavMenu}
         selectedTheme={selectedTheme}
@@ -109,13 +109,13 @@ function App() {
         setLanguageJSON={setLanguageJSON}
         language={language}
         setLanguage={setLanguage}
-      />
+      /> */}
       <main
         className="main"
         onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}
       >
-        <Home languageJSON={languageJSON} />
-        <AboutMe languageJSON={languageJSON} />
+        <SectionHome language={language} languageJSON={languageJSON} />
+        {/* <AboutMe languageJSON={languageJSON} />
         <Skills languageJSON={languageJSON} />
         <Qualification languageJSON={languageJSON} />
         <Services languageJSON={languageJSON} />
@@ -125,11 +125,11 @@ function App() {
         <Terminal
           terminalShow={terminalShow}
           setTerminalShow={setTerminalShow}
-        />
+        /> */}
       </main>
-      <Footer languageJSON={languageJSON} setTerminalShow={setTerminalShow} />
-      <ScrollUp />
-    </body>
+      {/* <Footer languageJSON={languageJSON} setTerminalShow={setTerminalShow} />
+      <ScrollUp /> */}
+    </main>
   );
 }
 
