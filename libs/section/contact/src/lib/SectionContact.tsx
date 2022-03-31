@@ -12,11 +12,14 @@ export interface SectionContactProps {
 
 export function SectionContact(props: SectionContactProps) {
   const form = useRef<HTMLFormElement>(null);
+  const email = useRef<HTMLInputElement>(null);
   const { languageJSON } = props;
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-    form.current &&
+    email.current &&
+      email.current.value !== '' &&
+      form.current &&
       emailjs
         .sendForm(
           'erias-awesome-gmail',
@@ -100,6 +103,7 @@ export function SectionContact(props: SectionContactProps) {
                 className="contact_input"
                 id="input_email"
                 name="input_email"
+                ref={email}
               />
             </div>
           </div>
