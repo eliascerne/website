@@ -4,11 +4,10 @@ import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { SectionHeader } from '@eliascerne/section/header';
 import { SectionHome } from '@eliascerne/section/home';
 import { SectionAboutMe } from '@eliascerne/section/about-me';
-// import AboutMe from './components/AboutMe';
 // import Skills from './components/Skills';
 // import Qualification from './components/Qualification';
 // import Services from './components/Services';
-// import Portfolio from './components/Portfolio';
+import { SectionPortfolio } from '@eliascerne/section/portfolio';
 // import ProjectInMind from './components/ProjectInMind';
 import { SectionContact } from '@eliascerne/section/contact';
 import { SectionFooter } from '@eliascerne/section/footer';
@@ -120,7 +119,7 @@ function App() {
         {/* <Skills languageJSON={languageJSON} /> */}
         {/* <Qualification languageJSON={languageJSON} /> */}
         {/* <Services languageJSON={languageJSON} /> */}
-        {/* <Portfolio languageJSON={languageJSON} /> */}
+        <SectionPortfolio languageJSON={languageJSON} />
         {/* <ProjectInMind languageJSON={languageJSON} /> */}
         <SectionContact languageJSON={languageJSON} />
         {/* <Terminal
