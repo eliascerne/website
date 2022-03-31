@@ -10,6 +10,7 @@
     "section-footer": "libs/section/footer",
     "section-header": "libs/section/header",
     "section-home": "libs/section/home",
-    "section-portfolio": "libs/section/portfolio"
+    "section-portfolio": "libs/section/portfolio",
+    "section-project-in-mind": "libs/section/project-in-mind"
   }
 }
