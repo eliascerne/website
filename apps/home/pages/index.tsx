@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 // import IPGeolocationAPI from 'ip-geolocation-api-javascript-sdk';
 // import './App.css';
-// import Header from './components/Header';
+import { SectionHeader } from '@eliascerne/section/header';
 import { SectionHome } from '@eliascerne/section/home';
 import { SectionAboutMe } from '@eliascerne/section/about-me';
 // import AboutMe from './components/AboutMe';
@@ -101,7 +101,7 @@ function App() {
 
   return (
     <main className={selectedTheme === 'dark' ? 'dark-theme' : undefined}>
-      {/* <Header
+      <SectionHeader
         showNavMenu={showNavMenu}
         setShowNavMenu={setShowNavMenu}
         selectedTheme={selectedTheme}
@@ -110,7 +110,7 @@ function App() {
         setLanguageJSON={setLanguageJSON}
         language={language}
         setLanguage={setLanguage}
-      /> */}
+      />
       <main
         className="main"
         onClick={showNavMenu ? () => setShowNavMenu(false) : undefined}
@@ -128,7 +128,10 @@ function App() {
           setTerminalShow={setTerminalShow}
         /> */}
       </main>
-      <SectionFooter languageJSON={languageJSON} setTerminalShow={setTerminalShow} />
+      <SectionFooter
+        languageJSON={languageJSON}
+        setTerminalShow={setTerminalShow}
+      />
       {/* <ScrollUp /> */}
     </main>
   );
