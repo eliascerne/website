@@ -27,6 +27,9 @@
       "@eliascerne/section/portfolio": ["libs/section/portfolio/src/index.ts"],
       "@eliascerne/section/project-in-mind": [
         "libs/section/project-in-mind/src/index.ts"
+      ],
+      "@eliascerne/section/qualification": [
+        "libs/section/qualification/src/index.ts"
       ]
     }
   },

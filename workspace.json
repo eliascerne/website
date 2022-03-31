@@ -11,6 +11,7 @@
     "section-header": "libs/section/header",
     "section-home": "libs/section/home",
     "section-portfolio": "libs/section/portfolio",
-    "section-project-in-mind": "libs/section/project-in-mind"
+    "section-project-in-mind": "libs/section/project-in-mind",
+    "section-qualification": "libs/section/qualification"
   }
 }
