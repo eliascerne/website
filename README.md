@@ -1,94 +1,35 @@
-
-
 # Website
 
-This project was generated using [Nx](https://nx.dev).
+This is the offical repository for the website eliascerne.com.
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## Rules for Commits
 
-🔎 **Smart, Fast and Extensible Build System**
+- `feat:` a new feature for the user, not a new feature for a build script
+- `fix:` bug fix for the user, not a fix to a build scripts
+- `refactor:` refactoring production code
+- `chore:` updating gulp tasks etc.; no production code change
+- `docs:` changes to documentation
+- `style:` formatting, missing semicolons, etc.; no code change
+- `perf:` code improved in terms of processing performance
+- `vendor:` update version for dependencies, packages.
+- `test:` adding missing tests, refactoring tests; no production code change
+- `create:` add a new file
+- `correct:` correcting a misspelled word or text
+- `delete:` deleting a file
+- `merge:` merge branches together
 
-## Adding capabilities to your workspace
+## Third party programs
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+### Iconscout:
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+Using iconscout.com for the icons. You can add these icons by going to this site: [iconscout.com](https://iconscout.com/unicons/explore/line) and search for the icon you want. The next step is to copy the Font and paste it into the file.
 
-Below are our core plugins:
+## Open this repo in gitpod IDE.
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/eliascerne/website)
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+## Contributor
 
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@website/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+Made by: © [@erias04](https://github.com/erias04)
+<br/>
+All Rights Reserved!
