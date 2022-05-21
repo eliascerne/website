@@ -6,21 +6,22 @@ import Image from 'next/image';
 export interface CardsAboutProps {
   size: string;
   description: string;
+  image: string;
 }
 
 const imageLoader = ({ src, width, quality }: any) => {
-  return `https://r2.eriascdn.com/${src}?w=${width}&q=${quality || 75}`;
+  return `${src}?w=${width}&q=${quality || 75}`;
 };
 
 export function CardsAbout(props: CardsAboutProps) {
-  const { size, description } = props;
+  const { size, description, image } = props;
   return (
     <CardsLayout size={size}>
       <div className="p-6">
         <div className="flex justify-center">
           <Image
             loader={imageLoader}
-            src="erias.png"
+            src={image}
             alt="Picture of the author"
             width={112}
             height={112}
