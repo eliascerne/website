@@ -11,22 +11,22 @@ export interface ListProps {}
 
 const menuItems = [
   {
-    index: 0,
+    id: 0,
     href: '/',
     name: 'Home',
   },
   {
-    index: 1,
+    id: 1,
     href: '/about',
     name: 'About',
   },
   {
-    index: 2,
+    id: 2,
     href: '/work',
     name: 'Work',
   },
   {
-    index: 3,
+    id: 3,
     href: '/blog',
     name: 'Blog',
   },
@@ -49,9 +49,9 @@ export function List(props: ListProps) {
   };
 
   const handleOnHoverStart = useCallback(
-    (index) => () => {
+    (id) => () => {
       isHover.current = true;
-      setActiveHoverIndex(index);
+      setActiveHoverIndex(id);
     },
     []
   );
@@ -60,15 +60,15 @@ export function List(props: ListProps) {
     if (isClicked.current) {
       return;
     }
-    const index = getActiveIndex(route);
+    const id = getActiveIndex(route);
 
-    if (index < 0) {
+    if (id < 0) {
       setTimeout(() => {
         if (isHover.current) return;
-        setActiveHoverIndex(index);
+        setActiveHoverIndex(id);
       }, 500);
     } else {
-      setActiveHoverIndex(index);
+      setActiveHoverIndex(id);
     }
 
     isHover.current = false;
@@ -82,11 +82,11 @@ export function List(props: ListProps) {
   return (
     <AnimateSharedLayout>
       <ul className="flex items-center justify-center flex-none w-full place-items-center md:w-auto">
-        {menuItems.map(({ href, name, index }) => (
+        {menuItems.map(({ href, name, id }) => (
           <ListItem
-            key={index}
-            active={activeHoverIndex === index}
-            onHoverStart={handleOnHoverStart(index)}
+            key={id}
+            active={activeHoverIndex === id}
+            onHoverStart={handleOnHoverStart(id)}
             onHoverEnd={handleOnHoverEnd}
             onClick={handleOnClicked}
           >
