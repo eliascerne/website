@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
     "@nrwl/next": "13.9.5",
     "autoprefixer": "^10.4.7",
     "core-js": "^3.6.5",
