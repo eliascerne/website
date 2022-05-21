@@ -17,6 +17,7 @@
     "paths": {
       "@eliascerne/cards/about": ["libs/cards/about/src/index.ts"],
       "@eliascerne/cards/layout": ["libs/cards/layout/src/index.ts"],
+      "@eliascerne/cards/link": ["libs/cards/link/src/index.ts"],
       "@eliascerne/cards/ui": ["libs/cards/ui/src/index.ts"],
       "@eliascerne/layout/base": ["libs/layout/base/src/index.ts"],
       "@eliascerne/utils/header": ["libs/utils/header/src/index.ts"]

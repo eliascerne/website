@@ -1,0 +1,23 @@
+{
+  "root": "libs/cards/link",
+  "sourceRoot": "libs/cards/link/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/cards/link/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/cards/link"],
+      "options": {
+        "jestConfig": "libs/cards/link/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

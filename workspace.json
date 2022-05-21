@@ -3,6 +3,7 @@
   "projects": {
     "cards-about": "libs/cards/about",
     "cards-layout": "libs/cards/layout",
+    "cards-link": "libs/cards/link",
     "cards-ui": "libs/cards/ui",
     "layout-base": "libs/layout/base",
     "utils-header": "libs/utils/header",
