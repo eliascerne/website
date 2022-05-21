@@ -16,7 +16,7 @@ export interface MenuProps {
   setMenuOpen: any;
 }
 
-export function Menu(props: MenuProps) {
+export function Nav(props: MenuProps) {
   const { menuOpen, setMenuOpen } = props;
   return (
     <Transition appear show={menuOpen} as={Fragment}>
@@ -94,4 +94,4 @@ export function Menu(props: MenuProps) {
   );
 }
 
-export default Menu;
+export default Nav;

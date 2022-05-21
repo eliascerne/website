@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ReactChild } from 'react';
-import sstyles from './menuitem.module.css';
+import { ListHover } from '@eliascerne/utils/header';
+
+import styles from './menuitem.module.css';
 
 /* eslint-disable-next-line */
 export interface MenuItemProps {
@@ -11,7 +13,7 @@ export interface MenuItemProps {
   children?: ReactChild;
 }
 
-export function Menuitem(props: MenuItemProps) {
+export function ListItem(props: MenuItemProps) {
   const { onHoverStart, onHoverEnd, onClick, active, children } = props;
   return (
     <motion.li
@@ -21,9 +23,9 @@ export function Menuitem(props: MenuItemProps) {
       onClick={onClick}
     >
       {children}
-      {active && <SharedHover />}
+      {active && <ListHover />}
     </motion.li>
   );
 }
 
-export default Menuitem;
+export default ListItem;

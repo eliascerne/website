@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { UilApps, UilSun } from '@iconscout/react-unicons';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ReactComponent as Logo } from 'apps/website/public/icons/logo.svg';
-import { Menu } from '@eliascerne/utils/header';
+import { Nav } from '@eliascerne/utils/header';
 import { useState } from 'react';
 
 import styles from './UtilsHeader.module.css';
@@ -11,7 +11,7 @@ import styles from './UtilsHeader.module.css';
 export interface UtilsHeaderProps {}
 
 export function UtilsHeader(props: UtilsHeaderProps) {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <header className="fixed w-full max-w-maxWidth bottom-0 left-0 py-2 z-40 bg-background md:top-0 md:max-h-header md:py-0 md:left-1/2 md:-translate-x-1/2">
       <nav className="ml-6 mr-5 flex justify-between items-center text-white md:h-header xl:ml-0 xl:mr-0">
@@ -63,12 +63,12 @@ export function UtilsHeader(props: UtilsHeaderProps) {
             />
             <UilApps
               className="w-5 md:hidden"
-              onClick={() => setMenuOpen(true)}
+              onClick={() => setNavOpen(true)}
             />
           </div>
         </div>
       </nav>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Nav menuOpen={navOpen} setMenuOpen={navOpen} />
     </header>
   );
 }

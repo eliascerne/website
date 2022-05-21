@@ -17,7 +17,7 @@ const spring: ISpring = {
 /* eslint-disable-next-line */
 export interface MenuHoverProps {}
 
-export function MenuHover(props: MenuHoverProps) {
+export function ListHover(props: MenuHoverProps) {
   return (
     <motion.div
       initial={false}
@@ -34,4 +34,4 @@ export function MenuHover(props: MenuHoverProps) {
   );
 }
 
-export default MenuHover;
+export default ListHover;

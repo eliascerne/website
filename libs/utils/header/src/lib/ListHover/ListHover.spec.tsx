@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import Menu from './menu';
+import ListHover from './ListHover';
 
-describe('Menu', () => {
+describe('Menuhover', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Menu />);
+    const { baseElement } = render(<ListHover />);
     expect(baseElement).toBeTruthy();
   });
 });

@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import MenuHover from './MenuHover';
+import Nav from './Nav';
 
-describe('Menuhover', () => {
+describe('Nav', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<MenuHover />);
+    const { baseElement } = render(<Nav />);
     expect(baseElement).toBeTruthy();
   });
 });
