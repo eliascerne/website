@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.6.2",
     "@iconscout/react-unicons": "^1.1.6",
     "@nrwl/next": "13.9.5",
     "autoprefixer": "^10.4.7",
