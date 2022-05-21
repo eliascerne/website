@@ -8,7 +8,13 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: '#111725',
+        card: '#1c2534',
+        cardBorder: '#333b49',
+      },
+    },
   },
   plugins: [],
 };
