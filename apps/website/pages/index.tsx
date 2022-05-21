@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
 import { LayoutBase } from '@eliascerne/layout/base';
+import { CardsUi } from '@eliascerne/cards/ui';
 
 import styles from './index.module.css';
 
@@ -29,6 +30,12 @@ export function Home() {
       <div className="col-span-2 bg-slate-400">16</div>
       <div className="bg-amber-700">17</div>
       <div className="bg-amber-200">18</div>
+      <CardsUi
+        size="medium"
+        type="about"
+        image=""
+        description=""
+      />
     </div>
   );
 }
