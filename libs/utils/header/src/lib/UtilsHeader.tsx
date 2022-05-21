@@ -2,13 +2,16 @@ import Link from 'next/link';
 import { UilApps, UilSun } from '@iconscout/react-unicons';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ReactComponent as Logo } from 'apps/website/public/icons/logo.svg';
+import { Menu } from '@eliascerne/utils/header';
 
 import styles from './UtilsHeader.module.css';
+import { useState } from 'react';
 
 /* eslint-disable-next-line */
 export interface UtilsHeaderProps {}
 
 export function UtilsHeader(props: UtilsHeaderProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="fixed w-full bottom-0 left-0 py-2 z-40 bg-background">
       <nav className="max-w-header ml-6 mr-5 h-header flex justify-between items-center text-white">
@@ -36,16 +39,12 @@ export function UtilsHeader(props: UtilsHeaderProps) {
             />
             <UilApps
               className="w-5"
-              // onClick={() => setNavMenuOpen(true)}
+              onClick={() => setMenuOpen(true)}
             />
           </div>
         </div>
       </nav>
-      {/* <NavMenu
-        navMenuOpen={navMenuOpen}
-        setNavMenuOpen={setNavMenuOpen}
-        setIsSearchOpen={setIsSearchOpen}
-      /> */}
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </header>
   );
 }
