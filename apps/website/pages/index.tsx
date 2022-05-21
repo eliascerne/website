@@ -1,9 +1,19 @@
+import type { ReactElement } from 'react';
+import Layout from '';
+import NestedLayout from '';
+
 import styles from './index.module.css';
 
-export function Index() {
-  return (
-    <h1 className=''>Hello World</h1>
-  );
+export function Home() {
+  return <h1 className="">Hello World</h1>;
 }
 
-export default Index;
+Home.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      <NestedLayout>{page}</NestedLayout>
+    </Layout>
+  );
+};
+
+export default Home;
