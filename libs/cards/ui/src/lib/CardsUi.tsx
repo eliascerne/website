@@ -1,12 +1,15 @@
 import styles from './CardsUi.module.css';
 import Cards from '@eliascerne/cards/ui';
-import { CardsLayout } from '@eliascerne/cards/layout';
+import { CardsAbout } from '@eliascerne/cards/about';
 
 /* eslint-disable-next-line */
 export interface CardsUiProps {}
 
 export function CardsUi(props: Cards) {
+  const { size, description } = props;
   if (!('type' in props)) return;
+
+  if (props.type === 'about') return <CardsAbout size={size} description={description} />;
 
   return (
     <div className={styles['container']}>
