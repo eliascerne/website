@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@eliascerne/cards/ui": ["libs/cards/ui/src/index.ts"],
       "@eliascerne/layout/base": ["libs/layout/base/src/index.ts"],
       "@eliascerne/utils/header": ["libs/utils/header/src/index.ts"]
     }
