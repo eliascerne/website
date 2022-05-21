@@ -1,6 +1,5 @@
 import type { ReactElement } from 'react';
-import Layout from '';
-import NestedLayout from '';
+import { LayoutHome } from '@eliascerne/layout/home';
 
 import styles from './index.module.css';
 
@@ -9,11 +8,7 @@ export function Home() {
 }
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <Layout>
-      <NestedLayout>{page}</NestedLayout>
-    </Layout>
-  );
+  return <LayoutHome>{page}</LayoutHome>;
 };
 
 export default Home;
