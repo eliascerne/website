@@ -14,6 +14,12 @@ module.exports = {
         card: '#1c2534',
         cardBorder: '#333b49',
       },
+      spacing: {
+        header: '60px',
+      },
+      maxWidth: {
+        maxWidth: '80rem',
+      },
     },
   },
   plugins: [],
