@@ -1,4 +1,4 @@
-type cardSize = 'small' | 'medium' | 'large';
+type cardSize = 'small' | 'medium' | 'large' | 'xlarge';
 
 export interface baseCard {
   size: cardSize;
