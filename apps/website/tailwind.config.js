@@ -13,6 +13,7 @@ module.exports = {
         background: '#111725',
         card: '#1c2534',
         cardBorder: '#333b49',
+        cardBorderHover: '#26ceb7',
       },
       spacing: {
         header: '60px',
