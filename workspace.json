@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "cards-ui": "libs/cards/ui",
     "layout-home": "libs/layout/home",
     "utils-header": "libs/utils/header",
     "website": "apps/website",
