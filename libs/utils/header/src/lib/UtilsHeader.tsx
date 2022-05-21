@@ -4,6 +4,7 @@ import { UilApps, UilSun } from '@iconscout/react-unicons';
 import { ReactComponent as Logo } from 'apps/website/public/icons/logo.svg';
 import { Nav } from '@eliascerne/utils/header';
 import { useState } from 'react';
+import { List } from '@eliascerne/utils/header';
 
 import styles from './UtilsHeader.module.css';
 
@@ -27,28 +28,7 @@ export function UtilsHeader(props: UtilsHeaderProps) {
           </div>
         </Link>
         <div className="hidden md:block font-extrabold">
-          <ul className="flex gap-10">
-            <li className="cursor-pointer">
-              <Link href="/">
-                <p className="">Home</p>
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/about">
-                <p className="">About</p>
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/work">
-                <p className="">Work</p>
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/blog">
-                <p className="">Blog</p>
-              </Link>
-            </li>
-          </ul>
+          <List />
         </div>
         <div className="flex gap-3 items-center cursor-pointer">
           <Link href="/">
