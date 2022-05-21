@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import { LayoutHome } from '@eliascerne/layout/home';
+import { LayoutBase } from '@eliascerne/layout/base';
 
 import styles from './index.module.css';
 
@@ -8,7 +8,7 @@ export function Home() {
 }
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <LayoutHome>{page}</LayoutHome>;
+  return <LayoutBase>{page}</LayoutBase>;
 };
 
 export default Home;
