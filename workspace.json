@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "cards-ui": "libs/cards/ui",
+    "layout-base": "libs/layout/base",
     "layout-home": "libs/layout/home",
     "utils-header": "libs/utils/header",
     "website": "apps/website",
