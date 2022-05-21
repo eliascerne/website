@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@eliascerne/layout/home": ["libs/layout/home/src/index.ts"]
+      "@eliascerne/layout/home": ["libs/layout/home/src/index.ts"],
+      "@eliascerne/utils/header": ["libs/utils/header/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
