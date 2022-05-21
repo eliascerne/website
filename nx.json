@@ -1,5 +1,5 @@
 {
-  "npmScope": "website",
+  "npmScope": "eliascerne",
   "affected": {
     "defaultBase": "main"
   },
@@ -48,5 +48,5 @@
       }
     }
   },
-  "defaultProject": "website"
+  "defaultProject": "eliascerne"
 }
