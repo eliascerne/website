@@ -3,9 +3,9 @@ import { UilApps, UilSun } from '@iconscout/react-unicons';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ReactComponent as Logo } from 'apps/website/public/icons/logo.svg';
 import { Menu } from '@eliascerne/utils/header';
+import { useState } from 'react';
 
 import styles from './UtilsHeader.module.css';
-import { useState } from 'react';
 
 /* eslint-disable-next-line */
 export interface UtilsHeaderProps {}
