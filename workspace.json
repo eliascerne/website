@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "layout-home": "libs/layout/home",
     "website": "apps/website",
     "website-e2e": "apps/website-e2e"
   }
