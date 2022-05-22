@@ -21,6 +21,7 @@ export function Home() {
         image="https://upload.wikimedia.org/wikipedia/commons/9/95/Tailwind_CSS_logo.svg"
         description="Tailwindcss is being used for fast and ✨beautiful✨ styling like this website is."
         buttonText="Visit"
+        buttonIcon={true}
         link="https://tailwindcss.com"
       />
     </div>
