@@ -48,7 +48,7 @@ export function UtilsHeader(props: UtilsHeaderProps) {
           </div>
         </div>
       </nav>
-      <Nav menuOpen={navOpen} setMenuOpen={navOpen} />
+      <Nav menuOpen={navOpen} setMenuOpen={setNavOpen} />
     </header>
   );
 }
