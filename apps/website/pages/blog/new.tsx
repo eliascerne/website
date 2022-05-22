@@ -1,4 +1,4 @@
-import { ReactElement, useRef } from 'react';
+import { ReactElement, useRef, useState } from 'react';
 import { LayoutBase } from '@eliascerne/layout/base';
 import { EditorUi } from '@eliascerne/editor/ui';
 import { NextApiResponse } from 'next';
@@ -16,11 +16,11 @@ const EditorJsWithNoSSR = dynamic(
 /* eslint-disable-next-line */
 export interface IndexTsxProps {}
 
-async function createPostHandler(heading: any, description: any) {
+async function createPostHandler(heading: any, description: any, text: any) {
   let response = {};
   const res: any = await fetch('/api/blog/new', {
     method: 'POST',
-    body: JSON.stringify({ heading, description }),
+    body: JSON.stringify({ heading, description, text }),
     headers: { 'Content-Type': 'application/json' },
   })
     .then((response) => response.json())
@@ -46,6 +46,7 @@ async function createPostHandler(heading: any, description: any) {
 export function BlogNew(props: IndexTsxProps) {
   const heading = useRef<HTMLInputElement>();
   const description = useRef<HTMLInputElement>();
+  const [text, setText] = useState<any>({});
   const router = useRouter();
 
   async function createPost() {
@@ -64,7 +65,8 @@ export function BlogNew(props: IndexTsxProps) {
 
     const res = await createPostHandler(
       heading.current.value,
-      description.current.value
+      description.current.value,
+      text
     ).then((data: any) => router.push(`/blog/edit/${data._id}`));
   }
 
@@ -91,7 +93,7 @@ export function BlogNew(props: IndexTsxProps) {
             />
           </div>
         </form>
-        {/* <EditorUi /> */}
+        <EditorUi text={text} setText={setText} />
       </div>
       <div className="relative py-8 w-full bg-slate-800 overflow-hidden border-4 border-cardBorder rounded-2xl">
         <button
