@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
+import { Toaster } from 'react-hot-toast';
 
 import './styles.css';
 
@@ -20,6 +21,7 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
       <Head>
         <title>Elias Cerne</title>
       </Head>
+      <Toaster position="top-right" />
       <main className="app">{getLayout(<Component {...pageProps} />)}</main>
     </>
   );
