@@ -6,6 +6,8 @@ type Data = {
   message: string;
   post?: any;
   text?: any;
+  heading?: any;
+  description?: any;
 };
 
 async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
@@ -21,8 +23,10 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
 
     const storedPost = await db.findOne(new ObjectId(id.toString()));
     const storedText = storedPost.text;
+    const storedHeading = storedPost.heading;
+    const storedDescription = storedPost.description;
 
-    // console.log(storedText);
+    console.log(storedHeading);
 
     if (!storedPost) {
       client.close();
@@ -36,6 +40,8 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
       message: 'Post successfully retrieved from db',
       post: storedPost,
       text: storedText,
+      heading: storedHeading,
+      description: storedDescription,
     });
   }
 }
