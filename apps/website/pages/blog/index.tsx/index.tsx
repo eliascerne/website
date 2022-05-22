@@ -1,7 +1,10 @@
-/* eslint-disable-next-line */
-export interface IndexTsxProps {}
+import type { ReactElement } from 'react';
+import { LayoutBase } from '@eliascerne/layout/base';
 
-export function IndexTsx(props: IndexTsxProps) {
+/* eslint-disable-next-line */
+export interface BlogProps {}
+
+export function Blog(props: BlogProps) {
   return (
     <div>
       <h1>Welcome to IndexTsx!</h1>
@@ -9,4 +12,8 @@ export function IndexTsx(props: IndexTsxProps) {
   );
 }
 
-export default IndexTsx;
+Blog.getLayout = function getLayout(page: ReactElement) {
+  return <LayoutBase>{page}</LayoutBase>;
+};
+
+export default Blog;
