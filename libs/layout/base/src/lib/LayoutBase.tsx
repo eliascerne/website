@@ -10,7 +10,7 @@ export interface LayoutBaseProps {
 
 export function LayoutBase(props: LayoutBaseProps) {
   return (
-    <div className="md:mt-header px-6 max-w-maxWidth mx-auto xl:px-0">
+    <div className="md:mt-header px-6 max-w-maxWidth mx-auto xl:px-0 mb-32">
       <UtilsHeader />
       {props.children}
     </div>
