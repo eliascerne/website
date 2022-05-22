@@ -6,6 +6,7 @@
     "cards-layout": "libs/cards/layout",
     "cards-link": "libs/cards/link",
     "cards-ui": "libs/cards/ui",
+    "editor-ui": "libs/editor/ui",
     "layout-base": "libs/layout/base",
     "layout-card": "libs/layout/card",
     "utils-header": "libs/utils/header",
