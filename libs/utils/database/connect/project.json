@@ -1,14 +1,22 @@
 {
   "root": "libs/utils/database/connect",
   "sourceRoot": "libs/utils/database/connect/src",
-  "projectType": "library",
-  "tags": [],
   "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/utils/database/connect",
+        "main": "libs/utils/database/connect/src/index.ts",
+        "tsConfig": "libs/utils/database/connect/tsconfig.lib.json",
+        "assets": ["libs/utils/database/connect/*.md"]
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/utils/database/connect/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/utils/database/connect/**/*.ts"]
       }
     },
     "test": {
@@ -19,5 +27,6 @@
         "passWithNoTests": true
       }
     }
-  }
+  },
+  "tags": []
 }
