@@ -1,16 +1,22 @@
 import { ReactElement } from 'react';
 import { LayoutBase } from '@eliascerne/layout/base';
-import { createReactEditorJS } from 'react-editor-js';
+import { EditorUi } from '@eliascerne/editor/ui';
+import dynamic from 'next/dynamic';
+
+const EditorJsWithNoSSR = dynamic(
+  () => import('@eliascerne/editor/ui') as any,
+  {
+    ssr: false,
+  }
+);
 
 /* eslint-disable-next-line */
 export interface IndexTsxProps {}
 
-const ReactEditorJS = createReactEditorJS();
-
 export function BlogNew(props: IndexTsxProps) {
   return (
-    <div>
-      <ReactEditorJS tools={EDITOR_JS_TOOLS} />
+    <div className="relative py-16 bg-slate-800 overflow-hidden">
+      <EditorUi/>
     </div>
   );
 }
