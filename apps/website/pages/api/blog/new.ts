@@ -27,7 +27,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   const createDate = new Date();
 
   const collection = await db.insertOne({
-    _id: new ObjectId(),
+    _id: objectId,
     slang: defaultSlang,
     heading: heading,
     description: description,
