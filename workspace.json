@@ -7,6 +7,7 @@
     "cards-link": "libs/cards/link",
     "cards-ui": "libs/cards/ui",
     "layout-base": "libs/layout/base",
+    "layout-card": "libs/layout/card",
     "utils-header": "libs/utils/header",
     "website": "apps/website",
     "website-e2e": "apps/website-e2e"
