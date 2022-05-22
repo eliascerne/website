@@ -9,8 +9,8 @@ export interface CardsLinkProps {
   size: string;
   image: string;
   description: string;
-  buttonIcon: any;
-  buttonText: any;
+  buttonIcon: boolean;
+  buttonText: string;
   link: string;
 }
 
@@ -41,7 +41,7 @@ export function CardsLink(props: CardsLinkProps) {
             href={link}
             className="flex p-2 gap-3 rounded-b-2xl justify-center bg-cardBorder"
           >
-            <Unicons.UilExternalLinkAlt />
+            {buttonIcon && <Unicons.UilExternalLinkAlt />}
             <p className="text-lg">{buttonText}</p>
           </a>
         </div>
