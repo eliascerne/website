@@ -1,5 +1,6 @@
-import type { ReactElement } from 'react';
+import { Fragment, ReactElement } from 'react';
 import { LayoutBase } from '@eliascerne/layout/base';
+import { LayoutCard } from 'libs/layout/card/src';
 import { CardsUi } from '@eliascerne/cards/ui';
 import { CardsLayout } from '@eliascerne/cards/layout';
 import { UilAirplay } from '@iconscout/react-unicons';
@@ -8,7 +9,7 @@ import styles from './index.module.css';
 
 export function Home() {
   return (
-    <div className="grid grid-flow-row-dense grid-cols-1 grid-rows-3 gap-4 pt-6 md:grid-cols-3 lg:grid-cols-4">
+    <Fragment>
       <CardsUi
         size="medium"
         type="about"
@@ -71,12 +72,16 @@ export function Home() {
         buttonIcon={true}
         link="https://tailwindcss.com"
       />
-    </div>
+    </Fragment>
   );
 }
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <LayoutBase>{page}</LayoutBase>;
+  return (
+    <LayoutBase>
+      <LayoutCard>{page}</LayoutCard>
+    </LayoutBase>
+  );
 };
 
 export default Home;
