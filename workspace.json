@@ -9,6 +9,7 @@
     "editor-ui": "libs/editor/ui",
     "layout-base": "libs/layout/base",
     "layout-card": "libs/layout/card",
+    "layout-editor": "libs/layout/editor",
     "utils-database-connect": "libs/utils/database/connect",
     "utils-header": "libs/utils/header",
     "website": "apps/website",
