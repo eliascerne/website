@@ -1,12 +1,12 @@
 /* eslint-disable-next-line */
 export interface IndexTsxProps {}
 
-export function IndexTsx(props: IndexTsxProps) {
+export function BlogId(props: IndexTsxProps) {
   return (
     <div>
-      <h1>Welcome to IndexTsx!</h1>
+      <h1>Welcome to BlogId!</h1>
     </div>
   );
 }
 
-export default IndexTsx;
+export default BlogId;
