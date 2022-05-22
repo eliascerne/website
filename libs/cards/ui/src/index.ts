@@ -15,10 +15,20 @@ export interface aboutCard extends baseCard {
 
 export interface linkCard extends baseCard {
   type: 'link';
-  image: any;
+  image: string;
   link: string;
   description: string;
-  buttonIcon?: any;
+  buttonIcon?: boolean;
+  buttonText?: string;
+}
+
+export interface blogCards extends baseCard {
+  type: 'blog';
+  image: string;
+  link: string;
+  title: string;
+  description: string;
+  buttonIcon?: boolean;
   buttonText?: string;
 }
 
