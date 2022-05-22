@@ -14,7 +14,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
       .status(400)
       .json({ message: 'Cannot get anything else than POST method.' });
   }
-  const { heading, description } = req.body;
+  const { heading, description, text } = req.body;
 
   if (!heading) res.status(400).json({ message: 'No heading provided :(' });
 
@@ -31,7 +31,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
     slang: defaultSlang,
     heading: heading,
     description: description,
-    text: [],
+    text: text,
     createDate: createDate,
   });
 
