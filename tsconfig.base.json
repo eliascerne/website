@@ -23,6 +23,9 @@
       "@eliascerne/editor/ui": ["libs/editor/ui/src/index.ts"],
       "@eliascerne/layout/base": ["libs/layout/base/src/index.ts"],
       "@eliascerne/layout/card": ["libs/layout/card/src/index.ts"],
+      "@eliascerne/utils/database/connect": [
+        "libs/utils/database/connect/src/index.ts"
+      ],
       "@eliascerne/utils/header": ["libs/utils/header/src/index.ts"]
     }
   },

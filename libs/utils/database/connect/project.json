@@ -1,0 +1,23 @@
+{
+  "root": "libs/utils/database/connect",
+  "sourceRoot": "libs/utils/database/connect/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/utils/database/connect/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/utils/database/connect"],
+      "options": {
+        "jestConfig": "libs/utils/database/connect/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
