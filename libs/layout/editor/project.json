@@ -1,0 +1,23 @@
+{
+  "root": "libs/layout/editor",
+  "sourceRoot": "libs/layout/editor/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/layout/editor/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/layout/editor"],
+      "options": {
+        "jestConfig": "libs/layout/editor/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
