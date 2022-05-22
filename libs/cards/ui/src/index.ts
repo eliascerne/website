@@ -27,6 +27,7 @@ export interface blogCards extends baseCard {
   image: string;
   link: string;
   title: string;
+  author: string;
   description: string;
   buttonIcon?: boolean;
   buttonText?: string;
