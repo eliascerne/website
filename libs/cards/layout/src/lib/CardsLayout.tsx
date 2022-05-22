@@ -18,16 +18,18 @@ export function CardsLayout(props: CardsLayoutProps) {
   const { size, children } = props;
 
   return (
-    <div
-      className={
-        'bg-card border-4 border-cardBorder rounded-3xl text-white h-full min-h-[278px] w-full hover:border-cardBorderHover transition-all duration-300 ease-in-out row-span-1' +
-        ' ' +
-        'col-span-' +
-        sizeMap[size]
-      }
-    >
-      {children}
-      <div className="col-span-1 col-span-2 col-span-3 col-span-4"></div>
+    <div className={`col-span-2 md:col-span-${sizeMap[size]}`}>
+      <div
+        className={
+          'bg-card border-4 border-cardBorder rounded-3xl text-white h-full min-h-[278px] w-full hover:border-cardBorderHover transition-all duration-300 ease-in-out'
+        }
+      >
+        {children}
+        <div className="col-span-1"></div>
+        <div className="col-span-2"></div>
+        <div className="col-span-3"></div>
+        <div className="col-span-4"></div>
+      </div>
     </div>
   );
 }

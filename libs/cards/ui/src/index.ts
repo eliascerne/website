@@ -16,12 +16,13 @@ export interface aboutCard extends baseCard {
 export interface linkCard extends baseCard {
   type: 'link';
   image: any;
+  link: string;
   description: string;
-  buttonIcon: any;
-  buttonText: string;
+  buttonIcon?: any;
+  buttonText?: string;
 }
 
-type Cards = aboutCard | linkCard;
+type Cards = linkCard | aboutCard;
 
 export default Cards;
 

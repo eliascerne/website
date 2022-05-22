@@ -5,3 +5,6 @@
  * .container {
  * }
 */
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
