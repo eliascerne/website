@@ -8,6 +8,7 @@ type Data = {
   text?: any;
   heading?: any;
   description?: any;
+  slug?: any;
 };
 
 async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
@@ -25,6 +26,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
     const storedText = storedPost.text;
     const storedHeading = storedPost.heading;
     const storedDescription = storedPost.description;
+    const storedSlug = storedPost.slug;
 
     console.log(storedHeading);
 
@@ -42,6 +44,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
       text: storedText,
       heading: storedHeading,
       description: storedDescription,
+      slug: storedSlug,
     });
   }
 }
