@@ -130,7 +130,7 @@ export function BlogEdit(props: IndexTsxProps) {
           {initText && (
             <ReactEditorJS
               holder="editor"
-              readOnly={true}
+              readOnly={false}
               // tools={EditorConfig}
               onInitialize={handleInitialize}
               onChange={handleSave}
