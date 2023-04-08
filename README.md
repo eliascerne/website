@@ -1,6 +1,6 @@
 # Website
-
 This is the offical repository for the website eliascerne.com.
+
 
 ## Rules for Commits
 
@@ -19,17 +19,20 @@ This is the offical repository for the website eliascerne.com.
 - `merge:` merge branches together
 
 ## Third party programs
+### Iconscout: 
+Using iconscout.com for the icons. You can add these icons by going to this site: [iconscout.com](https://iconscout.com/unicons/explore/line) and search for the icon you want. The next step is to copy the Font and paste it into the file. 
 
-### Iconscout:
-
-Using iconscout.com for the icons. You can add these icons by going to this site: [iconscout.com](https://iconscout.com/unicons/explore/line) and search for the icon you want. The next step is to copy the Font and paste it into the file.
+### Swiperjs:
+Using swiperjs for the Portfolio section. We will generate a swiper with swiperjs. You can see all swipers [here](https://swiperjs.com/demos).
+To implement the swiper to the site, you have to go to [this page](https://github.com/nolimits4web/swiper/tree/master/demos), and there find the right one for you.
+See a list of all effects for swiperjs [scripts](https://swiperjs.com/swiper-api).
+Thanks to nolimits4web to pulish that amazing swiper collection.
 
 ## Open this repo in gitpod IDE.
-
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/eliascerne/website)
 
-## Contributor
 
+## Contributor
 Made by: © [@erias04](https://github.com/erias04)
-<br/>
+ <br/>
 All Rights Reserved!

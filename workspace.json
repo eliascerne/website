@@ -1,18 +1,21 @@
 {
   "version": 2,
   "projects": {
-    "cards-about": "libs/cards/about",
-    "cards-blog": "libs/cards/blog",
-    "cards-layout": "libs/cards/layout",
-    "cards-link": "libs/cards/link",
-    "cards-ui": "libs/cards/ui",
-    "editor-ui": "libs/editor/ui",
-    "layout-base": "libs/layout/base",
-    "layout-card": "libs/layout/card",
-    "layout-editor": "libs/layout/editor",
-    "utils-database-connect": "libs/utils/database/connect",
-    "utils-header": "libs/utils/header",
-    "website": "apps/website",
-    "website-e2e": "apps/website-e2e"
+    "data": "libs/data",
+    "home": "apps/home",
+    "home-e2e": "apps/home-e2e",
+    "section-about-me": "libs/section/about-me",
+    "section-binary-clock": "libs/section/binary-clock",
+    "section-contact": "libs/section/contact",
+    "section-footer": "libs/section/footer",
+    "section-header": "libs/section/header",
+    "section-home": "libs/section/home",
+    "section-portfolio": "libs/section/portfolio",
+    "section-project-in-mind": "libs/section/project-in-mind",
+    "section-qualification": "libs/section/qualification",
+    "section-scroll-up": "libs/section/scroll-up",
+    "section-services": "libs/section/services",
+    "section-skills": "libs/section/skills",
+    "section-terminal": "libs/section/terminal"
   }
 }

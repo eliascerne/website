@@ -1,0 +1,23 @@
+{
+  "root": "libs/section/footer",
+  "sourceRoot": "libs/section/footer/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/section/footer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/section/footer"],
+      "options": {
+        "jestConfig": "libs/section/footer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

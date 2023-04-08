@@ -1,0 +1,23 @@
+{
+  "root": "libs/section/home",
+  "sourceRoot": "libs/section/home/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/section/home/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/section/home"],
+      "options": {
+        "jestConfig": "libs/section/home/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

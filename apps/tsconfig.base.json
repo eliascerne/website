@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@eliascerne/cards/about": ["libs/cards/about/src/index.ts"],
+      "@eliascerne/cards/blog": ["libs/cards/blog/src/index.ts"],
+      "@eliascerne/cards/layout": ["libs/cards/layout/src/index.ts"],
+      "@eliascerne/cards/link": ["libs/cards/link/src/index.ts"],
+      "@eliascerne/cards/ui": ["libs/cards/ui/src/index.ts"],
+      "@eliascerne/editor/ui": ["libs/editor/ui/src/index.ts"],
+      "@eliascerne/layout/base": ["libs/layout/base/src/index.ts"],
+      "@eliascerne/layout/card": ["libs/layout/card/src/index.ts"],
+      "@eliascerne/layout/editor": ["libs/layout/editor/src/index.ts"],
+      "@eliascerne/utils/database/connect": [
+        "libs/utils/database/connect/src/index.ts"
+      ],
+      "@eliascerne/utils/header": ["libs/utils/header/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

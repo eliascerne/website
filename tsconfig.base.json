@@ -15,19 +15,26 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@eliascerne/cards/about": ["libs/cards/about/src/index.ts"],
-      "@eliascerne/cards/blog": ["libs/cards/blog/src/index.ts"],
-      "@eliascerne/cards/layout": ["libs/cards/layout/src/index.ts"],
-      "@eliascerne/cards/link": ["libs/cards/link/src/index.ts"],
-      "@eliascerne/cards/ui": ["libs/cards/ui/src/index.ts"],
-      "@eliascerne/editor/ui": ["libs/editor/ui/src/index.ts"],
-      "@eliascerne/layout/base": ["libs/layout/base/src/index.ts"],
-      "@eliascerne/layout/card": ["libs/layout/card/src/index.ts"],
-      "@eliascerne/layout/editor": ["libs/layout/editor/src/index.ts"],
-      "@eliascerne/utils/database/connect": [
-        "libs/utils/database/connect/src/index.ts"
+      "@eliascerne/data": ["libs/data/src/index.ts"],
+      "@eliascerne/section/about-me": ["libs/section/about-me/src/index.ts"],
+      "@eliascerne/section/binary-clock": [
+        "libs/section/binary-clock/src/index.ts"
       ],
-      "@eliascerne/utils/header": ["libs/utils/header/src/index.ts"]
+      "@eliascerne/section/contact": ["libs/section/contact/src/index.ts"],
+      "@eliascerne/section/footer": ["libs/section/footer/src/index.ts"],
+      "@eliascerne/section/header": ["libs/section/header/src/index.ts"],
+      "@eliascerne/section/home": ["libs/section/home/src/index.ts"],
+      "@eliascerne/section/portfolio": ["libs/section/portfolio/src/index.ts"],
+      "@eliascerne/section/project-in-mind": [
+        "libs/section/project-in-mind/src/index.ts"
+      ],
+      "@eliascerne/section/qualification": [
+        "libs/section/qualification/src/index.ts"
+      ],
+      "@eliascerne/section/scroll-up": ["libs/section/scroll-up/src/index.ts"],
+      "@eliascerne/section/services": ["libs/section/services/src/index.ts"],
+      "@eliascerne/section/skills": ["libs/section/skills/src/index.ts"],
+      "@eliascerne/section/terminal": ["libs/section/terminal/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "projects": {
+    "cards-about": "libs/cards/about",
+    "cards-blog": "libs/cards/blog",
+    "cards-layout": "libs/cards/layout",
+    "cards-link": "libs/cards/link",
+    "cards-ui": "libs/cards/ui",
+    "editor-ui": "libs/editor/ui",
+    "layout-base": "libs/layout/base",
+    "layout-card": "libs/layout/card",
+    "layout-editor": "libs/layout/editor",
+    "utils-database-connect": "libs/utils/database/connect",
+    "utils-header": "libs/utils/header",
+    "website": "apps/website",
+    "website-e2e": "apps/website-e2e"
+  }
+}
