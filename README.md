@@ -1,6 +1,6 @@
 # Website
 
-This is the offical repository for the website eliascerne.com.
+This is the offical repository for the personal website eliascerne.com.
 
 ## Rules for Commits
 
