@@ -58,7 +58,7 @@ export function SectionPortfolio(props: SectionPortfolioProps) {
               <p className="card_text">
                 {Data.language[languageJSON].portfolio.tabs[1].description}
               </p>
-              <a href="https://pacm.io" className="button card_button">
+              <a href="https://erias04.github.io/pacman/" className="button card_button">
                 {Data.language[languageJSON].portfolio.tabs[1].button}
               </a>
             </div>
